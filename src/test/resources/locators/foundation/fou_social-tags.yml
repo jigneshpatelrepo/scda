@@ -1,0 +1,13 @@
+###Social Tags
+OpenGraph_title: XPATH=//meta[@property='og:title']
+#OpenGraph_url: XPATH=//meta[@property='og:url']
+#OpenGraph_image: XPATH=//meta[@property='og:image']
+#OpenGraph_site_name: XPATH=//meta[@property='og:site_name']
+#OpenGraph_description: XPATH=//meta[@property='og:description']
+
+#Twitter_card: XPATH=//meta[@name='twitter:card']
+#Twitter_site: XPATH=//meta[@name='twitter:site']
+Twitter_title: XPATH=//meta[@name='twitter:title']
+#Twitter_description: XPATH=//meta[@name='twitter:description']
+#Twitter_creator: XPATH=//meta[@name='twitter:creator']
+#Twitter_image: XPATH=//meta[@name='twitter:image:src']

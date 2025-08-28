@@ -1,0 +1,31 @@
+
+Cookiepolicy: XPATH=//button[@id='onetrust-accept-btn-handler']
+
+###Hero
+
+herocomponent: XPATH=//*[@data-component='Hero']
+herocomponentimstudent: XPATH=//*[@data-component='Hero']//a[@aria-label='Switch to CanvasWorld theme']
+herocomponentimprofessional: XPATH=//*[@data-component='Hero']//a[@data-automation='Theme-Switcher-Button-CanvasProfessional']
+herocomponentcta: XPATH=//*[@data-component='Hero']//a[@data-automation='cta']
+herocomponenttitle: XPATH=//*[@data-component='Hero']//h1
+herocomponentshortdesc: XPATH=//*[@data-component='Hero']//*[@data-automation='short_description']
+herocomponentstudentplaypause: XPATH=//*[@data-component='Hero']//button[contains(@class,'absolute z-30 -right-28 min-[1000px]')]
+herocomponentprofessinalplaypause: XPATH=//*[@data-component='Hero']//button[contains(@class,'top-[-70px] xl:top-[-119px] min-[1000px]')]
+###location
+locationcomponent: XPATH=//*[@data-automation='LocationFinder']
+locationcomponentHeadline: XPATH=//*[@data-automation='LocationFinder']//span[contains(text(), 'LIVING')]
+locationcomponentdesc: XPATH=//*[@data-automation='LocationFinder']//*[@data-automation='description']//p
+locationcomponentUK: XPATH=//*[@data-automation='LocationFinder']//button[text()='UNITED KINGDOM']
+locationcomponentEUROPE: XPATH=//*[@data-automation='LocationFinder']//button[text()='EUROPE']
+locationcomponentUKEuropeitems: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li
+locationcomponentcarouselrightarrow: XPATH=//*[@data-automation='LocationFinder']//button[@data-automation='carousel-arrow-right']
+locationcomponentcarouselleftarrow: XPATH=//*[@data-automation='LocationFinder']//button[@data-automation='carousel-arrow-left']
+locationcomponentUKEuropeitemslink: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]//a
+locationcomponentUKEuropeitemslinkparam: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]
+
+#locationcarddetails
+locationcomponentcardlocation: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]//div[contains(@class,'lex-col relative lg:gap-desktop-space-between-micro md')]/span
+locationcomponentcardproperties: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]//div[contains(@class,'text-desktop-typography-font-size-body')]/span
+locationcomponentcardcta: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]/a
+locationcomponentcardcount: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]//div[contains(@class,'lex-col relative lg:gap-desktop-space-between-micro md')]/div
+locationcomponentcardimage: XPATH=//*[@data-automation='LocationFinder']//ul[@class='splide__list']/li[1]//img

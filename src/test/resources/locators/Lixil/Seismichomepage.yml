@@ -1,0 +1,31 @@
+###Vertical accordion
+Cookiepolicy: XPATH=//button[@id='onetrust-accept-btn-handler']
+verticalaccrodioncomponent: XPATH=//section[@data-component='authorable/VerticalAccordion']/div
+verticalaccrodiontitel: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']
+verticalaccordionitem1: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div/div
+verticalaccordionitem1desc: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div[1]//p
+verticalaccordionitem1cta: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div[1]//a[@aria-label='Learn More']
+verticalaccordionitem2: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div[2]
+verticalaccordionitemtab: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div[2]/div[@role='button']/div/div
+verticalaccordionitemtabcolor: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div[2]/div[@role='button']/div/div
+verticalaccordionitem1cta2: XPATH=//section[@data-component='authorable/VerticalAccordion']//h4[text()='What can Seismic’s enablement software do for your team?']//following-sibling::div[2]//a//span[text()='Learn More']
+###locators for video carousel
+videocarouselcomponent: XPATH=//section[@data-component='authorable/VideoCarousel']
+videocarouselcomponentHeadline: XPATH=//section[@data-component='authorable/VideoCarousel']//h2
+videocarouselcomponentPrevBtn: XPATH=//section[@data-component='authorable/VideoCarousel']//div[@class='flex justify-between overflow-hidden']/button[@aria-label='previous slide']
+videocarouselcomponentNxtBtn: XPATH=//section[@data-component='authorable/VideoCarousel']//div[@class='flex justify-between overflow-hidden']/button[@aria-label='next slide']
+videocarouselarrowbtncompchange: XPATH=//section[@data-component='authorable/VideoCarousel']//div[@class='overflow-hidden relative']/following-sibling::div//child::div[@data-component='helpers/genericwrappers/richtextwrapper']
+videocarouselarrowbtncompchange1: XPATH=//section[@data-component='authorable/VideoCarousel']//div[@class='overflow-hidden relative']/following-sibling::div
+###locators for iconcard
+Iconcardcomponent: XPATH=//section[@data-component='authorable/IconCard']//div
+Iconcardcomponentimage: XPATH=//section[@data-component='authorable/IconCard']//a[@href='/platform/drive-revenue/']//img
+Iconcardcomponenttitle: XPATH=//section[@data-component='authorable/IconCard']//a[@href='/platform/drive-revenue/']//p
+Iconcardcomponentdesc: XPATH=//section[@data-component='authorable/IconCard']//a[@href='/platform/drive-revenue/']/div[contains(@data-component,'richtext')]
+Iconcardcomponentcta: XPATH=//section[@data-component='authorable/IconCard']//a[@href='/platform/drive-revenue/']/div/button
+#for hover effect
+first_Card: XPATH=//img[@alt="The Seismic Advantage white paper"]//ancestor::div[@class='group']
+first_Cardimage: XPATH=//img[@alt="The Seismic Advantage white paper"]
+
+
+brand_title: XPATH=//h1[text()='Page Title - Theme Light']
+brand_desc: XPATH=//*[@data-testid='component-hero-90907931-c790-4c42-851f-5fb303e00503']//*[@data-testid='description']//p

@@ -1,0 +1,19 @@
+###locators for common Component
+First_question: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-question']//span[text()='1']
+Second_question: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-question']//span[text()='2']
+Third_question: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-question']//span[text()='3']
+Forth_question: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-question']//span[text()='4']
+Bathroom_selection: XPATH=//div[@id="product-selector-wrapper"]//h4/span[text()='Bathroom']/ancestor::li
+Kitchen_selection: XPATH=//div[@id="product-selector-wrapper"]//h4/span[text()='Kitchen']
+Confirm_button: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-buttons']//button[text()='Confirm']
+Bathroom_options: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-options']//h4/span[text()='%s']
+Bathroom_Accessories: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-options']//h4/span[text()='Bathroom Accessories']/ancestor::li//figure/img
+Bathroom_Accessories_types: XPATH=//div[@id="product-selector-wrapper"]//p[text()='Select Accessory Type']/parent::div/following-sibling::div//h4/span[text()='%s']/ancestor::li//figure/img
+Accessory_kit: XPATH=//div[@id="product-selector-wrapper"]//p[text()='Select Accessory Type']/parent::div/following-sibling::div//h4/span[text()='Accessory Kit']/ancestor::li//figure/img
+Color_options: XPATH=//div[@id="product-selector-wrapper"]//p[text()='Select a color']/parent::div/following-sibling::div//h4/span[text()='%s']/ancestor::li//figure/img
+StartLight_Chrome_color: XPATH=//div[@id="product-selector-wrapper"]//p[text()='Select a color']/parent::div/following-sibling::div//h4/span[text()='StarLight Chrome']/ancestor::li//figure/img
+See_All_Products_button: XPATH=//div[@class="product-selector-top-wrap"]//div[contains(@class,"product-selector-results-link")]/a
+Products: XPATH=//ul[@id="productList"]//div[@class='product-item']
+Products_with_StarLight_Chrome_selection: XPATH=//ul[@id="productList"]//div[@class='product-item']//span[@class='current']/img[@title='StarLight Chrome']
+Bath_Shower: XPATH=//div[@id="product-selector-wrapper"]//div[@class='product-selector-options']//h4/span[text()='Bath & Shower Controls']/ancestor::li//figure/img
+Antique_Black: XPATH=//div[@id="product-selector-wrapper"]//p[text()='Select a color']/parent::div/following-sibling::div//h4/span[text()='Antique Bronze']/ancestor::li//figure/img

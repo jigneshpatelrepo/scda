@@ -1,0 +1,2 @@
+###HTML JS
+JS_script: XPATH=//script[contains(@src, '.js')]

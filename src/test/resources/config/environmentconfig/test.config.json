@@ -1,0 +1,9 @@
+{
+  "server": "https://www.adityabirlacapital.com/abc-of-money",
+  "siteDomain": "https://greystar-velocity-staging.vercel.app/en",
+  "defaultLang": "en-US",
+  "testData": "test_data.yml",
+  "timeOut": "90000",
+  "implicitWait": "5",
+  "MailConfig": "email-smtp.config.json"
+}

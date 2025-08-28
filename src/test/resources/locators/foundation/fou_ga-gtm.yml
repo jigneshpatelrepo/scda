@@ -1,0 +1,4 @@
+###Google Analytics, Google Tag Manager
+#GaGtm_analytics: XPATH=//script[contains(.,'www.google-analytics.com')]
+GaGtm_tag_manager: XPATH=//script[contains(.,'www.googletagmanager.com')]
+GaGtm_noscript_tag: XPATH=//noscript

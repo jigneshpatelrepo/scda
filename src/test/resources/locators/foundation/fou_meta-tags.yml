@@ -1,0 +1,8 @@
+###Meta Tags
+Meta_title: XPATH=//meta[@name='title']
+#Meta_description: XPATH=//meta[@name='description']
+#Meta_keywords: XPATH=//meta[@name='keywords']
+Meta_robots: XPATH=//meta[@name='robots']
+#Meta_contentType: XPATH=//meta[@http-equiv='Content-Type']
+Meta_viewport: XPATH=//meta[@name='viewport']
+#Meta_xua: XPATH=//meta[@http-equiv='X-UA-Compatible']

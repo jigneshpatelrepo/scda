@@ -1,0 +1,4 @@
+###Component Cookie policy###
+Cookie_cmpSection: XPATH=//*[@class="privacy-warning permisive"]
+Cookie_message: XPATH=//*[@class="privacy-warning permisive"]//*[@class="info"]
+Cookie_okCTA: XPATH=//*[@class="privacy-warning permisive"]//*[@class="submit"]

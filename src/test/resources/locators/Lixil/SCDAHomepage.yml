@@ -1,0 +1,81 @@
+###3cardcarousel
+
+Advancebutton: XPATH=//button[@id='details-button']
+Advancebuttonproceed: XPATH=//p[@id='final-paragraph']/a
+
+3cardcarouselComponent: XPATH=//section[@class='service-carousel-with-icon' or @aria-lable='Service Categories Carousel']
+3cardcarouselHeading: XPATH=//section[@class='service-carousel-with-icon']//h2
+3cardcarouselEyebrow: XPATH=//section[@class='service-carousel-with-icon']//span[(text()='EXPLORE')]
+
+3cardcarouselcardicon: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//span[contains(@class,'flex rtl')]
+3cardcarouselcardtitle: XPATH=//section[@class='service-carousel-with-icon']//h4[(text()='Building Completion Certificate')]
+3cardcarouselcardsingletag: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[contains(@aria-label,'Tags for card')]
+3cardcarouselcardmultitpletag: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul//li[@aria-label='3 more tags']
+3cardcarouselcardcta: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[@class='splide__list']/li[1]//following-sibling::div//span[(text()='View All')]//ancestor::a
+3cardcarouselcardctaCommon: XPATH=//section[@class='service-carousel-with-icon']//div[contains(@class,'self-start md:self-center')]//span[contains(@class,'cta-content ')]
+3cardcarouselcardPreviousBtn: XPATH=//section[@class='service-carousel-with-icon']//button[@aria-label='Previous slide']
+3cardcarouselcardNxtBtn: XPATH=//section[@class='service-carousel-with-icon']//button[@aria-label='Next slide']
+3cardcarouselcardNxtBtnClickAttr: XPATH=//section[@class='service-carousel-with-icon']//ul[@class='splide__list']/li[1]
+3cardcarouselFirstcard: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[@class='splide__list']/li[1]/div
+
+###onectabox
+onectaboxComponent: XPATH=*//div[@data-component='one-cta-box']
+onectaboxEyebrow: XPATH=*//div[@data-component='one-cta-box']//span[(text()='SERVICES')]
+onectaboxTitle: XPATH=//div[@data-component='one-cta-box']//span[contains(text(),'and hassle')]
+onectaboxCTAAnchor: XPATH=//div[@data-component='one-cta-box']//span[contains(text(),'E-Services')]//ancestor::a
+onectaboxCTASpan: XPATH=//div[@data-component='one-cta-box']//span[contains(text(),'E-Services')]
+onectaboxImage: XPATH=*//div[@data-component='one-cta-box']//img
+
+###4cardcarousel(partners/awards)
+4cardcarouselComponent: XPATH=//div[@class='carousel-with-four-cards']
+4cardcarouselEyebrow: XPATH=//div[@class='carousel-with-four-cards']//span[(text()='Acknowledgement')]
+4cardcarouselTitle: XPATH=//div[@class='carousel-with-four-cards']//h2[contains(text(),'proud of our')]
+4cardcarouselLinkPartner: XPATH=//div[@class='carousel-with-four-cards']//h2[contains(text(),'proud of our')]//following::button[(text()='partners')]
+4cardcarouselLinkCTAAwards: XPATH=//div[@class='carousel-with-four-cards']//h2[contains(text(),'proud of our')]//following::button[(text()='awards')]
+4cardcarouselCTAAnchorPartner: XPATH=//div[@class='carousel-with-four-cards']//span[contains(text(),'All Partners')]//ancestor::a
+4cardcarouselCTAAnchorAwards: XPATH=//div[@class='carousel-with-four-cards']//span[contains(text(),'All Awards')]//ancestor::a
+4cardcarouselCTAAwardsSpan: XPATH=//div[@class='carousel-with-four-cards']//span[contains(text(),'All Awards')]
+4cardcarouselCTAPartnerSpan: XPATH=//div[@class='carousel-with-four-cards']//span[contains(@class,'cta-content font')]
+4cardcarouselImage: XPATH=//div[@class='carousel-with-four-cards']//ul[@class='splide__list']/li//img
+4cardcarouselImageforAwards: XPATH=//div[@class='carousel-with-four-cards']//ul[@class='splide__list']/li[1]/a
+4cardcarouselImageforHover: XPATH=//div[@class='carousel-with-four-cards']//ul[@class='splide__list']/li[1]//a
+
+4cardcarouselLinkCTAAwardsTitle: XPATH=//div[@class='carousel-with-four-cards']//ul[@class='splide__list']/li[1]//div[contains(@class,'mt-auto')]
+4cardcarouselLinkCTAAwardsCTA: XPATH=//div[@class='carousel-with-four-cards']//ul[@class='splide__list']/li[1]//span[contains(@class,'cta-icon')]
+
+###FAQ's
+FAQComponent: XPATH=*//div[@data-component='faqs']
+FAQComponentTitle: XPATH=*//div[@data-component='faqs']//h2
+FAQComponentEyebrow: XPATH=*//div[@data-component='faqs']//span[(text()='FAQs')]
+FAQComponentCTA: XPATH=*//div[@data-component='faqs']//span[contains(@class,'cta-content font')]//ancestor::a
+FAQComponentCTASpan: XPATH=*//div[@data-component='faqs']//span[contains(@class,'cta-content font')]
+FAQComponentItem1: XPATH=*//div[@data-component='faq-item'][1]//h3
+FAQComponentItem1Btn: XPATH=*//div[@data-component='faq-item'][1]//button
+FAQComponentItem1Question: XPATH=//div[@data-component='faq-item'][1]//h3
+FAQComponentTotalItem: XPATH=*//div[@data-component='faqs']//div[contains(@aria-labelledby,'faq')]/div
+
+
+###News
+NewsComponent: XPATH=//div[@class='bg-neutral-100 container-max']
+NewsComponentTitle: XPATH=//div[@class='bg-neutral-100 container-max']//h2
+NewsComponentEyebrow: XPATH=//div[@class='bg-neutral-100 container-max']//span[(text()='NEWS')]
+NewsComponentCTA: XPATH=//div[@class='bg-neutral-100 container-max']//span[contains(@class,'cta-content font')]//ancestor::a
+NewsComponentCTASpan: XPATH=//div[@class='bg-neutral-100 container-max']//span[contains(@class,'cta-content font')]
+NewsComponentImage: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]
+NewsComponentImage2: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'flex-row group md')]/div[2]
+NewsComponentItem1BtnAnchor: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//following-sibling::div[contains(@class,'flex items-end')]//a
+NewsComponentItem1BtnSpan: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//following-sibling::div[contains(@class,'flex items-end')]//span[(text()='Read More')]
+NewsComponentDate: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//span[contains(@class,'uppercase')]
+NewsComponentItem1Title: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//h3
+
+
+
+
+
+
+
+
+
+
+
+
