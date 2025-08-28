@@ -310,7 +310,7 @@ Feature: SCDAHomepage: Validate SCDA Homepage
       | padding-right             | 0px                          |
       | text-transform            | uppercase                    |
 
-    Scenario: Validate FAQ- functionality (Expand / collapsed - Navigation)
+    Scenario: Validate News- functionality (Hover and Navigation)
 
 
     And I hover mouse over 'NewsComponentImage2'
@@ -319,5 +319,7 @@ Feature: SCDAHomepage: Validate SCDA Homepage
       | flex                     |  1 1 28.561%           |
       And I hover mouse over 'NewsComponentImage'
       And I wait for '2' seconds
+      And The 'NewsComponentImage' element has following CSS properties
+        | flex                     |  1 1 28.561%          |
       And The 'NewsComponentImage' element has following CSS properties
         | flex                     |  1 1 28.561%          |
