@@ -1,4 +1,4 @@
-@lixil @test @SCDAhomepage @Footer
+@test @SCDAhomepage @Footer
 Feature: Footer: Validate SCDA Homepage
 
   @clearcookies
