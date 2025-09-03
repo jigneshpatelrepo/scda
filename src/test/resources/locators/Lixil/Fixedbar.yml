@@ -1,0 +1,12 @@
+
+###FAQ's
+FixedBarComponent: XPATH=*//div[contains(@data-automation,'FixedBar')]
+FixedBarComponentEmergency: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Emergency')]//ancestor::a
+FixedBarComponentEmergencySpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Emergency')]
+FixedBarComponentEService: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='E-Service')]//ancestor::a
+FixedBarComponentEServiceSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='E-Service')]
+FixedBarComponentFeedback: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Feedback & Complaints')]//ancestor::a
+FixedBarComponentFeedbackSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Feedback & Complaints')]
+FixedBarComponentCallcenter: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]//ancestor::a
+FixedBarComponentCallcenterSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]
+FixedBarComponentsocialshare: XPATH=*//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'cursor-pointer')]

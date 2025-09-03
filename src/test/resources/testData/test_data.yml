@@ -6,4 +6,4 @@
 # In mail_recipient, this will work like an array and allows us to just iterate through the elements
 # For multiple emails id, add emails separated by comma
 mail_recipient:
-    - email: pshah@horizontal.com
+    - email: jpatel@horizontal.com

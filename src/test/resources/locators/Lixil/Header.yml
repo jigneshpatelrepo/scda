@@ -1,0 +1,11 @@
+
+Advancebutton: XPATH=//button[@id='details-button']
+Advancebuttonproceed: XPATH=//p[@id='final-paragraph']/a
+###Footer
+HeaderComponent: XPATH=//footer[contains(@class,'container-max')]
+
+
+
+
+
+

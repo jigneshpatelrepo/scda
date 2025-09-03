@@ -1,5 +1,5 @@
 {
-  "BaseURL": "https://greystar-velocity-staging.vercel.app/en",
+  "BaseURL": "https://dev-sdd.ishj.ae/en/",
   "defaultLang": "en-US",
   "testData": "test_data.yml",
   "timeOut": "30000",

@@ -1,0 +1,19 @@
+
+###News
+NewsComponent: XPATH=//div[@class='bg-neutral-100 container-max']
+NewsComponentTitle: XPATH=//div[@class='bg-neutral-100 container-max']//h2
+NewsComponentEyebrow: XPATH=//div[@class='bg-neutral-100 container-max']//span[(text()='NEWS')]
+NewsComponentCTA: XPATH=//div[@class='bg-neutral-100 container-max']//span[contains(@class,'cta-content font')]//ancestor::a
+NewsComponentCTASpan: XPATH=//div[@class='bg-neutral-100 container-max']//span[contains(@class,'cta-content font')]
+NewsComponentImage: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]
+NewsComponentImage2: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'flex-row group md')]/div[2]
+NewsComponentItem1BtnAnchor: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//following-sibling::div[contains(@class,'flex items-end')]//a
+NewsComponentItem1BtnSpan: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//following-sibling::div[contains(@class,'flex items-end')]//span[(text()='Read More')]
+NewsComponentDate: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//span[contains(@class,'uppercase')]
+NewsComponentItem1Title: XPATH=//div[@class='bg-neutral-100 container-max']//div[contains(@class,'group-hover:flex-1')]//h3
+
+
+
+
+
+
