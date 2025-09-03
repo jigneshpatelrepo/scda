@@ -1,29 +1,38 @@
 package stepdefinitions;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import helper.FindLocatorFileName;
-import helper.LinkChecker;
-import helper.SetGlobalVariable;
-import helper.YamlFile;
+import com.codeborne.selenide.*;
+import helper.*;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.testng.Assert;
 import org.openqa.selenium.*;
 import org.testng.asserts.SoftAssert;
+import java.util.logging.Level;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Locale;
+import java.util.Objects;
+
 import static com.codeborne.selenide.Selenide.$;
 import static corestepdef.Common.*;
+import static org.apache.xmlbeans.XmlBoolean.type;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 
 public class customecode {
     private static final Logger log = LogManager.getLogger("common_" + Thread.currentThread().threadId());
-    private static WebDriver driver;
-
+    //private static WebDriver driver;
+    WebDriver driver = WebDriverRunner.getWebDriver();
     @Then("^'(.*)' text is not visible in '(.*)'$")
     public void validateTextNotAvailableInElement(String expectedType, String compName) {
         log.debug("{} text is visible in the {}", expectedType, compName);
@@ -91,7 +100,8 @@ public class customecode {
         Assert.assertTrue(scaleAfter > scaleBefore,
                 "Transform scale did not increase after hover!");
 
-}
+    }
+
     private static double extractScale(String matrix) {
         if (matrix == null || matrix.equals("none")) {
             return 1.0; // default scale
@@ -108,4 +118,29 @@ public class customecode {
         return (scaleX + scaleY) / 2.0;
     }
 
+//    @Then("I check the console message")
+//    public void iClickOnconsole() {
+//        Waiter.waitForJavaScriptToLoad();
+//        Waiter.waitForJquery();
+//        WebDriverRunner.getWebDriver().manage().logs().get(LogType.BROWSER);
+//        Accessconsolelogs();
+//    }
+//
+//        public static void Accessconsolelogs () {
+//
+//            LogEntries logs = WebDriverRunner.getWebDriver().manage().logs().get(LogType.BROWSER);
+//
+//            List<LogEntry> successLogs = logs.getAll().stream()
+//                    .filter(entry -> entry.getLevel().equals(Level.INFO))
+//                    .toList();
+//
+//
+//            for (LogEntry entry : logs) {
+//                if (entry.getLevel().equals(Level.INFO)) {
+//                    System.out.println(" Success Log: " + entry.getMessage());
+//                }
+//
+//
+//            }
+//        }
 }

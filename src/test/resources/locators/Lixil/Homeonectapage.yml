@@ -1,0 +1,9 @@
+
+###onectabox
+
+onectaboxComponent: XPATH=*//div[@data-component='OneCTABox']
+onectaboxEyebrow: XPATH=*//div[@data-component='OneCTABox']//span[(text()='SERVICES')]
+onectaboxTitle: XPATH=//div[@data-component='OneCTABox']//span[contains(text(),'and hassle')]
+onectaboxCTAAnchor: XPATH=//div[@data-component='OneCTABox']//span[contains(text(),'E-Services')]//ancestor::a
+onectaboxCTASpan: XPATH=//div[@data-component='OneCTABox']//span[contains(text(),'E-Services')]
+onectaboxImage: XPATH=*//div[@data-component='OneCTABox']//img

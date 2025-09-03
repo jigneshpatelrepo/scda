@@ -1,0 +1,20 @@
+###3cardcarousel
+
+Advancebutton: XPATH=//button[@id='details-button']
+Advancebuttonproceed: XPATH=//p[@id='final-paragraph']/a
+
+3cardcarouselComponent: XPATH=//section[@class='service-carousel-with-icon' or @aria-lable='Service Categories Carousel']
+3cardcarouselHeading: XPATH=//section[@class='service-carousel-with-icon']//h2
+3cardcarouselEyebrow: XPATH=//section[@class='service-carousel-with-icon']//span[(text()='EXPLORE')]
+
+3cardcarouselcardicon: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//span[contains(@class,'flex rtl')]
+3cardcarouselcardtitle: XPATH=//section[@class='service-carousel-with-icon']//h4[(text()='Building Completion Certificate')]
+3cardcarouselcardsingletag: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[contains(@aria-label,'Tags for card')]
+3cardcarouselcardmultitpletagold: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul//li[@aria-label='3 more tags']
+3cardcarouselcardmultitpletag: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[contains(@aria-label,'Tags for card')]//li[contains(@aria-label,'more tags')]
+3cardcarouselcardcta: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[@class='splide__list']/li[1]//following-sibling::div//span[(text()='View All')]//ancestor::a
+3cardcarouselcardctaCommon: XPATH=//section[@class='service-carousel-with-icon']//div[contains(@class,'self-start md:self-center')]//span[contains(@class,'cta-content ')]
+3cardcarouselcardPreviousBtn: XPATH=//section[@class='service-carousel-with-icon']//button[@aria-label='Previous slide']
+3cardcarouselcardNxtBtn: XPATH=//section[@class='service-carousel-with-icon']//button[@aria-label='Next slide']
+3cardcarouselcardNxtBtnClickAttr: XPATH=//section[@class='service-carousel-with-icon']//ul[@class='splide__list']/li[1]
+3cardcarouselFirstcard: XPATH=//section[@class='service-carousel-with-icon']//div[@class='carousel']//ul[@class='splide__list']/li[1]/div
