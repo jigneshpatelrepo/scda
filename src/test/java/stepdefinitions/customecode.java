@@ -118,6 +118,57 @@ public class customecode {
         return (scaleX + scaleY) / 2.0;
     }
 
+    @Then("^The '(.*)' attribute of '(.*)' element do not (contains|is) '(.*)'$")
+    public void verifyAttributeValue(String attributeName, String compName, String matchType, String expectedValue) {
+        log.debug("The " + attributeName + " attribute of " + compName + " " + matchType + " " + expectedValue);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement element = Selenide.$(loc.get(compName));
+        scrollToElement(element);
+        String attrValue = element.getDomAttribute(attributeName);
+        log.debug("Attribute value: " + attrValue);
+        if ("contains".equalsIgnoreCase(matchType)) {
+            Assert.assertFalse(attrValue.toLowerCase().contains(expectedValue.toLowerCase()));
+        } else if ("is".equalsIgnoreCase(matchType)) {
+            Assert.assertEquals(attrValue, expectedValue);
+        } else {
+            Assert.fail("Invalid match type provided: " + matchType);
+        }
+
+    }
+
+
+    @Then("^'(.*)' text is visible in test '(.*)'$")
+    public void validateTextInElement(String expectedType, String compName) {
+        log.debug("{} text is visible in the {}", expectedType, compName);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement ele = Selenide.$(loc.get(compName));
+        ele.should(Condition.exist, waitForElementExists);
+        ele.should(Condition.visible, waitForElementVisible);
+        scrollToElement(ele);
+        String actualText = ele.getAttribute("aria-label");
+        String alphabetsRegex;
+        switch (expectedType.trim().toLowerCase()) {
+            case "numerical":
+                alphabetsRegex = "^[^a-zA-Z]+$";
+                Assert.assertTrue(actualText.matches(alphabetsRegex), "Expected numerical content (with special characters) but got: " + actualText);
+                SetGlobalVariable.scenario.log("--> Numerical value: " + actualText);
+                break;
+            case "alphabetical":
+                alphabetsRegex = "^[^0-9]+$";
+                Assert.assertTrue(actualText.matches(alphabetsRegex), "Expected only alphabets and common characters but got: " + actualText);
+                SetGlobalVariable.scenario.log("--> Alphabetical value: " + actualText);
+                break;
+            case "alphanumerical":
+                Assert.assertFalse(actualText.trim().isEmpty(), "Expected some text but found none.");
+                SetGlobalVariable.scenario.log("--> Alphanumerical value: " + actualText);
+                break;
+            default:
+                Assert.assertEquals(actualText.toLowerCase(), expectedType);
+        }
+
+    }
 //    @Then("I check the console message")
 //    public void iClickOnconsole() {
 //        Waiter.waitForJavaScriptToLoad();

@@ -3,7 +3,7 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
 
   @clearcookies
 
-   Scenario: Validate 3X card carousel - Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+   Scenario: Validate 3X card carousel - Visibility
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I wait for '3' seconds
 #    And 'Advancebutton' is visible
@@ -23,6 +23,8 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
     And '3cardcarouselcardNxtBtn' is visible
     And '3cardcarouselcardNxtBtn' is clickable
     And '3cardcarouselcardmultitpletag' is visible
+
+  Scenario: Validate 3X card carousel - UI (Font size,family and weight,Letter spacing,Line height)
 
     And The '3cardcarouselEyebrow' element has following CSS properties
       | font-size                 | 14px                         |
@@ -52,7 +54,7 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
       | letter-spacing            |        normal                |
 
 
-  Scenario: Validate 3X card carousel functionality
+  Scenario: Validate 3X card carousel functionality ( Enable and Disable )
 
     Then '3cardcarouselcardPreviousBtn' is disabled
     And I click on '3cardcarouselcardNxtBtn'
@@ -63,6 +65,9 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
     And The 'class' attribute of '3cardcarouselcardNxtBtnClickAttr' element contains 'splide__slide flex is-active is-visible'
     And I click on '3cardcarouselcardcta'
     And Current URL contains 'building-completion'
+
+  Scenario: Validate 3X card carousel functionality ( Navigation )
+
     And I navigate to 'https://dev-sdd.ishj.ae/en'
     And I click on '3cardcarouselcardctaCommon'
     And Current URL contains 'service'

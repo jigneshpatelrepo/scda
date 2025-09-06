@@ -3,7 +3,7 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
 
   @clearcookies
 
-  Scenario: Validate FAQ -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+  Scenario: Validate FAQ -Visibility
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I wait for '3' seconds
 #    And 'Advancebutton' is visible
@@ -17,6 +17,8 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
     And 'FAQComponentEyebrow' is visible
     And 'FAQComponentCTA' is visible
     And 'FAQComponentItem1' is visible
+
+  Scenario: Validate FAQ - (Font size,family and weight,Letter spacing,Line height)
 
     And The 'FAQComponentEyebrow' element has following CSS properties
       | font-size                 | 14px                         |
@@ -52,6 +54,8 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
     And I click on 'FAQComponentItem1'
     And I wait for '1' seconds
     And The 'aria-expanded' attribute of 'FAQComponentItem1Btn' element is 'false'
+
+  Scenario: Validate FAQ- functionality (Total count and Navigation)
 
     And Total count of 'FAQComponentTotalItem' is 4
     And I click on 'FAQComponentCTA'

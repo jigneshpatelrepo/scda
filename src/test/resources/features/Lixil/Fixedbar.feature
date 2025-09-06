@@ -3,7 +3,7 @@ Feature: Fixedbar: Validate SCDA Homepage
 
   @clearcookies
 
-   Scenario: Validate FixedBar - Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+   Scenario: Validate FixedBar - Visibility
     Then I navigate to 'https://dev-sdd.ishj.ae/en'
     And I wait for '3' seconds
     And 'Advancebutton' is visible
@@ -14,13 +14,14 @@ Feature: Fixedbar: Validate SCDA Homepage
     And I scroll to 'FixedBarComponent'
     And 'FixedBarComponentEmergency' is visible
     And 'FixedBarComponentEmergency' is clickable
-   And 'FixedBarComponentEService' is visible
-   And 'FixedBarComponentEService' is clickable
-   And 'FixedBarComponentFeedback' is visible
-   And 'FixedBarComponentFeedback' is clickable
-   And 'FixedBarComponentCallcenter' is visible
-   And 'FixedBarComponentCallcenter' is clickable
+    And 'FixedBarComponentEService' is visible
+    And 'FixedBarComponentEService' is clickable
+    And 'FixedBarComponentFeedback' is visible
+    And 'FixedBarComponentFeedback' is clickable
+    And 'FixedBarComponentCallcenter' is visible
+    And 'FixedBarComponentCallcenter' is clickable
 
+ Scenario: Validate FixedBar - UI (Font size,family and weight,Letter spacing,Line height)
 
    And The 'FixedBarComponentEmergencySpan' element has following CSS properties
     | font-size                 | 14px                         |
@@ -54,7 +55,8 @@ Feature: Fixedbar: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(0, 0, 0)           |
 
-   And I hover mouse over 'FixedBarComponentEmergency'
+ Scenario: Validate FixedBar - Hover and UI verification
+  And I hover mouse over 'FixedBarComponentEmergency'
    And I wait for '2' seconds
 
    And The 'FixedBarComponentFeedback' element has following CSS properties
@@ -79,3 +81,7 @@ Feature: Fixedbar: Validate SCDA Homepage
   And I click on 'FixedBarComponentsocialshare'
   And I wait for '1' seconds
   And The 'class' attribute of 'FixedBarComponentsocialshare' element contains 'hover'
+  And The 'class' attribute of 'FixedBarComponentblckbar' element do not contains 'bg-primary-400 border-b-1 border-neutral-500'
+  And I scroll to 'FooterComponentDisclaimer'
+  And I wait for '2' seconds
+ And The 'class' attribute of 'FixedBarComponentblckbar' element contains 'bg-primary-400 border-b-1 border-neutral-500'

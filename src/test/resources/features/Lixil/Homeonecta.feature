@@ -3,7 +3,7 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
 
   @clearcookies
 
-  Scenario: Validate Onectabox Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+  Scenario: Validate Onectabox Visibility
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I wait for '3' seconds
 #    And 'Advancebutton' is visible
@@ -17,6 +17,7 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
     And 'onectaboxCTAAnchor' is visible
     And 'onectaboxImage' is visible
 
+  Scenario: Validate Onectabox UI (Font size,family and weight,Letter spacing,Line height)
     And The 'onectaboxEyebrow' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
@@ -44,6 +45,7 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
       | padding-left              | 16px                         |
       | padding-right             | 0px                          |
 
+  Scenario: Validate Onectabox Mousehover Functionalities
     And I hover mouse over 'onectaboxCTAAnchor'
     And I wait for '2' seconds
     And The 'onectaboxCTASpan' element has following CSS properties
@@ -51,7 +53,7 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
       | padding-right             | 16px                        |
 
 
-  Scenario: Validate onectabox functionality
+  Scenario: Validate onectabox Functionalities
 
     And I click on 'onectaboxCTAAnchor'
     And I wait for '1' seconds

@@ -3,7 +3,7 @@ Feature: HomeNews: Validate SCDA Homepage - News
 
   @clearcookies
 
-  Scenario: Validate News -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+  Scenario: Validate News -Visibility
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I wait for '5' seconds
 #    And 'Advancebutton' is visible
@@ -18,6 +18,8 @@ Feature: HomeNews: Validate SCDA Homepage - News
     And 'NewsComponentImage' is visible
     And 'NewsComponentDate' is visible
     And 'NewsComponentItem1Title' is visible
+
+  Scenario: Validate News UI (Font size,family and weight,Letter spacing,Line height)
 
     And The 'NewsComponentEyebrow' element has following CSS properties
       | font-size                 | 14px                         |
@@ -58,7 +60,7 @@ Feature: HomeNews: Validate SCDA Homepage - News
       | padding-right             | 0px                          |
       | text-transform            | uppercase                    |
 
-    Scenario: Validate News- functionality (Hover and Navigation)
+    Scenario: Validate News- functionality (Hover)
 
     And I hover mouse over 'NewsComponentImage2'
     And I wait for '1' seconds
@@ -70,6 +72,8 @@ Feature: HomeNews: Validate SCDA Homepage - News
       And The 'NewsComponentImage' element has following CSS properties
         |           flex           |  1 1 28.561%          |
 #        |          width            |  335px                |
+
+  Scenario: Validate News- functionality (Navigation)
       And I click on 'NewsComponentCTA'
       And I wait for '2' seconds
       And Current URL contains 'news'

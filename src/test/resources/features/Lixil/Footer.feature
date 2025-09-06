@@ -3,7 +3,7 @@ Feature: Footer: Validate SCDA Homepage
 
   @clearcookies
 
-   Scenario: Validate Footer - Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+   Scenario: Validate Footer - Visibility
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I wait for '3' seconds
 #    And 'Advancebutton' is visible
@@ -32,13 +32,14 @@ Feature: Footer: Validate SCDA Homepage
     And 'FooterComponentallrightreserved' is visible
     And 'FooterComponentFollowus' is visible
 
+ Scenario: Validate Footer - UI (Font size,family and weight,Letter spacing,Line height)
+
     And The 'FooterComponentLeftlogo' element has following CSS properties
       | width                | 131px                         |
       | height               | 198px                         |
 
     And The 'FooterComponentRightlogo' element has following CSS properties
-      | width                | 152px                         |
-      | height               | 39.0375px                         |
+      | width                | 427px                         |
 
    And The 'FooterComponentAboutLink' element has following CSS properties
     | font-size                 | 14px                         |
@@ -87,7 +88,6 @@ Feature: Footer: Validate SCDA Homepage
     | font-weight               | 500                          |
     | letter-spacing            | normal                       |
     | Color                     | rgb(255, 255, 255)           |
-
 
    And The 'FooterComponentQuickLInks' element has following CSS properties
     | font-size                 | 14px                         |

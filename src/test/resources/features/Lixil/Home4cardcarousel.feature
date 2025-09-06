@@ -20,13 +20,9 @@ Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
     And '4cardcarouselImage' is visible
     And '4cardcarouselCTAAnchorPartner' is clickable
 
-  Scenario: Validate Carouselwith- 4Cards functionality
+  Scenario: Validate Carouselwith- 4Cards (Awards/Partner) -UI (Font size,family and weight,Letter spacing,Line height)
 
-    And I click on '4cardcarouselImage'
-    And I switch browser
-    And Current URL contains 'https'
-    And I switch browser
-    And I wait for '1' seconds
+
     And The '4cardcarouselEyebrow' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
@@ -47,11 +43,21 @@ Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 500                          |
 
+  Scenario: Validate Carouselwith- 4Cards (Awards/Partner) - Functionalities
+
+    And I click on '4cardcarouselImage'
+    And I switch browser
+    And Current URL contains 'https'
+    And I switch browser
+    And I wait for '1' seconds
     And I hover mouse over '4cardcarouselImageforHover'
     And I wait for '1' seconds
     And The '4cardcarouselImageforHover' element has following CSS properties
       | background-color           | rgb(230, 243, 236)       |
-    #clicking on awards tab
+
+#clicking on awards tab
+  Scenario: Validate Carouselwith- 4Cards (Awards/Partner) - Functionalities (Clicking ,Hover)
+
     And I click on '4cardcarouselLinkCTAAwards'
     And I wait for '1' seconds
     And '4cardcarouselLinkCTAAwardsTitle' is visible

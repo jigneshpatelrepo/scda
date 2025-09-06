@@ -10,3 +10,4 @@ FixedBarComponentFeedbackSpan: XPATH=*//div[contains(@data-automation,'FixedBar'
 FixedBarComponentCallcenter: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]//ancestor::a
 FixedBarComponentCallcenterSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]
 FixedBarComponentsocialshare: XPATH=*//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'cursor-pointer')]
+FixedBarComponentblckbar: XPATH=//div[@id='footer']/div
