@@ -1,29 +1,38 @@
 package stepdefinitions;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import helper.FindLocatorFileName;
-import helper.LinkChecker;
-import helper.SetGlobalVariable;
-import helper.YamlFile;
+import com.codeborne.selenide.*;
+import helper.*;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.testng.Assert;
 import org.openqa.selenium.*;
 import org.testng.asserts.SoftAssert;
+import java.util.logging.Level;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Locale;
+import java.util.Objects;
+
 import static com.codeborne.selenide.Selenide.$;
 import static corestepdef.Common.*;
+import static org.apache.xmlbeans.XmlBoolean.type;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 
 public class customecode {
     private static final Logger log = LogManager.getLogger("common_" + Thread.currentThread().threadId());
-    private static WebDriver driver;
-
+    //private static WebDriver driver;
+    WebDriver driver = WebDriverRunner.getWebDriver();
     @Then("^'(.*)' text is not visible in '(.*)'$")
     public void validateTextNotAvailableInElement(String expectedType, String compName) {
         log.debug("{} text is visible in the {}", expectedType, compName);
@@ -91,7 +100,8 @@ public class customecode {
         Assert.assertTrue(scaleAfter > scaleBefore,
                 "Transform scale did not increase after hover!");
 
-}
+    }
+
     private static double extractScale(String matrix) {
         if (matrix == null || matrix.equals("none")) {
             return 1.0; // default scale
@@ -108,4 +118,98 @@ public class customecode {
         return (scaleX + scaleY) / 2.0;
     }
 
+    @Then("^The '(.*)' attribute of '(.*)' element do not (contains|is) '(.*)'$")
+    public void verifyAttributeValue(String attributeName, String compName, String matchType, String expectedValue) {
+        log.debug("The " + attributeName + " attribute of " + compName + " " + matchType + " " + expectedValue);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement element = Selenide.$(loc.get(compName));
+        scrollToElement(element);
+        String attrValue = element.getDomAttribute(attributeName);
+        log.debug("Attribute value: " + attrValue);
+        if ("contains".equalsIgnoreCase(matchType)) {
+            Assert.assertFalse(attrValue.toLowerCase().contains(expectedValue.toLowerCase()));
+        } else if ("is".equalsIgnoreCase(matchType)) {
+            Assert.assertEquals(attrValue, expectedValue);
+        } else {
+            Assert.fail("Invalid match type provided: " + matchType);
+        }
+
+    }
+
+    @Then("^The '(.*)' attribute of '(.*)' elementforonlyattribute (contains|is) '(.*)'$")
+    public void verifyAttributeonlyValue(String attributeName, String compName, String matchType, String expectedValue) {
+        log.debug("The " + attributeName + " attribute of " + compName + " " + matchType + " " + expectedValue);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement element = Selenide.$(loc.get(compName));
+        scrollToElement(element);
+        String attrValue = element.getAttribute(attributeName);
+        log.debug("Attribute value: " + attrValue);
+        if ("contains".equalsIgnoreCase(matchType)) {
+            Assert.assertTrue(attrValue.toLowerCase().contains(expectedValue.toLowerCase()));
+        } else if ("is".equalsIgnoreCase(matchType)) {
+            Assert.assertEquals(attrValue, expectedValue);
+        } else {
+            Assert.fail("Invalid match type provided: " + matchType);
+        }
+
+    }
+
+    @Then("^'(.*)' text is visible in test '(.*)'$")
+    public void validateTextInElement(String expectedType, String compName) {
+        log.debug("{} text is visible in the {}", expectedType, compName);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement ele = Selenide.$(loc.get(compName));
+        ele.should(Condition.exist, waitForElementExists);
+        ele.should(Condition.visible, waitForElementVisible);
+        scrollToElement(ele);
+        String actualText = ele.getAttribute("aria-label");
+        String alphabetsRegex;
+        switch (expectedType.trim().toLowerCase()) {
+            case "numerical":
+                alphabetsRegex = "^[^a-zA-Z]+$";
+                Assert.assertTrue(actualText.matches(alphabetsRegex), "Expected numerical content (with special characters) but got: " + actualText);
+                SetGlobalVariable.scenario.log("--> Numerical value: " + actualText);
+                break;
+            case "alphabetical":
+                alphabetsRegex = "^[^0-9]+$";
+                Assert.assertTrue(actualText.matches(alphabetsRegex), "Expected only alphabets and common characters but got: " + actualText);
+                SetGlobalVariable.scenario.log("--> Alphabetical value: " + actualText);
+                break;
+            case "alphanumerical":
+                Assert.assertFalse(actualText.trim().isEmpty(), "Expected some text but found none.");
+                SetGlobalVariable.scenario.log("--> Alphanumerical value: " + actualText);
+                break;
+            default:
+                Assert.assertEquals(actualText.toLowerCase(), expectedType);
+        }
+
+    }
+//    @Then("I check the console message")
+//    public void iClickOnconsole() {
+//        Waiter.waitForJavaScriptToLoad();
+//        Waiter.waitForJquery();
+//        WebDriverRunner.getWebDriver().manage().logs().get(LogType.BROWSER);
+//        Accessconsolelogs();
+//    }
+//
+//        public static void Accessconsolelogs () {
+//
+//            LogEntries logs = WebDriverRunner.getWebDriver().manage().logs().get(LogType.BROWSER);
+//
+//            List<LogEntry> successLogs = logs.getAll().stream()
+//                    .filter(entry -> entry.getLevel().equals(Level.INFO))
+//                    .toList();
+//
+//
+//            for (LogEntry entry : logs) {
+//                if (entry.getLevel().equals(Level.INFO)) {
+//                    System.out.println(" Success Log: " + entry.getMessage());
+//                }
+//
+//
+//            }
+//        }
 }
