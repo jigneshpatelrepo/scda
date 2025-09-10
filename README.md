@@ -130,3 +130,4 @@ mvn clean test -Denvironment=qa -Dbrowser=chrome -Dcucumber.filter.tags=@test
 9. Logging feature using Log4J
 10. Library for master test cases defined
 11. Custom step definitions can be created under _stepdefinitions_ folder
+12. test
