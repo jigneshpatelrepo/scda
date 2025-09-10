@@ -1,0 +1,13 @@
+###Breadcrumb
+AwardsCertiComponent: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]
+AwardsCertiComponentitem: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article
+AwardsCertiComponentitemImg: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//img
+AwardsCertiComponentitemdate: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//p[1]
+AwardsCertiComponentitemMinistry: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//p[2]
+AwardsCertiComponentitemlinkAnchor: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//a
+AwardsCertiComponentitemlinkSpan: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//span[(text()='Learn More')]
+AwardsCertiComponentitemTitle: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//h4
+
+AwardsCertiComponentLoadmore: XPATH=//section[@data-component='ImageCardWithoutFilter']//span[(text()='Load More')]/ancestor::button
+
+

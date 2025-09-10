@@ -169,6 +169,21 @@ public class customecode {
         }
 
     }
+
+    @Then("^Current URL contains Either of '(.*)' or '(.*)'$")
+    public void currentURLcontainsPartofURLs(String partOfURL1,String partOfURL2) {
+        log.debug("Current URL contains " + partOfURL1);
+        log.debug("Current URL contains " + partOfURL2);
+        Waiter.waitForJavaScriptToLoad();
+        Waiter.waitForJquery();
+        //Assert.assertTrue(WebDriverRunner.url().toLowerCase().contains(partOfURL.toLowerCase()));
+        Assert.assertTrue(
+                partOfURL1.contains(partOfURL1.toLowerCase()) || partOfURL2.contains(partOfURL2.toLowerCase()),
+                "URL does not contain expected part: " + partOfURL1 + " or " + partOfURL2 + ". Actual URL: " + partOfURL1 + partOfURL2
+        );
+    }
+
+
 //    @Then("I check the console message")
 //    public void iClickOnconsole() {
 //        Waiter.waitForJavaScriptToLoad();
