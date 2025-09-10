@@ -1,0 +1,6 @@
+#common for clicking button
+
+Advancebutton: XPATH=//button[@id='details-button']
+Advancebuttonproceed: XPATH=//p[@id='final-paragraph']/a
+# this is used in scrolling to bottom of the page
+FooterComponentDisclaimer: XPATH=//ul[@data-automation='footer-legal-links']/li[1]/a
