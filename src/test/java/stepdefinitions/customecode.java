@@ -137,6 +137,24 @@ public class customecode {
 
     }
 
+    @Then("^The '(.*)' attribute of '(.*)' elementforonlyattribute (contains|is) '(.*)'$")
+    public void verifyAttributeonlyValue(String attributeName, String compName, String matchType, String expectedValue) {
+        log.debug("The " + attributeName + " attribute of " + compName + " " + matchType + " " + expectedValue);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement element = Selenide.$(loc.get(compName));
+        scrollToElement(element);
+        String attrValue = element.getAttribute(attributeName);
+        log.debug("Attribute value: " + attrValue);
+        if ("contains".equalsIgnoreCase(matchType)) {
+            Assert.assertTrue(attrValue.toLowerCase().contains(expectedValue.toLowerCase()));
+        } else if ("is".equalsIgnoreCase(matchType)) {
+            Assert.assertEquals(attrValue, expectedValue);
+        } else {
+            Assert.fail("Invalid match type provided: " + matchType);
+        }
+
+    }
 
     @Then("^'(.*)' text is visible in test '(.*)'$")
     public void validateTextInElement(String expectedType, String compName) {

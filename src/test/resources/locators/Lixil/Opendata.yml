@@ -1,0 +1,14 @@
+###News
+OpendataComponentTitle: XPATH=//div[contains(@data-automation,'RichTextExtended')]//h4
+OpendataComponentDesc: XPATH=//div[contains(@data-automation,'RichTextExtended')]//h4//parent::div//following-sibling::div
+OpendataRelatedResourcesTitle: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//h2
+OpendataRelatedResourcesCardTitle: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//li[contains(@data-automation,'relatedPagesCarousel')]//h4
+OpendataRelatedResourcescarddownloadbtn: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//li[contains(@data-automation,'relatedPagesCarousel')]//span[text()='Download']//ancestor::a
+OpendataRelatedResourcescarddownloadbtnspan: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//li[contains(@data-automation,'relatedPagesCarousel')]//span[text()='Download']
+OpendataRelatedResourcescarddownloadformat: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//li[contains(@data-automation,'relatedPagesCarousel')]//span[contains(normalize-space(text()),'pdf') or contains(text(), 'docx')]
+OpendataRelatedResourcescardComponent: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]
+OpendataRelatedResourcescardComponentcard1: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//li[1][contains(@data-automation,'relatedPagesCarousel')]/div
+OpendataRelatedResourcescardComponentPrevBtn: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//div[@aria-label='Carousel Navigation']/button[@aria-label='Previous slide']
+OpendataRelatedResourcescardComponentNextBtn: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//div[@aria-label='Carousel Navigation']/button[@aria-label='Next slide']
+OpendataRelatedResourcescardComponentTotalcards: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//ul[contains(@id,'splide01')]/li
+OpendataRelatedResourcescardComponentPrevBtndis: XPATH=//div[contains(@data-automation,'RelatedPagesCarousel')]//ul[contains(@id,'splide0')]/li[1]
