@@ -1,4 +1,4 @@
-@lixil @test @homepage
+@lixil @test1 @homepage
 Feature: Seismichomepage: Validate Seismichomepage
 
   @clearcookies

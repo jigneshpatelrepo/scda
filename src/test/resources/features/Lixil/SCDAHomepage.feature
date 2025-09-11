@@ -1,4 +1,4 @@
-@lixil @test @SCDAhomepage1
+@lixil @test1 @SCDAhomepage1
 Feature: SCDAHomepage: Validate SCDA Homepage
 
   @clearcookies

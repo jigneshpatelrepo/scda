@@ -1,0 +1,11 @@
+###Breadcrumb
+OurMartyrsComponent: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]
+OurMartyrsComponentitem: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article
+OurMartyrsComponentImg: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//img
+OurMartyrsComponentDate: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//p[contains(text(),'20')]
+OurMartyrsComponentDesignation: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//p[not(contains(text(),'20'))]
+OurMartyrsComponentTitle: XPATH=//section[contains(@data-automation,'ImageCardWithoutFilter')]//article//h4
+
+OurMartyrsComponentLoadmore: XPATH=//section[@data-component='ImageCardWithoutFilter']//span[(text()='Load More')]/ancestor::button
+
+
