@@ -2,15 +2,16 @@
 Feature: FAQspage: Validate SCDA Homepage
 
   @clearcookies
+ Scenario: Validate Security for Page opening
 
-   Scenario: Validate FAQ's page - Innerbanner and FAQ Q&A Visibility
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+  And I wait for '3' seconds
+  And I click on 'Advancebutton' if available
+  And  I click on 'Advancebuttonproceed' if available
+  And I wait for '3' seconds
 
-    Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/faqs'
-    And I wait for '3' seconds
-    And 'Advancebutton' is visible
-    And I click on 'Advancebutton'
-    And  I click on 'Advancebuttonproceed'
-    And I wait for '3' seconds
+ Scenario: Validate FAQ's page - Innerbanner and FAQ Q&A Visibility
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/faqs'
     And 'FAQInnerBannerwithImageComponent' component exists on the page
     And 'FAQInnerBannerwithImageComponentTitle' is visible
     And 'FAQsearchComponent' is visible
@@ -23,7 +24,6 @@ Feature: FAQspage: Validate SCDA Homepage
     And 'FAQFilterItem3' is visible
 
  Scenario: Validate FAQ - Innner banner UI (Font size,family and weight,Letter spacing,Line height)
-
 
    And The 'FAQInnerBannerwithImageComponentTitle' element has following CSS properties
     | font-size                 | 48px                         |
@@ -55,7 +55,6 @@ Feature: FAQspage: Validate SCDA Homepage
    | font-family               | Tajawal, "Tajawal Fallback"  |
    | font-weight               | 400                          |
    | letter-spacing            | -0.48px                       |
-
 
  Scenario: Validate FAQ - Functionalities - Count and Navigation
 

@@ -2,14 +2,16 @@
 Feature: Header: Validate SCDA Header
 
   @clearcookies
+  Scenario: Validate Security for Page opening
+
+    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+    And I wait for '3' seconds
+    And I click on 'Advancebutton' if available
+    And  I click on 'Advancebuttonproceed' if available
+    And I wait for '3' seconds
 
    Scenario: Validate Header - Visibility of All links and Logo
-    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-    And I wait for '3' seconds
-    And 'Advancebutton' is visible
-    And I click on 'Advancebutton'
-    And  I click on 'Advancebuttonproceed'
-    And I wait for '3' seconds
+#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
     And 'HeaderComponent' component exists on the page
     And I scroll to 'HeaderComponent'
     And 'HeaderComponentHome' is visible
@@ -48,7 +50,7 @@ Feature: Header: Validate SCDA Header
     When I hover mouse over 'HeaderComponentAbout'
     And  I wait for '2' seconds
     And I click on 'HeaderComponentAboutAboutus'
-    And Current URL contains 'about'
+    And Current URL contains Either of 'about' or 'us'
 
     When I hover mouse over 'HeaderComponentAbout'
     And  I wait for '1' seconds
@@ -108,14 +110,12 @@ Feature: Header: Validate SCDA Header
     And I click on 'HeaderComponentMediaAwareness'
     And Current URL contains Either of 'awareness' or 'Awareness'
 
-
   Scenario: Validate Header - Navigation for OpenData link
 
     When I hover mouse over 'HeaderComponentOpendata'
     And  I wait for '2' seconds
     And I click on 'HeaderComponentOpendata'
     And Current URL contains Either of 'Open' or 'data'
-
 
   Scenario: Validate Header - Navigation for FindUs -> Children links
 

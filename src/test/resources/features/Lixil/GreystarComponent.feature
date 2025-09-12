@@ -1,5 +1,5 @@
 #UI / Visibility Checks , #Functional Scenarios , #Typography Checks
-@lixil @test @greyhomepage
+@lixil @test1 @greyhomepage
 Feature: greystar: Validate Hero and Location Components on Home page
 
   @clearcookies

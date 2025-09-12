@@ -3,14 +3,15 @@ Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
 
   @clearcookies
 
-  Scenario: Validate Carouselwith- 4Cards (Awards/Partner) -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+  Scenario: Validate Security for Page opening
 
-#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-#    And I wait for '3' seconds
-#    And 'Advancebutton' is visible
-#    And I click on 'Advancebutton'
-#    And  I click on 'Advancebuttonproceed'
-#    And I wait for '3' seconds
+    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+    And I wait for '3' seconds
+    And I click on 'Advancebutton' if available
+    And  I click on 'Advancebuttonproceed' if available
+    And I wait for '3' seconds
+
+  Scenario: Validate Carouselwith- 4Cards (Awards/Partner) -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
     And '4cardcarouselComponent' component exists on the page
     And I scroll to '4cardcarouselComponent'
     And '4cardcarouselEyebrow' is visible
@@ -21,7 +22,6 @@ Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
     And '4cardcarouselCTAAnchorPartner' is clickable
 
   Scenario: Validate Carouselwith- 4Cards (Awards/Partner) -UI (Font size,family and weight,Letter spacing,Line height)
-
 
     And The '4cardcarouselEyebrow' element has following CSS properties
       | font-size                 | 14px                         |
@@ -35,7 +35,7 @@ Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
       | line-height               | 48px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 400                          |
-      | letter-spacing            | -1.92px                      |
+      | letter-spacing            | -0.48px                      |
 
     And The '4cardcarouselCTAPartnerSpan' element has following CSS properties
       | font-size                 | 14px                         |

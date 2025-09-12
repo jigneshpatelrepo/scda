@@ -1,16 +1,18 @@
 @test @FaqsOnservicepage @FAQs
-Feature: FAQsonServicepage: Validate SCDA Homepage
+Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
 
   @clearcookies
 
-   Scenario: Validate Service page for FAQ's - Visibility
+   Scenario: Validate Security for Page opening
 
-    Then I navigate to 'https://dev-sdd.ishj.ae/en/services/construction-plan-approvals'
-    And I wait for '3' seconds
-    And 'Advancebutton' is visible
-    And I click on 'Advancebutton'
-    And  I click on 'Advancebuttonproceed'
-    And I wait for '3' seconds
+   Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+   And I wait for '3' seconds
+   And I click on 'Advancebutton' if available
+   And  I click on 'Advancebuttonproceed' if available
+   And I wait for '3' seconds
+
+ Scenario: Validate Service page for FAQ - Visibility
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/services/construction-plan-approvals'
     And 'FAQsearchComponent' is visible
     And I scroll to 'FAQsearchComponent'
     And 'FAQsearchInput' is visible
@@ -20,7 +22,6 @@ Feature: FAQsonServicepage: Validate SCDA Homepage
     And 'FAQFilterItem3' is visible
 
  Scenario: Validate Service page for FAQ's - UI (Font size,family and weight,Letter spacing,Line height)
-
 
    And The 'FAQTTitleOnTop' element has following CSS properties
     | font-size                 | 24px                         |

@@ -3,14 +3,15 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
 
   @clearcookies
 
-  Scenario: Validate FAQ -Visibility
-#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-#    And I wait for '3' seconds
-#    And 'Advancebutton' is visible
-#    And I click on 'Advancebutton'
-#    And  I click on 'Advancebuttonproceed'
-#    And I wait for '3' seconds
+  Scenario: Validate Security for Page opening
 
+    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+    And I wait for '3' seconds
+    And I click on 'Advancebutton' if available
+    And  I click on 'Advancebuttonproceed' if available
+    And I wait for '3' seconds
+
+  Scenario: Validate FAQ -Visibility
     And 'FAQComponent' component exists on the page
     And I scroll to 'FAQComponent'
     And 'FAQComponentTitle' is visible
