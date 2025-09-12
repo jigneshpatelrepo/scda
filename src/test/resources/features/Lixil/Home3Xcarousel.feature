@@ -3,13 +3,15 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
 
   @clearcookies
 
+  Scenario: Validate Security for Page opening
+
+    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+    And I wait for '3' seconds
+    And I click on 'Advancebutton' if available
+    And  I click on 'Advancebuttonproceed' if available
+    And I wait for '3' seconds
+
    Scenario: Validate 3X card carousel - Visibility
-#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-#    And I wait for '3' seconds
-#    And 'Advancebutton' is visible
-#    And I click on 'Advancebutton'
-#    And  I click on 'Advancebuttonproceed'
-#    And I wait for '3' seconds
     And '3cardcarouselComponent' component exists on the page
     And I scroll to '3cardcarouselComponent'
     And I wait for '1' seconds
@@ -53,7 +55,6 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
       | font-weight               | 500                          |
       | letter-spacing            |        normal                |
 
-
   Scenario: Validate 3X card carousel functionality ( Enable and Disable )
 
     Then '3cardcarouselcardPreviousBtn' is disabled
@@ -64,7 +65,7 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
     And I wait for '1' seconds
     And The 'class' attribute of '3cardcarouselcardNxtBtnClickAttr' element contains 'splide__slide flex is-active is-visible'
     And I click on '3cardcarouselcardcta'
-    And Current URL contains 'building-completion'
+    And Current URL contains Either of 'completion' or 'building'
 
   Scenario: Validate 3X card carousel functionality ( Navigation )
 

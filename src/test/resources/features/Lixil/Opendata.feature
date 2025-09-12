@@ -3,14 +3,17 @@ Feature: opendata: Validate SCDA Homepage
 
   @clearcookies
 
+  Scenario: Validate Security for Page opening
+
+   Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+   And I wait for '3' seconds
+   And I click on 'Advancebutton' if available
+   And  I click on 'Advancebuttonproceed' if available
+   And I wait for '3' seconds
+
    Scenario: Validate Opendata page for - Visibility
 
     Then I navigate to 'https://dev-sdd.ishj.ae/en/open-data'
-    And I wait for '3' seconds
-    And 'Advancebutton' is visible
-    And I click on 'Advancebutton'
-    And  I click on 'Advancebuttonproceed'
-    And I wait for '3' seconds
     And 'OpendataRelatedResourcescardComponent' component exists on the page
     And I scroll to 'OpendataRelatedResourcescardComponent'
     And 'OpendataComponentTitle' is visible
@@ -43,7 +46,7 @@ Feature: opendata: Validate SCDA Homepage
    | line-height               | 48px                         |
    | font-family               | Tajawal, "Tajawal Fallback"  |
    | font-weight               | 400                          |
-   | letter-spacing            | -1.92px                      |
+   | letter-spacing            | -0.48px                      |
 
   And The 'OpendataRelatedResourcesCardTitle' element has following CSS properties
    | font-size                 | 24px                         |

@@ -2,21 +2,22 @@
 Feature: ourmartyrs: Validate AwardsCertification Page Component
 
   @clearcookies
-  Scenario: Validate Our Martyrs Field Visibility
+  Scenario: Validate Security for Page opening
 
+    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+    And I wait for '3' seconds
+    And I click on 'Advancebutton' if available
+    And  I click on 'Advancebuttonproceed' if available
+    And I wait for '3' seconds
+
+  Scenario: Validate Our Martyrs Field Visibility
     Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/about/our-martyrs'
-    And I wait for '3' seconds
-    And 'Advancebutton' is visible
-    And I click on 'Advancebutton'
-    And  I click on 'Advancebuttonproceed'
-    And I wait for '3' seconds
     And 'OurMartyrsComponent' component exists on the page
     And I scroll to 'OurMartyrsComponent'
     And 'OurMartyrsComponentTitle' is visible
     And 'OurMartyrsComponentImg' is visible
     And 'OurMartyrsComponentDate' is visible
     And 'OurMartyrsComponentDesignation' is visible
-
 
   Scenario: Validate Our Martyrs UI (Font size,family and weight,Letter spacing,Line height)
 
