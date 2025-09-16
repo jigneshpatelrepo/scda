@@ -1,3 +1,8 @@
+
+
+
+
+
 @lixil @test @Header
 Feature: Header: Validate SCDA Header
 
@@ -10,173 +15,173 @@ Feature: Header: Validate SCDA Header
     And  I click on 'Advancebuttonproceed' if available
     And I wait for '3' seconds
 
-   Scenario: Validate Header - Visibility of All links and Logo
+  Scenario: Validate Header - Visibility of All links and Logo
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
     And 'HeaderComponent' component exists on the page
     And I scroll to 'HeaderComponent'
-    And 'HeaderComponentHome' is visible
-    And 'HeaderComponentAbout' is visible
-    And 'HeaderComponentServices' is visible
-    And 'HeaderComponentMedia' is visible
-    And 'HeaderComponentOpendata' is visible
-    And 'HeaderComponentFindus' is visible
-    And 'HeaderComponentFAQ' is visible
-    And 'HeaderComponentLanguageDD' is visible
-    And 'HeaderComponentAccessIcon' is visible
-    And 'HeaderComponentTheme' is visible
-    And 'HeaderComponentSearch' is visible
+    And 'HeaderComponent_Home' is visible
+    And 'HeaderComponent_About' is visible
+    And 'HeaderComponent_Services' is visible
+    And 'HeaderComponent_Media' is visible
+    And 'HeaderComponent_Opendata' is visible
+    And 'HeaderComponent_Findus' is visible
+    And 'HeaderComponent_FAQ' is visible
+    And 'HeaderComponent_LanguageDD' is visible
+    And 'HeaderComponent_AccessIcon' is visible
+    And 'HeaderComponent_Theme' is visible
+    And 'HeaderComponent_Search' is visible
 
   Scenario: Validate Header - Logo Visible and Navigation
-    And 'HeaderComponentleftlogo' is visible
-    And 'HeaderComponentRightlogo' is visible
-    And I click on 'HeaderComponentleftlogo'
+    And 'HeaderComponent_leftlogo' is visible
+    And 'HeaderComponent_Rightlogo' is visible
+    And I click on 'HeaderComponent_leftlogo'
     And Current URL contains 'sdd.ishj.ae/en'
-    And I click on 'HeaderComponentRightlogo'
+    And I click on 'HeaderComponent_Rightlogo'
     And Current URL contains 'sdd.ishj.ae/en'
 
   Scenario: Validate Header - Hover for About us -> Child link
-    And Total count of 'HeaderComponentAbout' is 1
-    When I hover mouse over 'HeaderComponentAbout'
+    And Total count of 'HeaderComponent_About' is 1
+    When I hover mouse over 'HeaderComponent_About'
     And  I wait for '1' seconds
-    When I hover mouse over 'HeaderComponentAboutAboutus'
+    When I hover mouse over 'HeaderComponent_AboutAboutus'
     And  I wait for '1' seconds
-    And The 'HeaderComponentAboutAboutus' element has following CSS properties
+    And The 'HeaderComponent_AboutAboutus' element has following CSS properties
       | color                | rgb(23, 143, 82)              |
 
-    And Total count of 'HeaderComponentAboutHovercount' is 7
+    And Total count of 'HeaderComponent_AboutHovercount' is 7
 
   Scenario: Validate Header - Navigation for About us -> Children links
 
-    When I hover mouse over 'HeaderComponentAbout'
+    When I hover mouse over 'HeaderComponent_About'
     And  I wait for '2' seconds
-    And I click on 'HeaderComponentAboutAboutus'
+    And I click on 'HeaderComponent_AboutAboutus'
     And Current URL contains Either of 'about' or 'us'
 
-    When I hover mouse over 'HeaderComponentAbout'
+    When I hover mouse over 'HeaderComponent_About'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentAboutPartner'
+    And I click on 'HeaderComponent_AboutPartner'
     And Current URL contains Either of 'partner' or 'our'
 
-    When I hover mouse over 'HeaderComponentAbout'
+    When I hover mouse over 'HeaderComponent_About'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentAboutAwards'
+    And I click on 'HeaderComponent_AboutAwards'
     And Current URL contains Either of 'awards' or 'certification'
 
-    When I hover mouse over 'HeaderComponentAbout'
+    When I hover mouse over 'HeaderComponent_About'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentAboutregulations'
+    And I click on 'HeaderComponent_Aboutregulations'
     And Current URL contains Either of 'awards' or 'certification'
 
-    When I hover mouse over 'HeaderComponentAbout'
+    When I hover mouse over 'HeaderComponent_About'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentAboutCareers'
+    And I click on 'HeaderComponent_AboutCareers'
     And Current URL contains Either of 'awards' or 'certification'
 
   Scenario: Validate Header - Navigation for Services link
 
-    And I click on 'HeaderComponentServicesAnchor'
+    And I click on 'HeaderComponent_ServicesAnchor'
     And Current URL contains Either of 'Services' or 'service'
 
   Scenario: Validate Header - Hover for Media and -> Children links
-    And Total count of 'HeaderComponentMedia' is 1
-    When I hover mouse over 'HeaderComponentMedia'
+    And Total count of 'HeaderComponent_Media' is 1
+    When I hover mouse over 'HeaderComponent_Media'
     And  I wait for '1' seconds
-    When I hover mouse over 'HeaderComponentMediaNews'
+    When I hover mouse over 'HeaderComponent_MediaNews'
     And  I wait for '1' seconds
-    And The 'HeaderComponentMediaNews' element has following CSS properties
+    And The 'HeaderComponent_MediaNews' element has following CSS properties
       | color                | rgb(23, 143, 82)              |
 
-    And Total count of 'HeaderComponentMediaHoverCount' is 4
+    And Total count of 'HeaderComponent_MediaHoverCount' is 4
 
   Scenario: Validate Header - Navigation for Media -> Children links
 
-    When I hover mouse over 'HeaderComponentMedia'
+    When I hover mouse over 'HeaderComponent_Media'
     And  I wait for '2' seconds
-    And I click on 'HeaderComponentMediaNews'
+    And I click on 'HeaderComponent_MediaNews'
     And Current URL contains 'news'
 
-    When I hover mouse over 'HeaderComponentMedia'
+    When I hover mouse over 'HeaderComponent_Media'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentMediaEvents'
+    And I click on 'HeaderComponent_MediaEvents'
     And Current URL contains Either of 'Events' or 'events'
 
-    When I hover mouse over 'HeaderComponentMedia'
+    When I hover mouse over 'HeaderComponent_Media'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentMediaGallery'
+    And I click on 'HeaderComponent_MediaGallery'
     And Current URL contains Either of 'Gallery' or 'gallery'
 
-    When I hover mouse over 'HeaderComponentMedia'
+    When I hover mouse over 'HeaderComponent_Media'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentMediaAwareness'
+    And I click on 'HeaderComponent_MediaAwareness'
     And Current URL contains Either of 'awareness' or 'Awareness'
 
   Scenario: Validate Header - Navigation for OpenData link
 
-    When I hover mouse over 'HeaderComponentOpendata'
+    When I hover mouse over 'HeaderComponent_Opendata'
     And  I wait for '2' seconds
-    And I click on 'HeaderComponentOpendata'
+    And I click on 'HeaderComponent_Opendata'
     And Current URL contains Either of 'Open' or 'data'
 
   Scenario: Validate Header - Navigation for FindUs -> Children links
 
-    When I hover mouse over 'HeaderComponentFindus'
+    When I hover mouse over 'HeaderComponent_Findus'
     And  I wait for '2' seconds
-    And I click on 'HeaderComponentFindusContact'
+    And I click on 'HeaderComponent_FindusContact'
     And Current URL contains 'contact'
 
-    When I hover mouse over 'HeaderComponentFindus'
+    When I hover mouse over 'HeaderComponent_Findus'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentFindusServCenter'
+    And I click on 'HeaderComponent_FindusServCenter'
     And Current URL contains Either of 'Service' or 'center'
 
-    When I hover mouse over 'HeaderComponentFindus'
+    When I hover mouse over 'HeaderComponent_Findus'
     And  I wait for '1' seconds
-    And I click on 'HeaderComponentFindusFireCenter'
+    And I click on 'HeaderComponent_FindusFireCenter'
     And Current URL contains Either of 'Fire' or 'stations'
 
   Scenario: Validate Header - Navigation for FAQ link
 
-    When I hover mouse over 'HeaderComponentFAQ'
+    When I hover mouse over 'HeaderComponent_FAQ'
     And  I wait for '2' seconds
-    And I click on 'HeaderComponentFAQ'
+    And I click on 'HeaderComponent_FAQ'
     And Current URL contains Either of 'Faqs' or 'faq'
 
   Scenario: Validate Header - language switcher
 
-    And I click on 'HeaderComponentLanguageDD'
-    And I click on 'HeaderComponentLanguageDDArabic'
+    And I click on 'HeaderComponent_LanguageDD'
+    And I click on 'HeaderComponent_LanguageDDArabic'
     And I wait for '1' seconds
     And Current URL contains '/ar/'
-    And I click on 'HeaderComponentLanguageDD'
+    And I click on 'HeaderComponent_LanguageDD'
     And I wait for '1' seconds
-    And I click on 'HeaderComponentLanguageDDEnglish'
+    And I click on 'HeaderComponent_LanguageDDEnglish'
     And I wait for '1' seconds
     And Current URL contains '/en'
 
   Scenario: Validate Header - Theme change
 
-    And I click on 'HeaderComponentTheme'
+    And I click on 'HeaderComponent_Theme'
     And I wait for '1' seconds
-    And The 'class' attribute of 'HeaderComponentBGcolor' element contains 'dark'
-    And I click on 'HeaderComponentTheme'
+    And The 'class' attribute of 'HeaderComponent_BGcolor' element contains 'dark'
+    And I click on 'HeaderComponent_Theme'
     And I wait for '1' seconds
-    And The 'class' attribute of 'HeaderComponentBGcolor' element do not contains 'dark'
+    And The 'class' attribute of 'HeaderComponent_BGcolor' element do not contains 'dark'
 
 #  Scenario: Validate Header - Accessibility
 #
-#    When I hover mouse over 'HeaderComponentAbout'
+#    When I hover mouse over 'HeaderComponent_About'
 #    And  I wait for '2' seconds
-#    And I click on 'HeaderComponentAboutAboutus'
+#    And I click on 'HeaderComponent_AboutAboutus'
 #    And Current URL contains 'about'
 #
   Scenario: Validate Header - Search
 
-    And I click on 'HeaderComponentSearch'
-    And I click on 'HeaderComponentSearchXbtn'
+    And I click on 'HeaderComponent_Search'
+    And I click on 'HeaderComponent_SearchXbtn'
 
 
 #  Scenario: Validate Header - UI (Font size,family and weight,Letter spacing,Line height)
-  
+
 #
 #    And The 'FooterComponentLeftlogo' element has following CSS properties
 #      | width                | 131px                         |

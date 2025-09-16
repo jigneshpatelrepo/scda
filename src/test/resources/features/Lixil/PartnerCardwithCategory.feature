@@ -14,12 +14,12 @@ Feature: PartnerCardwithCategory: Validate SCDA Homepage - Faqs
     Then I navigate to 'https://dev-sdd.ishj.ae/en/about/our-partners'
     And 'CardsWithCategoryComponent' component exists on the page
     And I scroll to 'CardsWithCategoryComponent'
-    And 'CardsWithCategoryComponentTitle' is visible
-    And 'CardsWithCategoryComponentcard' is clickable
+    And 'CardsWithCategoryComponent_Title' is visible
+    And 'CardsWithCategoryComponent_card' is clickable
 
   Scenario: Validate Ourpartners - UI - (Font size,family and weight,Letter spacing,Line height)
 
-    And The 'CardsWithCategoryComponentTitle' element has following CSS properties
+    And The 'CardsWithCategoryComponent_Title' element has following CSS properties
       | font-size                 | 40px                         |
       | line-height               | 48px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -29,14 +29,14 @@ Feature: PartnerCardwithCategory: Validate SCDA Homepage - Faqs
 
   Scenario: Validate Ourpartners - Hover functionality
 
-    And I hover mouse over 'CardsWithCategoryComponentcard'
+    And I hover mouse over 'CardsWithCategoryComponent_card'
     And I wait for '1' seconds
-    And The 'CardsWithCategoryComponentcard' element has following CSS properties
+    And The 'CardsWithCategoryComponent_card' element has following CSS properties
       | background-color               |  rgb(230, 243, 236)      |
 
 
   Scenario: Validate Ourpartners - Navigation
 
-    And I click on 'CardsWithCategoryComponentcard'
+    And I click on 'CardsWithCategoryComponent_card'
     And Current URL contains 'https'
     And I switch browser

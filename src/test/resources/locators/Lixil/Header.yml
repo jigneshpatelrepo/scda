@@ -1,46 +1,46 @@
 
 ###Header
 HeaderComponent: XPATH=//header[contains(@data-automation,'Header')]
-HeaderComponentHome: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Home')]//ancestor::li
-HeaderComponentAbout: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li
-HeaderComponentAboutHovercount: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li//li
+HeaderComponent_Home: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Home')]//ancestor::li
+HeaderComponent_About: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li
+HeaderComponent_AboutHovercount: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li//li
   
-HeaderComponentAboutAboutus: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'About')]/ancestor::a
-HeaderComponentAboutMartyrs: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Marty')]/ancestor::a
-HeaderComponentAboutPartner: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Partners')]/ancestor::a
-HeaderComponentAboutAwards: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Awards ')]/ancestor::a
-HeaderComponentAboutregulations: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Regulations ')]/ancestor::a
-HeaderComponentAboutCareers: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Careers')]/ancestor::a
+HeaderComponent_AboutAboutus: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'About')]/ancestor::a
+HeaderComponent_AboutMartyrs: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Marty')]/ancestor::a
+HeaderComponent_AboutPartner: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Partners')]/ancestor::a
+HeaderComponent_AboutAwards: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Awards ')]/ancestor::a
+HeaderComponent_Aboutregulations: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Regulations ')]/ancestor::a
+HeaderComponent_AboutCareers: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'Careers')]/ancestor::a
 
-HeaderComponentServices: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Service')]//ancestor::li
-HeaderComponentServicesAnchor: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Service')]//ancestor::li/a
-HeaderComponentMedia: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li
-HeaderComponentMediaHoverCount: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//li
-HeaderComponentMediaNews: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'New')]/ancestor::a
-HeaderComponentMediaEvents: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'Event')]/ancestor::a
-HeaderComponentMediaGallery: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'Gallery')]/ancestor::a
-HeaderComponentMediaAwareness: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'Awareness')]/ancestor::a
+HeaderComponent_Services: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Service')]//ancestor::li
+HeaderComponent_ServicesAnchor: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Service')]//ancestor::li/a
+HeaderComponent_Media: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li
+HeaderComponent_MediaHoverCount: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//li
+HeaderComponent_MediaNews: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'New')]/ancestor::a
+HeaderComponent_MediaEvents: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'Event')]/ancestor::a
+HeaderComponent_MediaGallery: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'Gallery')]/ancestor::a
+HeaderComponent_MediaAwareness: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Media')]//ancestor::li//span[contains(text(),'Awareness')]/ancestor::a
 
-HeaderComponentOpendata: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Open')]//ancestor::li
-HeaderComponentFindus: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li
+HeaderComponent_Opendata: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Open')]//ancestor::li
+HeaderComponent_Findus: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li
 
-HeaderComponentFindusContact: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li//span[contains(text(),'Contact')]/ancestor::a
-HeaderComponentFindusServCenter: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li//span[contains(text(),'Service')]/ancestor::a
-HeaderComponentFindusFireCenter: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li//span[contains(text(),'Fire')]/ancestor::a
+HeaderComponent_FindusContact: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li//span[contains(text(),'Contact')]/ancestor::a
+HeaderComponent_FindusServCenter: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li//span[contains(text(),'Service')]/ancestor::a
+HeaderComponent_FindusFireCenter: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Find')]//ancestor::li//span[contains(text(),'Fire')]/ancestor::a
 
 
-HeaderComponentFAQ: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'FAQ')]//ancestor::li
+HeaderComponent_FAQ: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'FAQ')]//ancestor::li
 
-HeaderComponentleftlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'D1DFDB7FDD4F97814571A6966D1ACDD7')]
-HeaderComponentRightlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D2E7582F15F195BEB3515D04118315E59')]
+HeaderComponent_leftlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'D1DFDB7FDD4F97814571A6966D1ACDD7')]
+HeaderComponent_Rightlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D2E7582F15F195BEB3515D04118315E59')]
 
-HeaderComponentLanguageDD: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Language options']
-HeaderComponentLanguageDDEnglish: XPATH=//header[contains(@data-automation,'Header')]//button//parent::div//li[1]/button
-HeaderComponentLanguageDDArabic: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Language options']//parent::div//li[2]/button
+HeaderComponent_LanguageDD: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Language options']
+HeaderComponent_LanguageDDEnglish: XPATH=//header[contains(@data-automation,'Header')]//button//parent::div//li[1]/button
+HeaderComponent_LanguageDDArabic: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Language options']//parent::div//li[2]/button
 
-HeaderComponentAccessIcon: XPATH=//header[contains(@data-automation,'Header')]//button[contains(@title,'Accessibility')]
-HeaderComponentTheme: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Toggle theme']
-HeaderComponentBGcolor: XPATH=//html
-HeaderComponentSearch: XPATH=//header[contains(@data-automation,'Header')]//span[contains(text(),'Search')]//ancestor::button
-HeaderComponentSearchXbtn: XPATH=//header[contains(@data-automation,'Header')]//input[@placeholder='Search']//parent::div/following-sibling::button
+HeaderComponent_AccessIcon: XPATH=//header[contains(@data-automation,'Header')]//button[contains(@title,'Accessibility')]
+HeaderComponent_Theme: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Toggle theme']
+HeaderComponent_BGcolor: XPATH=//html
+HeaderComponent_Search: XPATH=//header[contains(@data-automation,'Header')]//span[contains(text(),'Search')]//ancestor::button
+HeaderComponent_SearchXbtn: XPATH=//header[contains(@data-automation,'Header')]//input[@placeholder='Search']//parent::div/following-sibling::button
 

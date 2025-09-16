@@ -1,0 +1,28 @@
+
+
+###award details
+
+Breadcrumb_Component: XPATH=//div[@data-component='BreadcrumbNavigation']
+Breadcrumb_Total_items: XPATH=//div[@data-component='BreadcrumbNavigation']//div[contains(@data-automation,'breadcrumbNavigation')]
+Breadcrumb_Detailspage: XPATH=//div[@data-component='BreadcrumbNavigation']//div[last()]/text()[normalize-space()]
+Breadcrumb_Parent_Item1: XPATH=//div[@data-component='BreadcrumbNavigation']/div/div[1]//a
+Breadcrumb_Parent_Item2: XPATH=//div[@data-component='BreadcrumbNavigation']/div/div[2]//a
+Breadcrumb_Parent_Item3: XPATH=//div[@data-component='BreadcrumbNavigation']/div/div[3]//a
+
+InnerBannerWithoutImage_Component: XPATH=//div[@data-component='InnerBannerWithoutImage']
+InnerBannerWithoutImage_Component_Heading: XPATH=//div[@data-component='InnerBannerWithoutImage']//h2
+InnerBannerWithoutImage_Component_Dateicon: XPATH=//div[@data-component='InnerBannerWithoutImage']//parent::div//div[contains(@class,'bg-primary-400')]//span[contains(normalize-space(.), '25')]/preceding-sibling::span
+InnerBannerWithoutImage_Component_Date: XPATH=//div[@data-component='InnerBannerWithoutImage']//parent::div//div[contains(@class,'bg-primary-400')]//span[contains(normalize-space(.), '25')]
+InnerBannerWithoutImage_Component_Tick_icon: XPATH=//span[contains(normalize-space(.), 'Award')]//parent::div//parent::div//span[contains(@class,'svg')]
+InnerBannerWithoutImage_Component_Awarded_by: XPATH=//span[contains(normalize-space(.), 'Award')]
+InnerBannerWithoutImage_Component_AwardName: XPATH=//span[contains(normalize-space(.), 'Award')]//parent::div//span[2]
+
+ImageBanner_Component: XPATH=//div[@data-component='ImageBanner']
+ImageBanner_Component_card: XPATH=//div[@data-component='ImageBanner']//ul[contains(@id,'splide')]/li
+ImageBanner_Component_card_Image: XPATH=//div[@data-component='ImageBanner']//ul[contains(@id,'splide')]/li//img
+ImageBanner_Component_card_Navigation: XPATH=//div[@data-component='ImageBanner']//ul[contains(@id,'splide')]/li[1]
+ImageBanner_Component_card_PreviousBtn: XPATH=//div[@data-component='ImageBanner']//button[@title='Previous']
+ImageBanner_Component_card_NextBtn: XPATH=//div[@data-component='ImageBanner']//button[@title='Next']
+
+
+RichText_Component: XPATH=//div[@data-component='RichTextExtended']

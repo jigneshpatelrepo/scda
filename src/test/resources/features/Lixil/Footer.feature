@@ -15,36 +15,36 @@ Feature: Footer: Validate SCDA Homepage
 
     And 'FooterComponent' component exists on the page
     And I scroll to 'FooterComponent'
-    And 'FooterComponentLeftlogo' is visible
-    And 'FooterComponentRightlogo' is visible
-    And 'FooterComponentAboutLink' is visible
-    And 'FooterComponentFindUs' is visible
-    And 'FooterComponentMedia' is visible
-    And 'FooterComponentQuickLInks' is visible
-    And 'FooterComponentJoinNewsletter' is visible
-    And 'FooterComponentAboutLinkItem1' is visible
-    And 'FooterComponentFindusItem1' is clickable
-    And 'FooterComponentMediaItem1' is clickable
-    And 'FooterComponentQuicklinksItem1' is clickable
-    And 'FooterComponentDisclaimer' is clickable
-    And 'FooterComponentPrivacy' is clickable
-    And 'FooterComponentSitemap' is clickable
-    And 'FooterComponentTermsandCondition' is clickable
-    And 'FooterComponentMonthltVisitors' is visible
-    And 'FooterComponentLastupdated' is visible
-    And 'FooterComponentallrightreserved' is visible
-    And 'FooterComponentFollowus' is visible
+    And 'FooterComponent_Leftlogo' is visible
+    And 'FooterComponent_Rightlogo' is visible
+    And 'FooterComponent_AboutLink' is visible
+    And 'FooterComponent_FindUs' is visible
+    And 'FooterComponent_Media' is visible
+    And 'FooterComponent_QuickLInks' is visible
+    And 'FooterComponent_JoinNewsletter' is visible
+    And 'FooterComponent_AboutLinkItem1' is visible
+    And 'FooterComponent_FindusItem1' is clickable
+    And 'FooterComponent_MediaItem1' is clickable
+    And 'FooterComponent_QuicklinksItem1' is clickable
+    And 'FooterComponent_Disclaimer' is clickable
+    And 'FooterComponent_Privacy' is clickable
+    And 'FooterComponent_Sitemap' is clickable
+    And 'FooterComponent_TermsandCondition' is clickable
+    And 'FooterComponent_MonthltVisitors' is visible
+    And 'FooterComponent_Lastupdated' is visible
+    And 'FooterComponent_allrightreserved' is visible
+    And 'FooterComponent_Followus' is visible
 
  Scenario: Validate Footer - UI (Font size,family and weight,Letter spacing,Line height)
 
-    And The 'FooterComponentLeftlogo' element has following CSS properties
+    And The 'FooterComponent_Leftlogo' element has following CSS properties
       | width                | 131px                         |
       | height               | 198px                         |
 
-    And The 'FooterComponentRightlogo' element has following CSS properties
+    And The 'FooterComponent_Rightlogo' element has following CSS properties
       | width                | 427px                         |
 
-   And The 'FooterComponentAboutLink' element has following CSS properties
+   And The 'FooterComponent_AboutLink' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -52,7 +52,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(180, 180, 180)           |
 
-   And The 'FooterComponentAboutLinkItem1' element has following CSS properties
+   And The 'FooterComponent_AboutLinkItem1' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -60,7 +60,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(255, 255, 255)           |
 
-   And The 'FooterComponentFindUs' element has following CSS properties
+   And The 'FooterComponent_FindUs' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -68,7 +68,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(180, 180, 180)           |
 
-   And The 'FooterComponentFindusItem1' element has following CSS properties
+   And The 'FooterComponent_FindusItem1' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -76,7 +76,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(255, 255, 255)           |
 
-   And The 'FooterComponentMedia' element has following CSS properties
+   And The 'FooterComponent_Media' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -84,7 +84,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(180, 180, 180)           |
 
-   And The 'FooterComponentMediaItem1' element has following CSS properties
+   And The 'FooterComponent_MediaItem1' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -92,7 +92,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(255, 255, 255)           |
 
-   And The 'FooterComponentQuickLInks' element has following CSS properties
+   And The 'FooterComponent_QuickLInks' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -100,7 +100,7 @@ Feature: Footer: Validate SCDA Homepage
     | letter-spacing            | normal                       |
     | Color                     | rgb(180, 180, 180)           |
 
-   And The 'FooterComponentQuicklinksItem1' element has following CSS properties
+   And The 'FooterComponent_QuicklinksItem1' element has following CSS properties
     | font-size                 | 14px                         |
     | line-height               | 16px                         |
     | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -110,6 +110,6 @@ Feature: Footer: Validate SCDA Homepage
 
  Scenario: Validate Footer - Functionality
 
-  And 'alphanumerical' text is visible in 'FooterComponentLastupdated'
-  And 'alphanumerical' text is visible in 'FooterComponentallrightreserved'
-  And 'alphanumerical' text is visible in 'FooterComponentMonthltVisitors'
+  And 'alphanumerical' text is visible in 'FooterComponent_Lastupdated'
+  And 'alphanumerical' text is visible in 'FooterComponent_allrightreserved'
+  And 'alphanumerical' text is visible in 'FooterComponent_MonthltVisitors'

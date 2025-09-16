@@ -15,17 +15,17 @@ Feature: awardsandcertifications: Validate AwardsCertification Page Component
     Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/about/our-awards-and-certifications'
     And 'AwardsCertiComponent' component exists on the page
     And I scroll to 'AwardsCertiComponent'
-    And 'AwardsCertiComponentitem' is visible
-    And 'AwardsCertiComponentitemImg' is visible
-    And 'AwardsCertiComponentitemdate' is visible
-    And 'AwardsCertiComponentitemMinistry' is visible
-    And 'AwardsCertiComponentitemlinkAnchor' is clickable
-    And 'AwardsCertiComponentitemlinkSpan' is visible
-    And 'AwardsCertiComponentitemTitle' is visible
+    And 'AwardsCertiComponent_item' is visible
+    And 'AwardsCertiComponent_itemImg' is visible
+    And 'AwardsCertiComponent_itemdate' is visible
+    And 'AwardsCertiComponent_itemMinistry' is visible
+    And 'AwardsCertiComponent_itemlinkAnchor' is clickable
+    And 'AwardsCertiComponent_itemlinkSpan' is visible
+    And 'AwardsCertiComponent_itemTitle' is visible
 
   Scenario: Validate Awards and certifications UI (Font size,family and weight,Letter spacing,Line height)
 
-    And The 'AwardsCertiComponentitemTitle' element has following CSS properties
+    And The 'AwardsCertiComponent_itemTitle' element has following CSS properties
       | font-size                 | 24px                         |
       | line-height               | 32px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -33,20 +33,20 @@ Feature: awardsandcertifications: Validate AwardsCertification Page Component
       | letter-spacing            | -0.48px                      |
       | Color                     | rgb(0, 0, 0)                 |
 
-    And The 'AwardsCertiComponentitemdate' element has following CSS properties
+    And The 'AwardsCertiComponent_itemdate' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 500                          |
       | letter-spacing            | normal                       |
 
-    And The 'AwardsCertiComponentitemMinistry' element has following CSS properties
+    And The 'AwardsCertiComponent_itemMinistry' element has following CSS properties
       | font-size                 | 16px                         |
       | line-height               | 24px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | letter-spacing            | normal                       |
 
-    And The 'AwardsCertiComponentitemlinkSpan' element has following CSS properties
+    And The 'AwardsCertiComponent_itemlinkSpan' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 14px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -54,20 +54,20 @@ Feature: awardsandcertifications: Validate AwardsCertification Page Component
       | font-weight               | 500                          |
 
   Scenario: Validate Awards and certifications Hover
-    And I hover mouse over 'AwardsCertiComponentitem'
+    And I hover mouse over 'AwardsCertiComponent_item'
     And I wait for '1' seconds
-    And The 'AwardsCertiComponentitemImg' element has following CSS properties
+    And The 'AwardsCertiComponent_itemImg' element has following CSS properties
       | scale                      | 1.05                        |
 
   Scenario: Validate Awards and certifications - Functionality - Loadmore
 
-    And Total count of 'AwardsCertiComponentitemlinkAnchor' is 9
-    And I click on 'AwardsCertiComponentLoadmore'
+    And Total count of 'AwardsCertiComponent_itemlinkAnchor' is 9
+    And I click on 'AwardsCertiComponent_Loadmore'
     And I wait for '1' seconds
-    And Total count of 'AwardsCertiComponentitemlinkAnchor' is 15
+    And Total count of 'AwardsCertiComponent_itemlinkAnchor' is 15
 
   Scenario: Validate Awards and certifications - Functionality - Navigation
-    
-    And I click on 'AwardsCertiComponentitemlinkAnchor'
+
+    And I click on 'AwardsCertiComponent_itemlinkAnchor'
     And I wait for '1' seconds
     And Current URL contains Either of 'our-awards-and-certifications' or 'detail'

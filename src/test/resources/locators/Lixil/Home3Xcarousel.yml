@@ -1,20 +1,20 @@
-###3cardcarousel
+###3cardcarousel_
 
 Advancebutton: XPATH=//button[@id='details-button']
 Advancebuttonproceed: XPATH=//p[@id='final-paragraph']/a
 
-3cardcarouselComponent: XPATH=//section[@data-component='CarouselWithIcon']
-3cardcarouselHeading: XPATH=//section[@data-component='CarouselWithIcon']//h2
-3cardcarouselEyebrow: XPATH=//section[@data-component='CarouselWithIcon']//span[(text()='EXPLORE')]
+3cardcarousel_Component: XPATH=//section[@data-component='CarouselWithIcon']
+3cardcarousel_Heading: XPATH=//section[@data-component='CarouselWithIcon']//h2
+3cardcarousel_Eyebrow: XPATH=//section[@data-component='CarouselWithIcon']//span[(text()='EXPLORE')]
 
-3cardcarouselcardicon: XPATH=//section[@data-component='CarouselWithIcon']//span[contains(@class,'flex rtl')]
-3cardcarouselcardtitle: XPATH=//section[@data-component='CarouselWithIcon']//h4[(text()='Building Completion Certificate')]
-3cardcarouselcardsingletag: XPATH=//section[@data-component='CarouselWithIcon']//ul[contains(@aria-label,'Tags for card')]
-3cardcarouselcardmultitpletagold: XPATH=//section[@data-component='CarouselWithIcon']//ul//li[contains(@aria-label, 'more tags')]
-3cardcarouselcardmultitpletag: XPATH=//section[@data-component='CarouselWithIcon']//ul[contains(@aria-label,'Tags for card')]//li[contains(@aria-label,'more tags')]
-3cardcarouselcardcta: XPATH=//section[@data-component='CarouselWithIcon']//ul[@class='splide__list']/li[1]//following-sibling::div//span[(text()='View All')]//ancestor::a
-3cardcarouselcardctaCommon: XPATH=//section[@data-component='CarouselWithIcon']//div[contains(@class,'self-start md:self-center')]//span[contains(@class,'cta-content ')]
-3cardcarouselcardPreviousBtn: XPATH=//section[@data-component='CarouselWithIcon']//button[@aria-label='Previous slide']
-3cardcarouselcardNxtBtn: XPATH=//section[@data-component='CarouselWithIcon']//button[@aria-label='Next slide']
-3cardcarouselcardNxtBtnClickAttr: XPATH=//section[@data-component='CarouselWithIcon']//ul[@class='splide__list']/li[1]
-3cardcarouselFirstcard: XPATH=//section[@data-component='CarouselWithIcon']//ul[@class='splide__list']/li/div
+3cardcarousel_cardicon: XPATH=//section[@data-component='CarouselWithIcon']//span[contains(@class,'flex rtl')]
+3cardcarousel_cardtitle: XPATH=//section[@data-component='CarouselWithIcon']//h4[(text()='Building Completion Certificate')]
+3cardcarousel_cardsingletag: XPATH=//section[@data-component='CarouselWithIcon']//ul[contains(@aria-label,'Tags for card')]
+3cardcarousel_cardmultitpletagold: XPATH=//section[@data-component='CarouselWithIcon']//ul//li[contains(@aria-label, 'more tags')]
+3cardcarousel_cardmultitpletag: XPATH=//section[@data-component='CarouselWithIcon']//ul[contains(@aria-label,'Tags for card')]//li[contains(@aria-label,'more tags')]
+3cardcarousel_cardcta: XPATH=//section[@data-component='CarouselWithIcon']//ul[@class='splide__list']/li[1]//following-sibling::div//span[(text()='View All')]//ancestor::a
+3cardcarousel_cardctaCommon: XPATH=//section[@data-component='CarouselWithIcon']//div[contains(@class,'self-start md:self-center')]//span[contains(@class,'cta-content ')]
+3cardcarousel_cardPreviousBtn: XPATH=//section[@data-component='CarouselWithIcon']//button[@aria-label='Previous slide']
+3cardcarousel_cardNxtBtn: XPATH=//section[@data-component='CarouselWithIcon']//button[@aria-label='Next slide']
+3cardcarousel_cardNxtBtnClickAttr: XPATH=//section[@data-component='CarouselWithIcon']//ul[@class='splide__list']/li[1]
+3cardcarousel_Firstcard: XPATH=//section[@data-component='CarouselWithIcon']//ul[@class='splide__list']/li/div

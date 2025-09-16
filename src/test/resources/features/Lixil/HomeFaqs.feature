@@ -14,14 +14,14 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
   Scenario: Validate FAQ -Visibility
     And 'FAQComponent' component exists on the page
     And I scroll to 'FAQComponent'
-    And 'FAQComponentTitle' is visible
-    And 'FAQComponentEyebrow' is visible
-    And 'FAQComponentCTA' is visible
-    And 'FAQComponentItem1' is visible
+    And 'FAQComponent_Title' is visible
+    And 'FAQComponent_Eyebrow' is visible
+    And 'FAQComponent_CTA' is visible
+    And 'FAQComponent_Item1' is visible
 
   Scenario: Validate FAQ - (Font size,family and weight,Letter spacing,Line height)
 
-    And The 'FAQComponentEyebrow' element has following CSS properties
+    And The 'FAQComponent_Eyebrow' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -29,14 +29,14 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
       | letter-spacing            | normal                       |
       | text-transform            | uppercase                    |
 
-    And The 'FAQComponentTitle' element has following CSS properties
+    And The 'FAQComponent_Title' element has following CSS properties
       | font-size                 | 48px                         |
       | line-height               | 48px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 400                          |
       | letter-spacing            | -0.48px                      |
 
-    And The 'FAQComponentCTASpan' element has following CSS properties
+    And The 'FAQComponent_CTASpan' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 14px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -46,20 +46,20 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
 
   Scenario: Validate FAQ- functionality (Expand / collapsed - Navigation)
 
-    And I click on 'FAQComponentItem1'
+    And I click on 'FAQComponent_Item1'
     And I wait for '1' seconds
-    And The 'aria-expanded' attribute of 'FAQComponentItem1Btn' element is 'true'
-    And The 'FAQComponentItem1Question' element has following CSS properties
+    And The 'aria-expanded' attribute of 'FAQComponent_Item1Btn' element is 'true'
+    And The 'FAQComponent_Item1Question' element has following CSS properties
       | color                     |  rgb(23, 143, 82)            |
 
-    And I click on 'FAQComponentItem1'
+    And I click on 'FAQComponent_Item1'
     And I wait for '1' seconds
-    And The 'aria-expanded' attribute of 'FAQComponentItem1Btn' element is 'false'
+    And The 'aria-expanded' attribute of 'FAQComponent_Item1Btn' element is 'false'
 
   Scenario: Validate FAQ- functionality (Total count and Navigation)
 
-    And Total count of 'FAQComponentTotalItem' is 4
-    And I click on 'FAQComponentCTA'
+    And Total count of 'FAQComponent_TotalItem' is 4
+    And I click on 'FAQComponent_CTA'
     And Current URL contains 'faq'
     And I navigate to 'https://dev-sdd.ishj.ae/en'
     And I wait for '3' seconds

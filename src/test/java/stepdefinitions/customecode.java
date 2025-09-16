@@ -2,32 +2,16 @@ package stepdefinitions;
 
 import com.codeborne.selenide.*;
 import helper.*;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 import org.testng.Assert;
 import org.openqa.selenium.*;
-import org.testng.asserts.SoftAssert;
-import java.util.logging.Level;
-
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Locale;
-import java.util.Objects;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static corestepdef.Common.*;
-import static org.apache.xmlbeans.XmlBoolean.type;
-import org.openqa.selenium.logging.LogEntries;
-import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 
 public class customecode {
     private static final Logger log = LogManager.getLogger("common_" + Thread.currentThread().threadId());
@@ -201,7 +185,33 @@ public class customecode {
         );
     }
 
+    @Then("^Total count '(.*)' is greater than single filter '(.*)'$")
+    public void compIsDisplayedInColumns(String Totalcount, String Specificitem) {
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        log.debug("Total count of " + Totalcount + " is " + Totalcount);
+        log.debug("Total count of Filteritem" + Specificitem + " is " + Specificitem);
+        By locator = loc.get(Totalcount);
+        By locator1 = loc.get(Specificitem);
+        Integer Totalcount1 = $$(locator).size();
+        Integer Totalcount2 = $$(locator1).size();
+        String Totalcount2String = Totalcount2.toString();
+        getExtractedNumber (Totalcount2String);
+        Selenide.$(locator).should(Condition.exist, waitForElementExists);
+        Selenide.$(locator1).should(Condition.exist, waitForElementVisible);
+       // Assert.assertEquals(Selenide.$$(locator).size(), Specificitem.size());
+        Assert.assertTrue((Totalcount1)>=(Totalcount2),
+                "Expected actual size to be greater than " + Specificitem + " but found " + Totalcount);
+    }
 
+    @Then("Go to method")
+    public void getExtractedNumber(String text)
+    {
+    String text1 = "Consultant Approvals Plan (6)";
+    String numberOnly = text.replaceAll("[^0-9]", "");
+    int extractedNumber = Integer.parseInt(numberOnly);
+    return;
+    }
 //    @Then("I check the console message")
 //    public void iClickOnconsole() {
 //        Waiter.waitForJavaScriptToLoad();
@@ -227,4 +237,28 @@ public class customecode {
 //
 //            }
 //        }
+
+    @Then("^'(.*)' multiple text are visible in '(.*)'$")
+    public void validateTextInElements(String expectedType, String compName) {
+        log.debug("{} text is visible in the {}", expectedType, compName);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement ele = Selenide.$(loc.get(compName));
+        ele.should(Condition.exist, waitForElementExists);
+        ele.should(Condition.visible, waitForElementVisible);
+        scrollToElement(ele);
+        String actualText = ele.getText().trim();
+        String alphabetsRegex;
+        String expectedTypenew = expectedType.trim().toLowerCase();
+        if (expectedTypenew.equals("today")) {
+        }
+            else if (expectedType.contains("today")){
+                alphabetsRegex = "^[^a-zA-Z]+$";
+                Assert.assertTrue(actualText.matches(alphabetsRegex), "Expected numerical content (with special characters) but got: " + actualText);
+                SetGlobalVariable.scenario.log("--> Numerical value: " + actualText);
+
+
+        }
+
+    }
 }
