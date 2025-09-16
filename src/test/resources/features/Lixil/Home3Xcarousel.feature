@@ -11,44 +11,44 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
     And  I click on 'Advancebuttonproceed' if available
     And I wait for '3' seconds
 
-   Scenario: Validate 3X card carousel - Visibility
-    And '3cardcarouselComponent' component exists on the page
-    And I scroll to '3cardcarouselComponent'
+  Scenario: Validate 3X card carousel - Visibility
+    And '3cardcarousel_Component' component exists on the page
+    And I scroll to '3cardcarousel_Component'
     And I wait for '1' seconds
-    And '3cardcarouselHeading' is visible
-    And '3cardcarouselEyebrow' is visible
-    And '3cardcarouselcardicon' is visible
-    And '3cardcarouselcardsingletag' is visible
-    And '3cardcarouselcardcta' is visible
-    And '3cardcarouselcardctaCommon' is visible
-    And '3cardcarouselcardPreviousBtn' is visible
-    And '3cardcarouselcardNxtBtn' is visible
-    And '3cardcarouselcardNxtBtn' is clickable
-    And '3cardcarouselcardmultitpletag' is visible
+    And '3cardcarousel_Heading' is visible
+    And '3cardcarousel_Eyebrow' is visible
+    And '3cardcarousel_cardicon' is visible
+    And '3cardcarousel_cardsingletag' is visible
+    And '3cardcarousel_cardcta' is visible
+    And '3cardcarousel_cardctaCommon' is visible
+    And '3cardcarousel_cardPreviousBtn' is visible
+    And '3cardcarousel_cardNxtBtn' is visible
+    And '3cardcarousel_cardNxtBtn' is clickable
+    And '3cardcarousel_cardmultitpletag' is visible
 
   Scenario: Validate 3X card carousel - UI (Font size,family and weight,Letter spacing,Line height)
 
-    And The '3cardcarouselEyebrow' element has following CSS properties
+    And The '3cardcarousel_Eyebrow' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 500                          |
       | letter-spacing            |                   normal     |
-     | text-transform            | uppercase                    |
+      | text-transform            | uppercase                    |
 
-     And The '3cardcarouselHeading' element has following CSS properties
-       | font-size                 | 48px                         |
-       | line-height               | 48px                         |
-       | font-family               | Tajawal, "Tajawal Fallback"  |
-       | font-weight               | 400                          |
+    And The '3cardcarousel_Heading' element has following CSS properties
+      | font-size                 | 48px                         |
+      | line-height               | 48px                         |
+      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-weight               | 400                          |
 #       | letter-spacing            |       -1.92px or -0.48px    |
-    And The '3cardcarouselcardtitle' element has following CSS properties
+    And The '3cardcarousel_cardtitle' element has following CSS properties
       | font-size                 | 24px                         |
       | line-height               | 32px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 400                          |
       | letter-spacing            |                   -0.48px    |
-    And The '3cardcarouselcardsingletag' element has following CSS properties
+    And The '3cardcarousel_cardsingletag' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -57,22 +57,22 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
 
   Scenario: Validate 3X card carousel functionality ( Enable and Disable )
 
-    Then '3cardcarouselcardPreviousBtn' is disabled
-    And I click on '3cardcarouselcardNxtBtn'
+    Then '3cardcarousel_cardPreviousBtn' is disabled
+    And I click on '3cardcarousel_cardNxtBtn'
     And I wait for '1' seconds
-    And The 'class' attribute of '3cardcarouselcardNxtBtnClickAttr' element contains 'splide__slide flex is-prev'
-    And I click on '3cardcarouselcardPreviousBtn'
+    And The 'class' attribute of '3cardcarousel_cardNxtBtnClickAttr' element contains 'splide__slide flex is-prev'
+    And I click on '3cardcarousel_cardPreviousBtn'
     And I wait for '1' seconds
-    And The 'class' attribute of '3cardcarouselcardNxtBtnClickAttr' element contains 'splide__slide flex is-active is-visible'
-    And I click on '3cardcarouselcardcta'
+    And The 'class' attribute of '3cardcarousel_cardNxtBtnClickAttr' element contains 'splide__slide flex is-active is-visible'
+    And I click on '3cardcarousel_cardcta'
     And Current URL contains Either of 'completion' or 'building'
 
   Scenario: Validate 3X card carousel functionality ( Navigation )
 
     And I navigate to 'https://dev-sdd.ishj.ae/en'
-    And I click on '3cardcarouselcardctaCommon'
+    And I click on '3cardcarousel_cardctaCommon'
     And Current URL contains 'service'
     Then I navigate to 'https://dev-sdd.ishj.ae/en'
-    And I hover mouse over '3cardcarouselFirstcard'
+    And I hover mouse over '3cardcarousel_Firstcard'
     And I wait for '1' seconds
-    And The 'class' attribute of '3cardcarouselFirstcard' element contains 'active-cta after:h-2 border-transparent bg-primary-100 after:bg-primary-200'
+    And The 'class' attribute of '3cardcarousel_Firstcard' element contains 'active-cta after:h-2 border-transparent bg-primary-100 after:bg-primary-200'

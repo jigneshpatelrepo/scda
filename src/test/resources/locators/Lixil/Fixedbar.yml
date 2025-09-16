@@ -1,13 +1,13 @@
 
 ###FAQ's
 FixedBarComponent: XPATH=*//div[contains(@data-automation,'FixedBar')]
-FixedBarComponentEmergency: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Emergency')]//ancestor::a
-FixedBarComponentEmergencySpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Emergency')]
-FixedBarComponentEService: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='E-Service')]//ancestor::a
-FixedBarComponentEServiceSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='E-Service')]
-FixedBarComponentFeedback: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Feedback & Complaints')]//ancestor::a
-FixedBarComponentFeedbackSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Feedback & Complaints')]
-FixedBarComponentCallcenter: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]//ancestor::a
-FixedBarComponentCallcenterSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]
-FixedBarComponentsocialshare: XPATH=*//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'cursor-pointer')]
-FixedBarComponentblckbar: XPATH=//div[@id='footer']/div
+FixedBarComponent_Emergency: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Emergency')]//ancestor::a
+FixedBarComponent_EmergencySpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Emergency')]
+FixedBarComponent_EService: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='E-Service')]//ancestor::a
+FixedBarComponent_EServiceSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='E-Service')]
+FixedBarComponent_Feedback: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Feedback & Complaints')]//ancestor::a
+FixedBarComponent_FeedbackSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Feedback & Complaints')]
+FixedBarComponent_Callcenter: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]//ancestor::a
+FixedBarComponent_CallcenterSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]
+FixedBarComponent_socialshare: XPATH=*//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'cursor-pointer')]
+FixedBarComponent_blckbar: XPATH=//div[@id='footer']/div

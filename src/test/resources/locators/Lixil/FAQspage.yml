@@ -1,16 +1,16 @@
 
 ###FAQs
-FAQInnerBannerwithImageComponent: XPATH=*//div[@data-component='InnerBannerWithImage']
-FAQInnerBannerwithImageComponentTitle: XPATH=*//div[@data-component='InnerBannerWithImage']//h1
-FAQsearchComponent: XPATH=//section[@data-component='TabsWithFilters']
-FAQsearchInput: XPATH=//section[@data-component='TabsWithFilters']//input
+FAQ_InnerBannerwithImageComponent: XPATH=*//div[@data-component='InnerBannerWithImage']
+FAQ_InnerBannerwithImageComponentTitle: XPATH=*//div[@data-component='InnerBannerWithImage']//h1
+FAQ_searchComponent: XPATH=//section[@data-component='TabsWithFilters']
+FAQ_searchInput: XPATH=//section[@data-component='TabsWithFilters']//input
 
-FAQTotalcount: XPATH=//div[@id='filter-list']//ul[@aria-label='Available filters']//li[1]//button
-FAQFilterItem1: XPATH=*//div[@id='filter-list']//ul[@aria-label='Available filters']//li[2]//button
-FAQFilterItem2: XPATH=*//div[@id='filter-list']//ul[@aria-label='Available filters']//li[3]//button
-FAQFilterItem3: XPATH=*//div[@id='filter-list']//ul[@aria-label='Available filters']//li[4]//button
-FAQItem1: XPATH=//div[@data-component='faq-item']//button
-FAQQuestion1Item1: XPATH=//div[@data-component='faq-item']//button//h3
+FAQ_Totalcount: XPATH=//div[@id='filter-list']//ul[@aria-label='Available filters']//li[1]//button
+FAQ_FilterItem1: XPATH=*//div[@id='filter-list']//ul[@aria-label='Available filters']//li[2]//button
+FAQ_FilterItem2: XPATH=*//div[@id='filter-list']//ul[@aria-label='Available filters']//li[3]//button
+FAQ_FilterItem3: XPATH=*//div[@id='filter-list']//ul[@aria-label='Available filters']//li[4]//button
+FAQ_Item1: XPATH=//div[@data-component='FAQ_-item']//button
+FAQ_Question1Item1: XPATH=//div[@data-component='FAQ_-item']//button//h3
 
-FAQQuestionLoadmore: XPATH=//section[@data-component='TabsWithFilters']//section//span[(text()='Load More')]/ancestor::button
-FAQcountafterclickingonLoadmore: XPATH=//section[@data-component='TabsWithFilters']//div[contains(@aria-label,'Showing')]/div
+FAQ_QuestionLoadmore: XPATH=//section[@data-component='TabsWithFilters']//section//span[(text()='Load More')]/ancestor::button
+FAQ_countafterclickingonLoadmore: XPATH=//section[@data-component='TabsWithFilters']//div[contains(@aria-label,'Showing')]/div

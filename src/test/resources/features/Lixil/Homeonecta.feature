@@ -1,5 +1,5 @@
 @lixil @test @SCDAhomepage @Homeonecta
-Feature: Homeonectapage: Validate SCDA home page - Onectabox component
+Feature: Homeonectapage: Validate SCDA home page - onectabox_ component
 
   @clearcookies
 
@@ -11,16 +11,16 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
     And  I click on 'Advancebuttonproceed' if available
     And I wait for '3' seconds
 
-  Scenario: Validate Onectabox Visibility
+  Scenario: Validate onectabox_ Visibility
     And I scroll to 'onectaboxComponent'
     And 'onectaboxComponent' component exists on the page
-    And 'onectaboxEyebrow' is visible
-    And 'onectaboxTitle' is visible
-    And 'onectaboxCTAAnchor' is visible
-    And 'onectaboxImage' is visible
+    And 'onectabox_Eyebrow' is visible
+    And 'onectabox_Title' is visible
+    And 'onectabox_CTAAnchor' is visible
+    And 'onectabox_Image' is visible
 
-  Scenario: Validate Onectabox UI (Font size,family and weight,Letter spacing,Line height)
-    And The 'onectaboxEyebrow' element has following CSS properties
+  Scenario: Validate onectabox_ UI (Font size,family and weight,Letter spacing,Line height)
+    And The 'onectabox_Eyebrow' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 16px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -28,18 +28,18 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
       | letter-spacing            |                   normal     |
       | text-transform            | uppercase                    |
 
-    And The 'onectaboxTitle' element has following CSS properties
+    And The 'onectabox_Title' element has following CSS properties
       | font-size                 | 48px                         |
       | line-height               | 48px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
       | font-weight               | 400                          |
       | letter-spacing            |            -0.48px           |
 
-    And The 'onectaboxImage' element has following CSS properties
+    And The 'onectabox_Image' element has following CSS properties
       | height                    | 353px                        |
       | width                     | 579px                        |
 
-    And The 'onectaboxCTASpan' element has following CSS properties
+    And The 'onectabox_CTASpan' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 14px                         |
       | font-family               | Tajawal, "Tajawal Fallback"  |
@@ -47,17 +47,17 @@ Feature: Homeonectapage: Validate SCDA home page - Onectabox component
       | padding-left              | 16px                         |
       | padding-right             | 0px                          |
 
-  Scenario: Validate Onectabox Mousehover Functionalities
-    And I hover mouse over 'onectaboxCTAAnchor'
+  Scenario: Validate onectabox_ Mousehover Functionalities
+    And I hover mouse over 'onectabox_CTAAnchor'
     And I wait for '2' seconds
-    And The 'onectaboxCTASpan' element has following CSS properties
+    And The 'onectabox_CTASpan' element has following CSS properties
       | padding-left              | 0px                         |
       | padding-right             | 16px                        |
 
 
-  Scenario: Validate onectabox Functionalities
+  Scenario: Validate onectabox_ Functionalities
 
-    And I click on 'onectaboxCTAAnchor'
+    And I click on 'onectabox_CTAAnchor'
     And I wait for '1' seconds
     And Current URL contains 'find-us'
     And I navigate to 'https://dev-sdd.ishj.ae/en'

@@ -76,11 +76,6 @@ Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
    | font-weight               | 500                          |
    | letter-spacing            | normal                       |
 
- Scenario: Validate FAQ - Hover effect on card
-  And I hover mouse over 'FAQItemBoxHoverfortest'
-  And I wait for '2' seconds
-  And The 'class' attribute of 'FAQItemBoxHover' element contains 'active-cta'
-
  Scenario: Validate FAQ - Functionalities - Count and Navigation
 
   And I click on 'FAQTotalcount'
@@ -95,6 +90,15 @@ Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
    And I wait for '1' seconds
   And The 'aria-label' attribute of 'FAQFilterItem2' element contains '(5 items)'
 
+ Scenario: Validate FAQ - Hover effect on card
+  And I refresh the current page
+  And I scroll to 'FAQItemBoxCTA'
+  And I hover mouse over 'FAQItemBoxCTA'
+  And I wait for '1' seconds
+#  And The 'FAQItemBoxHover' element has following CSS properties
+#   | background-color           | rgb(230, 243, 236)       |
+  And The 'class' attribute of 'FAQItemBoxHover' element contains 'active-cta'
+
  Scenario: Validate FAQ - Functionalities - Loadmore
 
   And I click on 'FAQTotalcount'
@@ -103,7 +107,10 @@ Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
   And I click on 'FAQQuestionLoadmore'
   And I wait for '1' seconds
   And Total count of 'FAQcountafterclickingonLoadmore' is 11
-
+#  And I refresh the current page
+#  And I click on 'FAQFilterItem2'
+# And Total count 'FAQItemBox' is greater than single filter 'FAQcountafterclickingonLoadmore'
+ 
  Scenario: Validate FAQ - Search Functionality
   And I enter 'add' into 'FAQsearchInput' field
   And I wait for '1' seconds
