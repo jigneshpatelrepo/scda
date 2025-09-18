@@ -76,7 +76,7 @@ Feature: opendata: Validate SCDA Homepage
   And The 'class' attribute of 'OpendataRelatedResources_cardComponentcard1' element contains 'border-primary-200'
 
  Scenario: Validate FAQ - Functionalities - Count and Navigation
-  And Total count of 'OpendataRelatedResources_cardComponentTotalcards' is 5
+  And Total count of 'OpendataRelatedResources_cardComponentTotalcards' is 6
 
  Scenario: Validate Related Resources carousel functionality ( Enable and Disable )
 

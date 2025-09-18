@@ -10,27 +10,26 @@ Scenario: Validate Security for Page opening
    And I wait for '1' seconds
 
  Scenario: Validate Our regulation and Standard page component - Visibility
-  Then I navigate to 'https://dev-sdd.ishj.ae/en/about/our-regulations-and-standards'
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/about/our-regulations-and-standards'
   And 'DropDownFilterWithCards_Component' is visible
   And 'DropDownFilterWithCards_Component_DD' is visible
   And 'DropDownFilterWithCards_Component_Allcards' is visible
 
  Scenario: Validate Our regulation and Standard page  - Filter Functionality - Single filter
-  Then I click on 'DropDownFilterWithCards_Component_DD'
-  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 9
-  And I click on 'DropDownFilterWithCards_Component_Loadmore' if available
-  Then I click on 'DropDownFilterWithCards_Component_DD'
+  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 7
   Then The 'aria-selected' attribute of 'DropDownFilterWithCards_Component_DD_item1_Cb' element contains 'true'
   Then I click on 'DropDownFilterWithCards_Component_DD'
   Then I click on 'DropDownFilterWithCards_Component_DD_item2'
   And I wait for '2' seconds
-  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 5
+  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 2
+  And I click on 'DropDownFilterWithCards_Component_Loadmore' if available
 
  Scenario: Validate Our regulation and Standard page  - Filter Functionality - Multiple filter
   Then I click on 'DropDownFilterWithCards_Component_DD'
   Then I click on 'DropDownFilterWithCards_Component_DD_item3'
   And I wait for '2' seconds
-  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 7
+  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 4
+  And '1 more tags' text is visible in test 'DropDownFilterWithCards_Component_plusonetext'
 
  Scenario: Validate Our regulation and Standard page  - Hover Functionality on Card
   Then I hover mouse over 'DropDownFilterWithCards_Component_Allcards_Hover'

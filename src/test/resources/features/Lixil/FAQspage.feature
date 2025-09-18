@@ -1,5 +1,5 @@
 @test @FAQ_spage @FAQ_s
-Feature: FAQ_spage: Validate SCDA Homepage
+Feature: FAQspage: Validate SCDA Homepage
 
  @clearcookies
  Scenario: Validate Security for Page opening
@@ -10,8 +10,8 @@ Feature: FAQ_spage: Validate SCDA Homepage
   And  I click on 'Advancebuttonproceed' if available
   And I wait for '3' seconds
 
- Scenario: Validate FAQ_'s page - Innerbanner and FAQ_ Q&A Visibility
-  Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/FAQ_s'
+ Scenario: Validate FAQ_'s page - Innerbanner and FAQ Q&A Visibility
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/qa/automation/FAQs'
   And 'FAQ_InnerBannerwithImageComponent' component exists on the page
   And 'FAQ_InnerBannerwithImageComponentTitle' is visible
   And 'FAQ_searchComponent' is visible
@@ -33,7 +33,7 @@ Feature: FAQ_spage: Validate SCDA Homepage
    | letter-spacing            | -0.48px                      |
    | Color                     | rgb(255, 255, 255)           |
 
- Scenario: Validate FAQ_ - UI (Font size,family and weight,Letter spacing,Line height)
+ Scenario: Validate FAQ - UI (Font size,family and weight,Letter spacing,Line height)
 
   And The 'FAQ_Totalcount' element has following CSS properties
    | font-size                 | 18px                         |
@@ -56,7 +56,7 @@ Feature: FAQ_spage: Validate SCDA Homepage
    | font-weight               | 400                          |
    | letter-spacing            | -0.48px                       |
 
- Scenario: Validate FAQ_ - Functionalities - Count and Navigation
+ Scenario: Validate FAQ - Functionalities - Count and Navigation
 
   And I click on 'FAQ_Totalcount'
   And I wait for '1' seconds
@@ -71,14 +71,14 @@ Feature: FAQ_spage: Validate SCDA Homepage
   And I wait for '1' seconds
   And The 'aria-label' attribute of 'FAQ_FilterItem2' element contains '(3 items)'
 
- Scenario: Validate FAQ_ - Functionalities - Collapse and Expand
+ Scenario: Validate FAQ - Functionalities - Collapse and Expand
 
   And The 'aria-expanded' attribute of 'FAQ_Item1' element contains 'false'
   And I click on 'FAQ_Item1'
   And I wait for '1' seconds
   And The 'aria-expanded' attribute of 'FAQ_Item1' element contains 'true'
 
- Scenario: Validate FAQ_ - Functionalities - Loadmore
+ Scenario: Validate FAQ - Functionalities - Loadmore
 
   And I click on 'FAQ_Totalcount'
   And I wait for '1' seconds
@@ -88,7 +88,7 @@ Feature: FAQ_spage: Validate SCDA Homepage
   And I wait for '1' seconds
   And Total count of 'FAQ_countafterclickingonLoadmore' is 22
 
- Scenario: Validate FAQ_ - Search Functionality
+ Scenario: Validate FAQ - Search Functionality
   And I enter 'why' into 'FAQ_searchInput' field
   And I wait for '1' seconds
   And Total count of 'FAQ_countafterclickingonLoadmore' is 6

@@ -17,3 +17,4 @@ DropDownFilterWithCards_Component_Btn: XPATH=//div[contains(@data-automation,'Dr
 DropDownFilterWithCards_Component_BtnDownload: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//span//parent::a[contains(@href,'pdf') or contains(@href,'doc')]
 DropDownFilterWithCards_Component_FormatandSize: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//span[contains(text(), 'pdf') or contains(text(), 'doc')]
 DropDownFilterWithCards_Component_Loadmore: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//span[(text()='Load More')]/ancestor::button
+DropDownFilterWithCards_Component_plusonetext: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//li[contains(@aria-label,'more')]
