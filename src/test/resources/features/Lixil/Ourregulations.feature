@@ -3,21 +3,19 @@ Feature: Ourregulations: Validate SCDA Regulation and Standard Page
 
   @clearcookies
 Scenario: Validate Security for Page opening
-
    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
    And I wait for '1' seconds
    And I click on 'Advancebutton' if available
-   And  I click on 'Advancebuttonproceed' if available
+   And I click on 'Advancebuttonproceed' if available
    And I wait for '1' seconds
 
  Scenario: Validate Our regulation and Standard page component - Visibility
-
   Then I navigate to 'https://dev-sdd.ishj.ae/en/about/our-regulations-and-standards'
   And 'DropDownFilterWithCards_Component' is visible
   And 'DropDownFilterWithCards_Component_DD' is visible
   And 'DropDownFilterWithCards_Component_Allcards' is visible
 
- Scenario: Validate Our regulation and Standard page  - Filter Functionality - single filter
+ Scenario: Validate Our regulation and Standard page  - Filter Functionality - Single filter
   Then I click on 'DropDownFilterWithCards_Component_DD'
   And Total count of 'DropDownFilterWithCards_Component_Allcards' is 9
   And I click on 'DropDownFilterWithCards_Component_Loadmore' if available
@@ -34,13 +32,12 @@ Scenario: Validate Security for Page opening
   And I wait for '2' seconds
   And Total count of 'DropDownFilterWithCards_Component_Allcards' is 7
 
- Scenario: Validate Our regulation and Standard page  - Hover
+ Scenario: Validate Our regulation and Standard page  - Hover Functionality on Card
   Then I hover mouse over 'DropDownFilterWithCards_Component_Allcards_Hover'
   And I wait for '2' seconds
   Then The 'class' attribute of 'DropDownFilterWithCards_Component_Allcards_Hover' element contains 'active-cta'
 
- Scenario: Validate Our regulation and Standard page  - card field Visibility
-
+ Scenario: Validate Our regulation and Standard page  - Card field Visibility
   And 'DropDownFilterWithCards_Component_Allcards' is visible
   And 'DropDownFilterWithCards_Component_Heading' is visible
   And 'DropDownFilterWithCards_Component_Desc' is visible
@@ -48,7 +45,6 @@ Scenario: Validate Security for Page opening
   And 'DropDownFilterWithCards_Component_FormatandSize' is visible
   
  Scenario: Validate Our regulation and Standard page  - card - Download Functionality
-
   And 'DropDownFilterWithCards_Component_BtnDownload' is visible
   Then I click on 'DropDownFilterWithCards_Component_Btn'
   And I wait for '5' seconds
@@ -80,4 +76,3 @@ Scenario: Validate Security for Page opening
    | font-family               | Tajawal, "Tajawal Fallback"  |
    | font-weight               | 400                          |
    | letter-spacing            | normal                       |
-
