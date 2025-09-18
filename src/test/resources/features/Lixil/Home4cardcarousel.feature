@@ -1,10 +1,9 @@
 @lixil @test @SCDAhomepage @Home4cardcarousel_
-Feature: Home4cardcarousel_: Validate SCDA Homepage - Home4cardcarousel_
+Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
 
   @clearcookies
 
   Scenario: Validate Security for Page opening
-
     Then I navigate to 'https://dev-sdd.ishj.ae/en/'
     And I wait for '3' seconds
     And I click on 'Advancebutton' if available

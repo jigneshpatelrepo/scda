@@ -2,13 +2,15 @@ package stepdefinitions;
 
 import com.codeborne.selenide.*;
 import helper.*;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.openqa.selenium.*;
-
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static corestepdef.Common.*;
@@ -118,7 +120,6 @@ public class customecode {
         } else {
             Assert.fail("Invalid match type provided: " + matchType);
         }
-
     }
 
     @Then("^The '(.*)' attribute of '(.*)' elementforonlyattribute (contains|is) '(.*)'$")
@@ -139,7 +140,7 @@ public class customecode {
         }
 
     }
-
+//here we have changed type to expectedtype
     @Then("^'(.*)' text is visible in test '(.*)'$")
     public void validateTextInElement(String expectedType, String compName) {
         log.debug("{} text is visible in the {}", expectedType, compName);
@@ -212,33 +213,8 @@ public class customecode {
     int extractedNumber = Integer.parseInt(numberOnly);
     return;
     }
-//    @Then("I check the console message")
-//    public void iClickOnconsole() {
-//        Waiter.waitForJavaScriptToLoad();
-//        Waiter.waitForJquery();
-//        WebDriverRunner.getWebDriver().manage().logs().get(LogType.BROWSER);
-//        Accessconsolelogs();
-//    }
-//
-//        public static void Accessconsolelogs () {
-//
-//            LogEntries logs = WebDriverRunner.getWebDriver().manage().logs().get(LogType.BROWSER);
-//
-//            List<LogEntry> successLogs = logs.getAll().stream()
-//                    .filter(entry -> entry.getLevel().equals(Level.INFO))
-//                    .toList();
-//
-//
-//            for (LogEntry entry : logs) {
-//                if (entry.getLevel().equals(Level.INFO)) {
-//                    System.out.println(" Success Log: " + entry.getMessage());
-//                }
-//
-//
-//            }
-//        }
 
-    @Then("^'(.*)' multiple text are visible in '(.*)'$")
+    @Then("^'(.*)' Either of texts visible in '(.*)'$")
     public void validateTextInElements(String expectedType, String compName) {
         log.debug("{} text is visible in the {}", expectedType, compName);
         FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
@@ -247,18 +223,33 @@ public class customecode {
         ele.should(Condition.exist, waitForElementExists);
         ele.should(Condition.visible, waitForElementVisible);
         scrollToElement(ele);
-        String actualText = ele.getText().trim();
-        String alphabetsRegex;
-        String expectedTypenew = expectedType.trim().toLowerCase();
-        if (expectedTypenew.equals("today")) {
-        }
-            else if (expectedType.contains("today")){
-                alphabetsRegex = "^[^a-zA-Z]+$";
-                Assert.assertTrue(actualText.matches(alphabetsRegex), "Expected numerical content (with special characters) but got: " + actualText);
-                SetGlobalVariable.scenario.log("--> Numerical value: " + actualText);
-
+        String actualText = ele.getText().trim().toLowerCase();
+        String result = expectedType.replaceAll("[^A-Z]", " ").trim().split("\\s+")[0];
+        String expectedTypenew = result.trim().toLowerCase();
+        if ((expectedTypenew.contains("today"))||(expectedTypenew.contains("tomorrow"))) {
+            Assert.assertTrue(actualText.matches(expectedTypenew), "Expected text contains today and  tomorrow: " + actualText);
+            SetGlobalVariable.scenario.log("--> Event value: " + expectedTypenew);
 
         }
-
+        else if(expectedTypenew.contains("days"))
+        {
+            Assert.assertTrue(actualText.matches(expectedTypenew), "Expected text contains any days left: " + actualText);
+            SetGlobalVariable.scenario.log("--> Event value: " + expectedTypenew);
+        }
+        else
+        {
+            Assert.assertFalse(actualText.trim().isEmpty(), "Expected some text but found none.");
+            Assert.fail("Invalid match type provided: " + expectedTypenew);
+        }
     }
+
+    @And("^I press '(.*)' key on page$")
+    public void iPressStringKey(String keyName) throws AWTException {
+        Robot robot = new Robot();
+        robot.delay(2000);
+        log.debug("I press " + keyName + " key on " );
+        robot.keyPress(KeyEvent.VK_ESCAPE);
+        robot.keyRelease(KeyEvent.VK_ESCAPE);
+    }
+
 }

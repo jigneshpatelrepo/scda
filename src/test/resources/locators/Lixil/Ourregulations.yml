@@ -1,0 +1,20 @@
+###Breadcrumb
+DropDownFilterWithCards_Component: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]
+DropDownFilterWithCards_Component_DD: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//button[contains(@id,'Category')]
+DropDownFilterWithCards_Component_DD_item1: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//ul[contains(@id,'filter')]//li[1]//parent::button
+DropDownFilterWithCards_Component_DD_item1_Cb: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//ul[contains(@id,'filter')]//li[1]
+DropDownFilterWithCards_Component_DD_item2: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//ul[contains(@id,'filter')]//li[2]//parent::button
+DropDownFilterWithCards_Component_DD_item2_Cb: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//ul[contains(@id,'filter')]//li[2]
+DropDownFilterWithCards_Component_DD_item3: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//ul[contains(@id,'filter')]//li[3]//parent::button
+DropDownFilterWithCards_Component_DD_item3_Cb: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//ul[contains(@id,'filter')]//li[3]
+
+##carddetails
+DropDownFilterWithCards_Component_Allcards: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]
+DropDownFilterWithCards_Component_Allcards_Hover: XPATH=//div[contains(@data-automation,'filter-card-list')]//div[contains(@class,'col-span-full md:col-span-6')]/div
+DropDownFilterWithCards_Component_Heading: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//h4
+DropDownFilterWithCards_Component_Desc: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//p
+DropDownFilterWithCards_Component_Btn: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//span//parent::a
+DropDownFilterWithCards_Component_BtnDownload: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//span//parent::a[contains(@href,'pdf') or contains(@href,'doc')]
+DropDownFilterWithCards_Component_FormatandSize: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//span[contains(text(), 'pdf') or contains(text(), 'doc')]
+DropDownFilterWithCards_Component_Loadmore: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//span[(text()='Load More')]/ancestor::button
+DropDownFilterWithCards_Component_plusonetext: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//li[contains(@aria-label,'more')]

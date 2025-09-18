@@ -1,9 +1,8 @@
-
 ###onectabox
 
 onectaboxComponent: XPATH=*//div[@data-component='OneCTABox']
-onectabox_Eyebrow: XPATH=*//div[@data-component='onectabox_']//span[(text()='SERVICES')]
-onectabox_Title: XPATH=//div[@data-component='onectabox_']//span[contains(text(),'and hassle')]
-onectabox_CTAAnchor: XPATH=//div[@data-component='onectabox_']//span[contains(text(),'E-Services')]//ancestor::a
-onectabox_CTASpan: XPATH=//div[@data-component='onectabox_']//span[contains(text(),'E-Services')]
-onectabox_Image: XPATH=*//div[@data-component='onectabox_']//img
+onectabox_Eyebrow: XPATH=*//div[contains(@data-automation,'OneCTABox')]//div[contains(@data-automation,'eye')]//span[2]
+onectabox_Title: XPATH=*//div[contains(@data-automation,'OneCTABox')]//div[contains(@data-automation,'heading')]//span[1]
+onectabox_CTAAnchor: XPATH=*//div[contains(@data-automation,'OneCTABox')]//div[contains(@data-automation,'cta')]//ancestor::a
+onectabox_CTASpan: XPATH=*//div[contains(@data-automation,'OneCTABox')]//div[contains(@data-automation,'cta')]//span[contains(@class,'cta')]
+onectabox_Image: XPATH=*//div[contains(@data-automation,'OneCTABox')]//div[contains(@data-automation,'image')]//img
