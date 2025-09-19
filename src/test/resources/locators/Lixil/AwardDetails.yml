@@ -1,7 +1,4 @@
-
-
 ###award details
-
 Breadcrumb_Component: XPATH=//div[@data-component='BreadcrumbNavigation']
 Breadcrumb_Total_items: XPATH=//div[@data-component='BreadcrumbNavigation']//div[contains(@data-automation,'breadcrumbNavigation')]
 Breadcrumb_Detailspage: XPATH=//div[@data-component='BreadcrumbNavigation']//div[last()]/text()[normalize-space()]

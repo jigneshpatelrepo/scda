@@ -1,5 +1,5 @@
 @lixil @test @SCDAhomepage @HomeNews
-Feature: HomeNews: Validate SCDA Homepage - News
+Feature: HomeNews: Validate News Component (SCDA Homepage)
 
   @clearcookies
 

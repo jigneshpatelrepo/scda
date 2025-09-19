@@ -1,10 +1,5 @@
-
-
-
-
-
 @lixil @test @Header
-Feature: Header: Validate SCDA Header
+Feature: Header: Validate Header (SCDA Homepage)
 
   @clearcookies
   Scenario: Validate Security for Page opening
@@ -51,7 +46,6 @@ Feature: Header: Validate SCDA Header
     And Total count of 'HeaderComponent_AboutHovercount' is 7
 
   Scenario: Validate Header - Navigation for About us -> Children links
-
     When I hover mouse over 'HeaderComponent_About'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_AboutAboutus'
@@ -78,7 +72,6 @@ Feature: Header: Validate SCDA Header
     And Current URL contains Either of 'awards' or 'certification'
 
   Scenario: Validate Header - Navigation for Services link
-
     And I click on 'HeaderComponent_ServicesAnchor'
     And Current URL contains Either of 'Services' or 'service'
 
@@ -90,11 +83,9 @@ Feature: Header: Validate SCDA Header
     And  I wait for '1' seconds
     And The 'HeaderComponent_MediaNews' element has following CSS properties
       | color                | rgb(23, 143, 82)              |
-
     And Total count of 'HeaderComponent_MediaHoverCount' is 4
 
   Scenario: Validate Header - Navigation for Media -> Children links
-
     When I hover mouse over 'HeaderComponent_Media'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_MediaNews'
@@ -116,14 +107,12 @@ Feature: Header: Validate SCDA Header
     And Current URL contains Either of 'awareness' or 'Awareness'
 
   Scenario: Validate Header - Navigation for OpenData link
-
     When I hover mouse over 'HeaderComponent_Opendata'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_Opendata'
     And Current URL contains Either of 'Open' or 'data'
 
   Scenario: Validate Header - Navigation for FindUs -> Children links
-
     When I hover mouse over 'HeaderComponent_Findus'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_FindusContact'
@@ -140,14 +129,12 @@ Feature: Header: Validate SCDA Header
     And Current URL contains Either of 'Fire' or 'stations'
 
   Scenario: Validate Header - Navigation for FAQ link
-
     When I hover mouse over 'HeaderComponent_FAQ'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_FAQ'
     And Current URL contains Either of 'Faqs' or 'faq'
 
   Scenario: Validate Header - language switcher
-
     And I click on 'HeaderComponent_LanguageDD'
     And I click on 'HeaderComponent_LanguageDDArabic'
     And I wait for '1' seconds
@@ -159,7 +146,6 @@ Feature: Header: Validate SCDA Header
     And Current URL contains '/en'
 
   Scenario: Validate Header - Theme change
-
     And I click on 'HeaderComponent_Theme'
     And I wait for '1' seconds
     And The 'class' attribute of 'HeaderComponent_BGcolor' element contains 'dark'
@@ -175,7 +161,6 @@ Feature: Header: Validate SCDA Header
 #    And Current URL contains 'about'
 #
   Scenario: Validate Header - Search
-
     And I click on 'HeaderComponent_Search'
     And I click on 'HeaderComponent_SearchXbtn'
 

@@ -1,10 +1,9 @@
 @test @SCDAhomepage @Footer
-Feature: Footer: Validate SCDA Homepage
+Feature: Footer: Validate Footer (SCDA Homepage)
 
   @clearcookies
 
   Scenario: Validate Security for Page opening
-
    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
    And I wait for '3' seconds
    And I click on 'Advancebutton' if available
@@ -12,7 +11,6 @@ Feature: Footer: Validate SCDA Homepage
    And I wait for '3' seconds
 
    Scenario: Validate Footer - Visibility
-
     And 'FooterComponent' component exists on the page
     And I scroll to 'FooterComponent'
     And 'FooterComponent_Leftlogo' is visible
@@ -109,7 +107,6 @@ Feature: Footer: Validate SCDA Homepage
     | Color                     | rgb(255, 255, 255)           |
 
  Scenario: Validate Footer - Functionality
-
   And 'alphanumerical' text is visible in 'FooterComponent_Lastupdated'
   And 'alphanumerical' text is visible in 'FooterComponent_allrightreserved'
   And 'alphanumerical' text is visible in 'FooterComponent_MonthltVisitors'

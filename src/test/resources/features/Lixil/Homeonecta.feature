@@ -1,5 +1,5 @@
 @lixil @test @SCDAhomepage @Homeonecta
-Feature: Homeonectapage: Validate SCDA home page - onectabox_ component
+Feature: one_cta_Component: Validate onectabox component (SCDA Homepage)
 
   @clearcookies
 

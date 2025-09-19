@@ -1,10 +1,9 @@
 @test @FaqsOnservicepage @FAQs
-Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
+Feature: FAQs_on_Servicepage: Validate FAQ on Service page
 
   @clearcookies
 
-   Scenario: Validate Security for Page opening
-
+ Scenario: Validate Security for Page opening
    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
    And I wait for '3' seconds
    And I click on 'Advancebutton' if available
@@ -77,17 +76,16 @@ Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
    | letter-spacing            | normal                       |
 
  Scenario: Validate FAQ - Functionalities - Count and Navigation
-
   And I click on 'FAQTotalcount'
-   And I wait for '1' seconds
-   And The 'aria-label' attribute of 'FAQTotalcount' element contains '11'
+  And I wait for '1' seconds
+  And The 'aria-label' attribute of 'FAQTotalcount' element contains '11'
 
-   And I click on 'FAQFilterItem1'
-   And I wait for '1' seconds
+  And I click on 'FAQFilterItem1'
+  And I wait for '1' seconds
   And The 'aria-label' attribute of 'FAQFilterItem1' element contains '(6 items)'
 
-   And I click on 'FAQFilterItem2'
-   And I wait for '1' seconds
+  And I click on 'FAQFilterItem2'
+  And I wait for '1' seconds
   And The 'aria-label' attribute of 'FAQFilterItem2' element contains '(5 items)'
 
  Scenario: Validate FAQ - Hover effect on card
@@ -100,7 +98,6 @@ Feature: FAQsonServicepage: Validate SCDA FAQ on Servicepage
   And The 'class' attribute of 'FAQItemBoxHover' element contains 'active-cta'
 
  Scenario: Validate FAQ - Functionalities - Loadmore
-
   And I click on 'FAQTotalcount'
   And I wait for '1' seconds
   And Total count of 'FAQcountafterclickingonLoadmore' is 10

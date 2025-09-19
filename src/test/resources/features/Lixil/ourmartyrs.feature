@@ -1,5 +1,5 @@
 @test @martyrs @Ourmartyrs
-Feature: ourmartyrs: Validate AwardsCertification Page Component
+Feature: Our_martyrs: Validate Our Martyrs Page
 
   @clearcookies
   Scenario: Validate Security for Page opening

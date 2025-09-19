@@ -1,5 +1,5 @@
 @test @ourregulations @smoke
-Feature: Ourregulations: Validate SCDA Regulation and Standard Page
+Feature: Our_Regulations: Validate SCDA Regulation and Standard Page
 
   @clearcookies
 Scenario: Validate Security for Page opening

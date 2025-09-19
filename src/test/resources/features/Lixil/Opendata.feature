@@ -1,10 +1,9 @@
 @test @opendata @OpendataPage
-Feature: opendata: Validate SCDA Homepage
+Feature: opendata: Validate Opendata page
 
  @clearcookies
 
  Scenario: Validate Security for Page opening
-
   Then I navigate to 'https://dev-sdd.ishj.ae/en/'
   And I wait for '3' seconds
   And I click on 'Advancebutton' if available
@@ -12,7 +11,6 @@ Feature: opendata: Validate SCDA Homepage
   And I wait for '3' seconds
 
  Scenario: Validate Opendata page for - Visibility
-
   Then I navigate to 'https://dev-sdd.ishj.ae/en/open-data'
   And 'OpendataRelatedResources_cardComponent' component exists on the page
   And I scroll to 'OpendataRelatedResources_cardComponent'
@@ -79,7 +77,6 @@ Feature: opendata: Validate SCDA Homepage
   And Total count of 'OpendataRelatedResources_cardComponentTotalcards' is 6
 
  Scenario: Validate Related Resources carousel functionality ( Enable and Disable )
-
   Then 'OpendataRelatedResources_cardComponentPrevBtn' is disabled
   And I click on 'OpendataRelatedResources_cardComponentNextBtn'
   And I wait for '2' seconds

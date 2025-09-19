@@ -1,5 +1,5 @@
 @lixil @test @SCDAhomepage @Home4cardcarousel_
-Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
+Feature: 4XCard_carousel: Validate 4X cardcarousel (SCDA Homepage)
 
   @clearcookies
 
@@ -56,16 +56,13 @@ Feature: Home4cardcarousel: Validate SCDA Homepage - Home4cardcarousel
 
 #clicking on awards tab
   Scenario: Validate Carouselwith- 4Cards (Awards/Partner) - Functionalities (Clicking ,Hover)
-
     And I click on '4cardcarousel_LinkCTAAwards'
     And I wait for '1' seconds
     And '4cardcarousel_LinkCTAAwardsTitle' is visible
-
     And I hover mouse over '4cardcarousel_ImageforHover'
     And I wait for '3' seconds
     And The '4cardcarousel_ImageforHover' element has following CSS properties
       | background-color            | rgb(230, 243, 236)       |
-
     And The '4cardcarousel_CTAAwardsSpan' element has following CSS properties
       | font-size                 | 14px                         |
       | line-height               | 14px                         |

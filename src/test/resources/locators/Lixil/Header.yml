@@ -31,7 +31,7 @@ HeaderComponent_FindusFireCenter: XPATH=//header[contains(@data-automation,'Head
 
 HeaderComponent_FAQ: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'FAQ')]//ancestor::li
 
-HeaderComponent_leftlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'D1DFDB7FDD4F97814571A6966D1ACDD7')]
+HeaderComponent_leftlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D02730E9FFC83B61429F050D61BF04ED6')]
 HeaderComponent_Rightlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D2E7582F15F195BEB3515D04118315E59')]
 
 HeaderComponent_LanguageDD: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Language options']
