@@ -1,10 +1,8 @@
 @test @Awards @AwardsandCertification
-Feature: awardsandcertifications: Validate AwardsCertification Page Component
+Feature: Awards_and_Certifications: Validate Awards and Certification Page
 
   @clearcookies
-
   Scenario: Validate Security for Page opening
-
     Then I navigate to 'https://dev-sdd.ishj.ae/en/'
     And I wait for '3' seconds
     And I click on 'Advancebutton' if available
@@ -60,14 +58,12 @@ Feature: awardsandcertifications: Validate AwardsCertification Page Component
       | scale                      | 1.05                        |
 
   Scenario: Validate Awards and certifications - Functionality - Loadmore
-
     And Total count of 'AwardsCertiComponent_itemlinkAnchor' is 9
     And I click on 'AwardsCertiComponent_Loadmore'
     And I wait for '1' seconds
     And Total count of 'AwardsCertiComponent_itemlinkAnchor' is 15
 
   Scenario: Validate Awards and certifications - Functionality - Navigation
-
     And I click on 'AwardsCertiComponent_itemlinkAnchor'
     And I wait for '1' seconds
     And Current URL contains Either of 'our-awards-and-certifications' or 'detail'

@@ -1,5 +1,5 @@
 @lixil @test @SCDAhomepage @Home3Xcarousel
-Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
+Feature: 3Xcarousel: Validate 3Xcarousel  (SCDA Homepage)
 
   @clearcookies
 
@@ -56,7 +56,6 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
       | letter-spacing            |        normal                |
 
   Scenario: Validate 3X card carousel functionality ( Enable and Disable )
-
     Then '3cardcarousel_cardPreviousBtn' is disabled
     And I click on '3cardcarousel_cardNxtBtn'
     And I wait for '1' seconds
@@ -68,7 +67,6 @@ Feature: Home3Xcarousel: Validate on SCDA Homepage - Home3Xcarousel
     And Current URL contains Either of 'completion' or 'building'
 
   Scenario: Validate 3X card carousel functionality ( Navigation )
-
     And I navigate to 'https://dev-sdd.ishj.ae/en'
     And I click on '3cardcarousel_cardctaCommon'
     And Current URL contains 'service'

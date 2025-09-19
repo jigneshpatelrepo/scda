@@ -1,10 +1,8 @@
 @lixil @test @SCDAhomepage @HomeFaqs
-Feature: HomeFaqs: Validate SCDA Homepage - Faqs
+Feature: Faqs_Home: Validate Faqs (SCDA Homepage)
 
   @clearcookies
-
   Scenario: Validate Security for Page opening
-
     Then I navigate to 'https://dev-sdd.ishj.ae/en/'
     And I wait for '3' seconds
     And I click on 'Advancebutton' if available
@@ -45,7 +43,6 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
       | padding-right             | 0px                          |
 
   Scenario: Validate FAQ- functionality (Expand / collapsed - Navigation)
-
     And I click on 'FAQComponent_Item1'
     And I wait for '1' seconds
     And The 'aria-expanded' attribute of 'FAQComponent_Item1Btn' element is 'true'
@@ -57,7 +54,6 @@ Feature: HomeFaqs: Validate SCDA Homepage - Faqs
     And The 'aria-expanded' attribute of 'FAQComponent_Item1Btn' element is 'false'
 
   Scenario: Validate FAQ- functionality (Total count and Navigation)
-
     And Total count of 'FAQComponent_TotalItem' is 4
     And I click on 'FAQComponent_CTA'
     And Current URL contains 'faq'

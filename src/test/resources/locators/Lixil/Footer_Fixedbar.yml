@@ -10,4 +10,6 @@ FixedBarComponent_FeedbackSpan: XPATH=*//div[contains(@data-automation,'FixedBar
 FixedBarComponent_Callcenter: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]//ancestor::a
 FixedBarComponent_CallcenterSpan: XPATH=*//div[contains(@data-automation,'FixedBar')]//div//span[(text()='Call Centre')]
 FixedBarComponent_socialshare: XPATH=*//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'cursor-pointer')]
-FixedBarComponent_blckbar: XPATH=//div[@id='footer']/div
+FixedBarComponent_blackbar: XPATH=//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'flex gap-8')]
+FooterComponentDisclaimer: XPATH=//ul[@data-automation='footer-legal-links']/li[1]/a
+HeaderComponent_leftlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D02730E9FFC83B61429F050D61BF04ED6')]

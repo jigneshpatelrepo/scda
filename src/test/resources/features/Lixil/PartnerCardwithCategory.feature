@@ -1,5 +1,5 @@
  @test @Ourpartners @CardsWithCategory
-Feature: PartnerCardwithCategory: Validate SCDA Homepage - Faqs
+Feature: Our_Partner_Page: Validate CardsWithCategory Component on Our Partners page
 
   @clearcookies
   Scenario: Validate Security for Page opening
@@ -28,7 +28,6 @@ Feature: PartnerCardwithCategory: Validate SCDA Homepage - Faqs
 
 
   Scenario: Validate Ourpartners - Hover functionality
-
     And I hover mouse over 'CardsWithCategoryComponent_card'
     And I wait for '1' seconds
     And The 'CardsWithCategoryComponent_card' element has following CSS properties
@@ -36,7 +35,6 @@ Feature: PartnerCardwithCategory: Validate SCDA Homepage - Faqs
 
 
   Scenario: Validate Ourpartners - Navigation
-
     And I click on 'CardsWithCategoryComponent_card'
     And Current URL contains 'https'
     And I switch browser

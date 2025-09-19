@@ -1,5 +1,5 @@
 @test @FAQ_spage @FAQ_s
-Feature: FAQspage: Validate SCDA Homepage
+Feature: FAQs_page: Validate FAQ (SCDA Homepage)
 
  @clearcookies
  Scenario: Validate Security for Page opening
@@ -57,10 +57,9 @@ Feature: FAQspage: Validate SCDA Homepage
    | letter-spacing            | -0.48px                       |
 
  Scenario: Validate FAQ - Functionalities - Count and Navigation
-
   And I click on 'FAQ_Totalcount'
   And I wait for '1' seconds
-  And 'all FAQ_s (22 items) - selected' text is visible in test 'FAQ_Totalcount'
+  And 'all faqs (22 items) - selected' text is visible in test 'FAQ_Totalcount'
   And The 'aria-label' attribute of 'FAQ_Totalcount' element contains '22'
 
   And I click on 'FAQ_FilterItem1'
@@ -72,14 +71,12 @@ Feature: FAQspage: Validate SCDA Homepage
   And The 'aria-label' attribute of 'FAQ_FilterItem2' element contains '(3 items)'
 
  Scenario: Validate FAQ - Functionalities - Collapse and Expand
-
   And The 'aria-expanded' attribute of 'FAQ_Item1' element contains 'false'
   And I click on 'FAQ_Item1'
   And I wait for '1' seconds
   And The 'aria-expanded' attribute of 'FAQ_Item1' element contains 'true'
 
  Scenario: Validate FAQ - Functionalities - Loadmore
-
   And I click on 'FAQ_Totalcount'
   And I wait for '1' seconds
   And I click on 'FAQ_QuestionLoadmore'

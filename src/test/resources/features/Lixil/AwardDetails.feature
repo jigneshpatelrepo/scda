@@ -2,9 +2,7 @@
 Feature: AwardDetails: Validate SCDA Award details page
 
   @clearcookies
-
    Scenario: Validate Security for Page opening
-
    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
    And I wait for '1' seconds
    And I click on 'Advancebutton' if available
@@ -20,7 +18,6 @@ Feature: AwardDetails: Validate SCDA Award details page
     And 'RichText_Component' is visible
 
  Scenario: Validate Award Details page for Breadcrumb component - UI (Font size,family and weight,Letter spacing,Line height)
-
   And Total count of 'Breadcrumb_Total_items' is 3
 
   And The 'Breadcrumb_Parent_Item1' element has following CSS properties
@@ -46,7 +43,6 @@ Feature: AwardDetails: Validate SCDA Award details page
 
 
  Scenario:  Validate Award Details page for InnerBannerWithoutImage Component  - Field visible
-
   And 'InnerBannerWithoutImage_Component_Heading' is visible
   And 'InnerBannerWithoutImage_Component_Dateicon' is visible
   And 'InnerBannerWithoutImage_Component_Date' is visible
@@ -86,7 +82,6 @@ Feature: AwardDetails: Validate SCDA Award details page
 
 
  Scenario: Validate Image banner carousel functionality ( Enable and Disable )
-
   Then 'ImageBanner_Component_card_PreviousBtn' is disabled
   And I click on 'ImageBanner_Component_card_NextBtn'
   And I wait for '1' seconds
