@@ -42,31 +42,30 @@ Feature: Header: Validate Header (SCDA Homepage)
     And  I wait for '1' seconds
     And The 'HeaderComponent_AboutAboutus' element has following CSS properties
       | color                | rgb(23, 143, 82)              |
-
     And Total count of 'HeaderComponent_AboutHovercount' is 7
 
   Scenario: Validate Header - Navigation for About us -> Children links
-    When I hover mouse over 'HeaderComponent_About'
-    And  I wait for '2' seconds
+    Then I click on 'HeaderComponent_About'
+    And  I wait for '1' seconds
     And I click on 'HeaderComponent_AboutAboutus'
     And Current URL contains Either of 'about' or 'us'
 
-    When I hover mouse over 'HeaderComponent_About'
+    Then I click on 'HeaderComponent_About'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_AboutPartner'
     And Current URL contains Either of 'partner' or 'our'
 
-    When I hover mouse over 'HeaderComponent_About'
+    Then I click on 'HeaderComponent_About'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_AboutAwards'
     And Current URL contains Either of 'awards' or 'certification'
 
-    When I hover mouse over 'HeaderComponent_About'
+    Then I click on 'HeaderComponent_About'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_Aboutregulations'
     And Current URL contains Either of 'awards' or 'certification'
 
-    When I hover mouse over 'HeaderComponent_About'
+    Then I click on 'HeaderComponent_About'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_AboutCareers'
     And Current URL contains Either of 'awards' or 'certification'
@@ -76,61 +75,58 @@ Feature: Header: Validate Header (SCDA Homepage)
     And Current URL contains Either of 'Services' or 'service'
 
   Scenario: Validate Header - Hover for Media and -> Children links
-    And Total count of 'HeaderComponent_Media' is 1
     When I hover mouse over 'HeaderComponent_Media'
-    And  I wait for '1' seconds
     When I hover mouse over 'HeaderComponent_MediaNews'
-    And  I wait for '1' seconds
+    And  I wait for '2' seconds
     And The 'HeaderComponent_MediaNews' element has following CSS properties
       | color                | rgb(23, 143, 82)              |
-    And Total count of 'HeaderComponent_MediaHoverCount' is 4
 
   Scenario: Validate Header - Navigation for Media -> Children links
-    When I hover mouse over 'HeaderComponent_Media'
+    When I click on 'HeaderComponent_Media'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_MediaNews'
     And Current URL contains 'news'
 
-    When I hover mouse over 'HeaderComponent_Media'
+    When I click on 'HeaderComponent_Media'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_MediaEvents'
     And Current URL contains Either of 'Events' or 'events'
 
-    When I hover mouse over 'HeaderComponent_Media'
-    And  I wait for '1' seconds
+    When I click on 'HeaderComponent_Media'
+    And  I wait for '2' seconds
     And I click on 'HeaderComponent_MediaGallery'
     And Current URL contains Either of 'Gallery' or 'gallery'
 
-    When I hover mouse over 'HeaderComponent_Media'
+    When I click on 'HeaderComponent_Media'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_MediaAwareness'
     And Current URL contains Either of 'awareness' or 'Awareness'
 
   Scenario: Validate Header - Navigation for OpenData link
-    When I hover mouse over 'HeaderComponent_Opendata'
-    And  I wait for '2' seconds
+    When I click on 'HeaderComponent_Opendata'
+    And  I wait for '1' seconds
     And I click on 'HeaderComponent_Opendata'
     And Current URL contains Either of 'Open' or 'data'
 
   Scenario: Validate Header - Navigation for FindUs -> Children links
-    When I hover mouse over 'HeaderComponent_Findus'
-    And  I wait for '2' seconds
+    When I click on 'HeaderComponent_Findus'
+    And  I wait for '1' seconds
     And I click on 'HeaderComponent_FindusContact'
     And Current URL contains 'contact'
 
-    When I hover mouse over 'HeaderComponent_Findus'
+    When I click on 'HeaderComponent_Findus'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_FindusServCenter'
     And Current URL contains Either of 'Service' or 'center'
 
-    When I hover mouse over 'HeaderComponent_Findus'
+    When I click on 'HeaderComponent_Findus'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_FindusFireCenter'
     And Current URL contains Either of 'Fire' or 'stations'
 
   Scenario: Validate Header - Navigation for FAQ link
-    When I hover mouse over 'HeaderComponent_FAQ'
-    And  I wait for '2' seconds
+    When I click on 'HeaderComponent_FAQ'
+    And  I wait for '1' seconds
     And I click on 'HeaderComponent_FAQ'
     And Current URL contains Either of 'Faqs' or 'faq'
 

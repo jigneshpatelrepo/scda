@@ -1,0 +1,56 @@
+###Contact us form
+ContactUs_Form_Component: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]
+ContactUs_Form_Component_heading: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//h2
+ContactUs_Form_Component_Subject: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//button[@id='Subjects-button']
+ContactUs_Form_Component_Subject_DDitem1: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//ul//li[1]
+ContactUs_Form_Component_Subject_DDitem1_Btn: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//ul//li[1]/button
+ContactUs_Form_Component_Subject_DDitem1_Btn_span: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//ul//li[1]/button/span
+ContactUs_Form_Component_FirstName: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='firstName']
+ContactUs_Form_Component_LastName: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='lastName']
+ContactUs_Form_Component_Email: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='email']
+ContactUs_Form_Component_Phone: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='phoneNumber']
+ContactUs_Form_Component_Message: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//textarea[@id='message']
+ContactUs_Form_Component_Submit: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//button[@type='submit']
+ContactUs_Form_Component_Img: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//img
+
+ContactUs_Form_Component_ThankYou: XPATH=//h3 | //p[contains(text(),'appreciate')]
+### form validation message
+ContactUs_Form_Component_Subject_ValidionMsg: XPATH=//button[@id='Subjects-button']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_Firstname_ValidionMsg: XPATH=//input[@id='firstName']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_Lastname_ValidionMsg: XPATH=//input[@id='lastName']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_email_ValidionMsg: XPATH=//input[@id='email']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_phone_ValidionMsg: XPATH=//input[@id='phoneNumber']//ancestor::div[@data-error='fieldError']//div[contains(@title,'digits')]
+ContactUs_Form_Component_Message_ValidionMsg: XPATH=//textarea[@id='message']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required ')]
+
+ContactUs_Form_Component_email_Regex: XPATH=//input[@id='email']//ancestor::div[@data-error='fieldError']//div[contains(@title,'valid email')]
+ContactUs_Form_Component_Phone_Regex: XPATH=//input[@id='phoneNumber']//ancestor::div[@data-error='fieldError']//div[contains(@title,'10 digits')]
+
+###2ctabox
+TwoCtaBox_component: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]
+TwoCtaBox_component_Card1Title: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'false')]//div[contains(@data-automation, 'twoCTABox-title')]
+TwoCtaBox_component_Card1Desc: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'false')]//div[contains(@data-automation, 'description')]/p
+TwoCtaBox_component_Card1Cta: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a
+TwoCtaBox_component_Card1CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='Visit Fire Stations']
+
+TwoCtaBox_component_Card2Title: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'true')]//div[contains(@data-automation, 'twoCTABox-title')]
+TwoCtaBox_component_Card2Desc: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'true')]//div[contains(@data-automation, 'description')]/p
+TwoCtaBox_component_Card2Cta: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a
+TwoCtaBox_component_Card2CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='Visit FAQs']
+
+###contact info
+ContactInfo_component: XPATH=//div[contains(@data-automation, 'Contact')]
+ContactInfo_component_Working_Hours: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Working')]
+ContactInfo_component_Working_Hours_time: XPATH=//div[contains(@data-automation, 'Contact')]//p[contains(text(), 'PM')]
+ContactInfo_component_logo: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Working')]//parent::div//parent::div//span[contains(@class, 'svg')]
+
+ContactInfo_component_Address: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Address')]
+ContactInfo_component_Addresslink: XPATH=//div[contains(@data-automation, 'Contact')]//a[contains(text(), 'Civil')]
+ContactInfo_component_Address_logo: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Address')]//parent::div//parent::div//span[contains(@class, 'svg')]
+
+ContactInfo_component_Phone: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Phone')]
+ContactInfo_component_PhoneNo: XPATH=//div[contains(@data-automation, 'Contact')]//a[contains(@href, 'tel')]
+ContactInfo_component_Phone_logo: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Phone')]//parent::div//parent::div//span[contains(@class, 'svg')]
+
+ContactInfo_component_Email: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Email')]
+ContactInfo_component_Email_Address: XPATH=//div[contains(@data-automation, 'Contact')]//a[contains(@href, 'mail')]
+ContactInfo_component_EmailAddress_logo: XPATH=//div[contains(@data-automation, 'Contact')]//span[contains(text(), 'Email')]//parent::div//parent::div//span[contains(@class, 'svg')]

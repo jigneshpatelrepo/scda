@@ -13,3 +13,4 @@ FixedBarComponent_socialshare: XPATH=*//div[contains(@data-automation,'FixedBar'
 FixedBarComponent_blackbar: XPATH=//div[contains(@data-automation,'FixedBar')]//div[contains(@class,'flex gap-8')]
 FooterComponentDisclaimer: XPATH=//ul[@data-automation='footer-legal-links']/li[1]/a
 HeaderComponent_leftlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D02730E9FFC83B61429F050D61BF04ED6')]
+HeaderComponent_Rightlogo: XPATH=//header[contains(@data-automation,'Header')]//img[contains(@src,'3D2E7582F15F195BEB3515D04118315E59')]
