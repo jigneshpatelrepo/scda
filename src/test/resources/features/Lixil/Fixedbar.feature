@@ -79,6 +79,6 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
     And I wait for '1' seconds
     And The 'class' attribute of 'FixedBarComponent_socialshare' element contains 'hover'
     And The 'class' attribute of 'FixedBarComponent_blackbar' element do not contains 'bg-primary-400 border-b-1 border-neutral-500'
-    And I scroll to 'HeaderComponent_leftlogo'
+    And I scroll to 'HeaderComponent_Rightlogo'
     And I wait for '5' seconds
     And The 'class' attribute of 'FixedBarComponent_blackbar' element contains 'gap-8'

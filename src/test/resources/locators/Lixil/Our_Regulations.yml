@@ -11,6 +11,7 @@ DropDownFilterWithCards_Component_DD_item3_Cb: XPATH=//div[contains(@data-automa
 ##carddetails
 DropDownFilterWithCards_Component_Allcards: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]
 DropDownFilterWithCards_Component_Allcards_Hover: XPATH=//div[contains(@data-automation,'filter-card-list')]//div[contains(@class,'col-span-full md:col-span-6')]/div
+DropDownFilterWithCards_Component_Allcards_Hover2: XPATH=//div[contains(@data-automation,'filter-card-list')]//div[contains(@class,'col-span-full md:col-span-6')]/div//h4/parent::a
 DropDownFilterWithCards_Component_Heading: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//h4
 DropDownFilterWithCards_Component_Desc: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//p
 DropDownFilterWithCards_Component_Btn: XPATH=//div[contains(@data-automation,'DropDownFilterWithCards')]//div[contains(@class,'col-span-full md:col-span-6')]//span//parent::a

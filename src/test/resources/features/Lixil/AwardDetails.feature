@@ -12,6 +12,7 @@ Feature: AwardDetails: Validate SCDA Award details page
  Scenario: Validate Award Details page component  - Visibility
   #page has breadcrumb,innerbanner and imagebanner component
   Then I navigate to 'https://dev-sdd.ishj.ae/en/about/our-awards-and-certifications/award-detail-1'
+  And I refresh the current page
     And 'Breadcrumb_Component' is visible
     And 'InnerBannerWithoutImage_Component' is visible
     And 'ImageBanner_Component' is visible

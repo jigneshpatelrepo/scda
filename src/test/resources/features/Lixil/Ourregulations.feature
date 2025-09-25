@@ -16,25 +16,25 @@ Scenario: Validate Security for Page opening
   And 'DropDownFilterWithCards_Component_Allcards' is visible
 
  Scenario: Validate Our regulation and Standard page  - Filter Functionality - Single filter
-  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 7
+  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 9
   Then The 'aria-selected' attribute of 'DropDownFilterWithCards_Component_DD_item1_Cb' element contains 'true'
   Then I click on 'DropDownFilterWithCards_Component_DD'
   Then I click on 'DropDownFilterWithCards_Component_DD_item2'
   And I wait for '2' seconds
-  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 2
+  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 3
   And I click on 'DropDownFilterWithCards_Component_Loadmore' if available
 
  Scenario: Validate Our regulation and Standard page  - Filter Functionality - Multiple filter
   Then I click on 'DropDownFilterWithCards_Component_DD'
   Then I click on 'DropDownFilterWithCards_Component_DD_item3'
   And I wait for '2' seconds
-  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 4
+  And Total count of 'DropDownFilterWithCards_Component_Allcards' is 5
   And '1 more tags' text is visible in test 'DropDownFilterWithCards_Component_plusonetext'
 
  Scenario: Validate Our regulation and Standard page  - Hover Functionality on Card
   Then I hover mouse over 'DropDownFilterWithCards_Component_Allcards_Hover'
   And I wait for '2' seconds
-  Then The 'class' attribute of 'DropDownFilterWithCards_Component_Allcards_Hover' element contains 'active-cta'
+  Then The 'class' attribute of 'DropDownFilterWithCards_Component_Allcards_Hover2' element contains 'underline'
 
  Scenario: Validate Our regulation and Standard page  - Card field Visibility
   And 'DropDownFilterWithCards_Component_Allcards' is visible
