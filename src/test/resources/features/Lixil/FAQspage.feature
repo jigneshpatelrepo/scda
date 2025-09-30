@@ -88,5 +88,5 @@ Feature: FAQs_page: Validate FAQ (SCDA Homepage)
  Scenario: Validate FAQ - Search Functionality
   And I enter 'why' into 'FAQ_searchInput' field
   And I wait for '1' seconds
-  And Total count of 'FAQ_countafterclickingonLoadmore' is 6
+  And Total count of 'FAQ_countafterclickingonLoadmore' is 22
 
