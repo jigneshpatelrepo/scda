@@ -85,43 +85,51 @@ Feature: Header: Validate Header (SCDA Homepage)
     When I click on 'HeaderComponent_Media'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_MediaNews'
+    And  I wait for '2' seconds
     And Current URL contains 'news'
 
     When I click on 'HeaderComponent_Media'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_MediaEvents'
+    And  I wait for '2' seconds
     And Current URL contains Either of 'Events' or 'events'
 
     When I click on 'HeaderComponent_Media'
     And  I wait for '2' seconds
     And I click on 'HeaderComponent_MediaGallery'
+    And  I wait for '2' seconds
     And Current URL contains Either of 'Gallery' or 'gallery'
 
     When I click on 'HeaderComponent_Media'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_MediaAwareness'
+    And  I wait for '2' seconds
     And Current URL contains Either of 'awareness' or 'Awareness'
 
   Scenario: Validate Header - Navigation for OpenData link
     When I click on 'HeaderComponent_Opendata'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_Opendata'
+    And  I wait for '2' seconds
     And Current URL contains Either of 'Open' or 'data'
 
   Scenario: Validate Header - Navigation for FindUs -> Children links
     When I click on 'HeaderComponent_Findus'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_FindusContact'
+    And  I wait for '2' seconds
     And Current URL contains 'contact'
 
     When I click on 'HeaderComponent_Findus'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_FindusServCenter'
+    And  I wait for '2' seconds
     And Current URL contains Either of 'Service' or 'center'
 
     When I click on 'HeaderComponent_Findus'
     And  I wait for '1' seconds
     And I click on 'HeaderComponent_FindusFireCenter'
+    And  I wait for '2' seconds
     And Current URL contains Either of 'Fire' or 'stations'
 
   Scenario: Validate Header - Navigation for FAQ link
