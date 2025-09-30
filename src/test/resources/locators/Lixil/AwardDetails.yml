@@ -11,7 +11,7 @@ InnerBannerWithoutImage_Component_Heading: XPATH=//div[@data-component='InnerBan
 InnerBannerWithoutImage_Component_Dateicon: XPATH=//div[@data-component='InnerBannerWithoutImage']//parent::div//div[contains(@class,'bg-primary-400')]//span[contains(normalize-space(.), '25')]/preceding-sibling::span
 InnerBannerWithoutImage_Component_Date: XPATH=//div[@data-component='InnerBannerWithoutImage']//parent::div//div[contains(@class,'bg-primary-400')]//span[contains(normalize-space(.), '25')]
 InnerBannerWithoutImage_Component_Tick_icon: XPATH=//span[contains(normalize-space(.), 'Award')]//parent::div//parent::div//span[contains(@class,'svg')]
-InnerBannerWithoutImage_Component_Awarded_by: XPATH=//span[contains(normalize-space(.), 'Award')]
+InnerBannerWithoutImage_Component_Awarded_by: XPATH=//span[contains(normalize-space(text()), 'Awarded by')]
 InnerBannerWithoutImage_Component_AwardName: XPATH=//span[contains(normalize-space(.), 'Award')]//parent::div//span[2]
 
 ImageBanner_Component: XPATH=//div[@data-component='ImageBanner']

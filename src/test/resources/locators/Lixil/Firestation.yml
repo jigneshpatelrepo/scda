@@ -1,0 +1,10 @@
+###Contact us form
+ServiceCenter_Component: XPATH=//iframe
+#ServiceCenter_Component_Common_heading: XPATH=//div[@id='root']//div[@class='section-title']
+#ServiceCenter_Component_heading_EachProperty_title: XPATH=//div[@id='root']//div[@class='records-div']//div[@class='center-card ']//div[@class='record-title']
+#ServiceCenter_Component_heading_EachCard: XPATH=//div[@id='root']//div[@class='records-div']//div[@class='center-card ']//div[@class='record-title']
+#ServiceCenter_Component_Icon: XPATH=//div[@id='root']//div[@class='records-div']//div[@class='center-card ']//div[@class='row-item']//img[contains(@src,'/static/media/')]
+#ServiceCenter_Component_Name: XPATH=//div[@id='root']//div[@class='records-div']//div[@class='center-card ']//div[@class='row-item']//img[contains(@src,'/static/media/')]//following-sibling::span
+#ServiceCenter_Component_Phone: XPATH=//div[@id='root']//div[@class='records-div']//div[@class='center-card ']//div[@class='row-item']//img[contains(@src,'/static/media/')]//following-sibling::span[contains(text(),'+')]
+#ServiceCenter_Component_LocationName: XPATH=//div[@id='root']//div[@class='records-div']//div[@class='center-card ']//div[@class='row-item']//img[contains(@src,'/static/media/')]/following-sibling::span[     contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'abu dhabi')     or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'al ain')     or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'al dhafra') ]
+#ServiceCenter_Component_Map: XPATH=//canvas
