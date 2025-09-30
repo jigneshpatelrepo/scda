@@ -26,7 +26,7 @@ FooterComponent_TermsandCondition: XPATH=//ul[@data-automation='footer-legal-lin
 FooterComponent_MonthltVisitors: XPATH=//div[@data-automation='footer-copyright']//p[1]
 FooterComponent_Lastupdated: XPATH=//div[@data-automation='footer-copyright']//p[2]
 FooterComponent_allrightreserved: XPATH=//div[@data-automation='footer-copyright']//p[3]
-FooterComponent_Followus: XPATH=//div[@data-automation='footer-social']//p[1]
+FooterComponent_Followus: XPATH=//div[@data-automation='footer-social']
 
 
 

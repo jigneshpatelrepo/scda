@@ -57,6 +57,8 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
       | Color                     | rgb(0, 0, 0)           |
 
   Scenario: Validate FixedBar - Hover and UI verification
+    And I refresh the current page
+    And I wait for '2' seconds
     And I hover mouse over 'FixedBarComponent_Emergency'
     And I wait for '2' seconds
     And The 'FixedBarComponent_Feedback' element has following CSS properties

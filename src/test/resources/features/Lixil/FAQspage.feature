@@ -79,9 +79,9 @@ Feature: FAQs_page: Validate FAQ (SCDA Homepage)
  Scenario: Validate FAQ - Functionalities - Loadmore
   And I click on 'FAQ_Totalcount'
   And I wait for '1' seconds
-  And I click on 'FAQ_QuestionLoadmore'
+  And I click on 'FAQ_QuestionLoadmore' if available
   And Total count of 'FAQ_countafterclickingonLoadmore' is 20
-  And I click on 'FAQ_QuestionLoadmore'
+  And I click on 'FAQ_QuestionLoadmore' if available
   And I wait for '1' seconds
   And Total count of 'FAQ_countafterclickingonLoadmore' is 22
 

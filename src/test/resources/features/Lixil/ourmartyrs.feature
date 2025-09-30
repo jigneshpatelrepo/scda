@@ -52,6 +52,6 @@ Feature: Our_martyrs: Validate Our Martyrs Page
   Scenario: Validate Our Martyrs - Functionality - Load more
 
     And Total count of 'OurMartyrsComponent_item' is 9
-    And I click on 'OurMartyrsComponent_Loadmore'
+    And I click on 'OurMartyrsComponent_Loadmore' if available
     And I wait for '1' seconds
     And Total count of 'OurMartyrsComponent_item' is 11

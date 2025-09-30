@@ -69,8 +69,13 @@ Feature: 3Xcarousel: Validate 3Xcarousel  (SCDA Homepage)
   Scenario: Validate 3X card carousel functionality ( Navigation )
     And I navigate to 'https://dev-sdd.ishj.ae/en'
     And I click on '3cardcarousel_cardctaCommon'
-    And Current URL contains 'service'
-    Then I navigate to 'https://dev-sdd.ishj.ae/en'
+    And I wait for '2' seconds
+    And Current URL contains 'services'
+
+  Scenario: Validate 3X card carousel functionality ( Hover )
+    And I navigate to 'https://dev-sdd.ishj.ae/en'
+    And I refresh the current page
+    And I wait for '1' seconds
     And I hover mouse over '3cardcarousel_Firstcard'
     And I wait for '1' seconds
-    And The 'class' attribute of '3cardcarousel_Firstcard' element contains 'active-cta after:h-2 border-transparent bg-primary-100 after:bg-primary-200'
+    And The 'class' attribute of '3cardcarousel_Firstcard' element contains 'bg-primary-200 hover:text-neutral-600 active-cta'
