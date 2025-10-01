@@ -30,12 +30,12 @@ TwoCtaBox_component: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJ
 TwoCtaBox_component_Card1Title: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'false')]//div[contains(@data-automation, 'twoCTABox-title')]
 TwoCtaBox_component_Card1Desc: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'false')]//div[contains(@data-automation, 'description')]/p
 TwoCtaBox_component_Card1Cta: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a
-TwoCtaBox_component_Card1CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='Visit Fire Stations']
+TwoCtaBox_component_Card1CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='Services']
 
 TwoCtaBox_component_Card2Title: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'true')]//div[contains(@data-automation, 'twoCTABox-title')]
 TwoCtaBox_component_Card2Desc: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'true')]//div[contains(@data-automation, 'description')]/p
 TwoCtaBox_component_Card2Cta: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a
-TwoCtaBox_component_Card2CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='Visit FAQs']
+TwoCtaBox_component_Card2CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='FAQs']
 
 ###contact info
 ContactInfo_component: XPATH=//div[contains(@data-automation, 'Contact')]

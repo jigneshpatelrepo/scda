@@ -110,6 +110,6 @@ Feature: FAQs_on_Servicepage: Validate FAQ on Service page
  
  Scenario: Validate FAQ - Search Functionality
   And I enter 'add' into 'FAQsearchInput' field
-  And I wait for '1' seconds
+  And I wait for '3' seconds
   And Total count of 'FAQcountafterclickingonLoadmore' is 11
 

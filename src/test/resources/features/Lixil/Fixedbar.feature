@@ -57,6 +57,8 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
       | Color                     | rgb(0, 0, 0)           |
 
   Scenario: Validate FixedBar - Hover and UI verification
+    And I refresh the current page
+    And I wait for '2' seconds
     And I hover mouse over 'FixedBarComponent_Emergency'
     And I wait for '2' seconds
     And The 'FixedBarComponent_Feedback' element has following CSS properties
@@ -67,12 +69,7 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
       | background-color                |       rgb(0, 0, 0)    |
 
   Scenario: Validate Fixed Bar - Functionality
-    And I click on 'FixedBarComponent_Feedback'
-    And I wait for '2' seconds
-    And I switch browser
-    And Current URL contains 'login'
-    And I switch browser
-    And I wait for '2' seconds
+
     And The 'href' attribute of 'FixedBarComponent_Callcenter' element contains 'tel:65566667'
     And The 'href' attribute of 'FixedBarComponent_Emergency' element contains 'tel:997'
     And I click on 'FixedBarComponent_socialshare'
@@ -82,3 +79,10 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
     And I scroll to 'HeaderComponent_Rightlogo'
     And I wait for '5' seconds
     And The 'class' attribute of 'FixedBarComponent_blackbar' element contains 'gap-8'
+    And I refresh the current page
+    And I wait for '2' seconds
+    And I click on 'FixedBarComponent_Feedback'
+    And I wait for '2' seconds
+    And I switch browser
+    And Current URL contains 'login'
+    And I switch browser
