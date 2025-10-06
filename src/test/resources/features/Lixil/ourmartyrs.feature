@@ -22,25 +22,25 @@ Feature: Our_martyrs: Validate Our Martyrs Page
   Scenario: Validate Our Martyrs UI (Font size,family and weight,Letter spacing,Line height)
 
     And The 'OurMartyrsComponent_Title' element has following CSS properties
-      | font-size                 | 24px                         |
-      | line-height               | 32px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-size                 | 22px                         |
+      | line-height               | 36px                         |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-      | letter-spacing            | -0.48px                      |
+      | letter-spacing            | normal                       |
       | Color                     | rgb(0, 0, 0)                 |
 
     And The 'OurMartyrsComponent_Date' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               |  Inter, "Inter Fallback"     |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
+      | letter-spacing            | 0.2px                        |
 
     And The 'OurMartyrsComponent_Designation' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | letter-spacing            | normal                       |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            | 0.2px                        |
       | font-weight               | 500                          |
 
   Scenario: Validate Our Martyrs Hover on image

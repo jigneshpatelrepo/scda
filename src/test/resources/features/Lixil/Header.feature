@@ -11,7 +11,6 @@ Feature: Header: Validate Header (SCDA Homepage)
     And I wait for '3' seconds
 
   Scenario: Validate Header - Visibility of All links and Logo
-#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
     And 'HeaderComponent' component exists on the page
     And I scroll to 'HeaderComponent'
     And 'HeaderComponent_Home' is visible
@@ -79,7 +78,7 @@ Feature: Header: Validate Header (SCDA Homepage)
     When I hover mouse over 'HeaderComponent_MediaNews'
     And  I wait for '2' seconds
     And The 'HeaderComponent_MediaNews' element has following CSS properties
-      | color                | rgb(23, 143, 82)              |
+      | color                | rgb(23, 143, 82)      |
 
   Scenario: Validate Header - Navigation for Media -> Children links
     When I click on 'HeaderComponent_Media'
@@ -168,21 +167,46 @@ Feature: Header: Validate Header (SCDA Homepage)
     And I click on 'HeaderComponent_Search'
     And I click on 'HeaderComponent_SearchXbtn'
 
+  Scenario: Validate Header - UI (Font size,family and weight,Letter spacing,Line height)
 
-#  Scenario: Validate Header - UI (Font size,family and weight,Letter spacing,Line height)
+    And The 'HeaderComponent_Home_span' element has following CSS properties
+      | font-size                 | 14px                         |
+      | line-height               | 24px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |
 
-#
-#    And The 'FooterComponentLeftlogo' element has following CSS properties
-#      | width                | 131px                         |
-#      | height               | 198px                         |
-#
-#    And The 'FooterComponentRightlogo' element has following CSS properties
-#      | width                | 152px                         |
-#      | height               | 39.0375px                         |
+    And The 'HeaderComponent_About' element has following CSS properties
+      | font-size                 | 14px                         |
+      | line-height               | 24px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |
 
+    And The 'HeaderComponent_AboutAboutus' element has following CSS properties
+      | font-size                 | 12px                         |
+      | line-height               | 14px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |
 
+    And The 'HeaderComponent_AboutMartyrs' element has following CSS properties
+      | font-size                 | 12px                         |
+      | line-height               | 14px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |
 
+    And The 'HeaderComponent_MediaNews' element has following CSS properties
+      | font-size                 | 12px                         |
+      | line-height               | 14px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |
 
+    And The 'HeaderComponent_MediaEvents' element has following CSS properties
+      | font-size                 | 12px                         |
+      | line-height               | 14px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |
 
-
-
+    And The 'HeaderComponent_Search_Span' element has following CSS properties
+      | font-size                 | 12px                         |
+      | line-height               | 14px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | letter-spacing            |     0.2px                    |

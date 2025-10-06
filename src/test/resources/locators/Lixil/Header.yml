@@ -2,7 +2,9 @@
 ###Header
 HeaderComponent: XPATH=//header[contains(@data-automation,'Header')]
 HeaderComponent_Home: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Home')]//ancestor::li
+HeaderComponent_Home_span: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'Home')]//ancestor::li//a/span
 HeaderComponent_About: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li/button//span[contains(text(),'About')]
+HeaderComponent_About_Span: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li/button//span[contains(text(),'About')]
 HeaderComponent_AboutHovercount: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[contains(text(),'About')]//ancestor::li//li
   
 HeaderComponent_AboutAboutus: XPATH=//header[contains(@data-automation,'Header')]//ul[contains(@data-automation,'navigation')]//span[(text()='About Us')]//ancestor::li//span[contains(text(),'About')]/ancestor::a
@@ -41,5 +43,6 @@ HeaderComponent_AccessIcon: XPATH=//header[contains(@data-automation,'Header')]/
 HeaderComponent_Theme: XPATH=//header[contains(@data-automation,'Header')]//button[@title='Toggle theme']
 HeaderComponent_BGcolor: XPATH=//html
 HeaderComponent_Search: XPATH=//header[contains(@data-automation,'Header')]//span[contains(text(),'Search')]//ancestor::button
+HeaderComponent_Search_Span: XPATH=//header[contains(@data-automation,'Header')]//span[contains(text(),'Search')]
 HeaderComponent_SearchXbtn: XPATH=//header[contains(@data-automation,'Header')]//input[@placeholder='Search']//parent::div/following-sibling::button
 

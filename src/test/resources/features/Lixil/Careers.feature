@@ -17,15 +17,29 @@ Feature: Careers: Validate ServiceCategory Page
     And 'CardsWithoutFilter_Component_Desc' is visible
     And 'CardsWithoutFilter_Cta' is visible
 
-#  Scenario: Validate ServiceCategory UI (Font size,family and weight,Letter spacing,Line height)
-#
-#    And The 'AwardsCertiComponent_itemTitle' element has following CSS properties
-#      | font-size                 | 24px                         |
-#      | line-height               | 32px                         |
-#      | font-family               | Tajawal, "Tajawal Fallback"  |
-#      | font-weight               | 400                          |
-#      | letter-spacing            | -0.48px                      |
-#      | Color                     | rgb(0, 0, 0)                 |
+  Scenario: Validate ServiceCategory UI (Font size,family and weight,Letter spacing,Line height)
+
+    And The 'CardsWithoutFilter_Component_title' element has following CSS properties
+      | font-size                 | 22px                         |
+      | line-height               | 36px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | font-weight               | 400                          |
+      | letter-spacing            | normal                       |
+      | Color                     | rgb(0, 0, 0)                 |
+
+    And The 'CardsWithoutFilter_Component_Desc' element has following CSS properties
+      | font-size                 | 14px                         |
+      | line-height               | 24px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | font-weight               | 400                          |
+      | letter-spacing            | 0.2px                        |
+
+    And The 'CardsWithoutFilter_Cta_span' element has following CSS properties
+      | font-size                 | 12px                         |
+      | line-height               | 14px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | font-weight               | 500                          |
+      | letter-spacing            | 0.2px                        |
 
 
   Scenario: Validate Careers Job card Hover

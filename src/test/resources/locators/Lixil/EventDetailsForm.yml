@@ -1,0 +1,26 @@
+###Contact us form
+###Contact us form
+ContactUs_Form_Component: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]
+ContactUs_Form_Component_heading: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//h2
+
+ContactUs_Form_Component_FirstName: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='firstName']
+ContactUs_Form_Component_LastName: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='lastName']
+ContactUs_Form_Component_Email: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='Email']
+ContactUs_Form_Component_Phone: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//input[@id='Telephone']
+ContactUs_Form_Component_NoofAtten: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//button[contains(@id,'AttendeesDropdown')]
+ContactUs_Form_Component_NoofAtten_item1: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//ul//li[1]/button
+ContactUs_Form_Component_NoofAtten_item1_Span: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//ul//li[1]//button/span
+
+ContactUs_Form_Component_Submit: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//button[@type='submit']
+ContactUs_Form_Component_Img: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//img
+
+ContactUs_Form_Component_ThankYou: XPATH=//h3[contains(text(),'Sent') | //p[contains(text(),'appreciate')]
+### form validation message
+ContactUs_Form_Component_Attend_ValidionMsg: XPATH=//button[contains(@id,'AttendeesDropdown')]//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_Firstname_ValidionMsg: XPATH=//input[@id='firstName']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_Lastname_ValidionMsg: XPATH=//input[@id='lastName']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+ContactUs_Form_Component_email_ValidionMsg: XPATH=//input[@id='Email']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
+#ContactUs_Form_Component_phone_ValidionMsg: XPATH=//input[@id='Telephone']//ancestor::div[@data-error='fieldError']//div[contains(@title,'digits')]
+
+ContactUs_Form_Component_email_Regex: XPATH=//input[@id='Email']//ancestor::div[@data-error='fieldError']//div[contains(@title,'valid email')]
+#ContactUs_Form_Component_Phone_Regex: XPATH=//input[@id='phoneNumber']//ancestor::div[@data-error='fieldError']//div[contains(@title,'10 digits')]

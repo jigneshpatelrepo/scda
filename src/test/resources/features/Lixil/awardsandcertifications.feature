@@ -24,31 +24,31 @@ Feature: Awards_and_Certifications: Validate Awards and Certification Page
   Scenario: Validate Awards and certifications UI (Font size,family and weight,Letter spacing,Line height)
 
     And The 'AwardsCertiComponent_itemTitle' element has following CSS properties
-      | font-size                 | 24px                         |
-      | line-height               | 32px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-size                 | 22px                         |
+      | line-height               | 36px                         |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-      | letter-spacing            | -0.48px                      |
+      | letter-spacing            | normal                       |
       | Color                     | rgb(0, 0, 0)                 |
 
     And The 'AwardsCertiComponent_itemdate' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
+      | letter-spacing            | 0.2px                        |
 
     And The 'AwardsCertiComponent_itemMinistry' element has following CSS properties
-      | font-size                 | 16px                         |
+      | font-size                 | 14px                         |
       | line-height               | 24px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | letter-spacing            | normal                       |
+      | font-family               |  Inter, "Inter Fallback"     |
+      | letter-spacing            | 0.2px                        |
 
     And The 'AwardsCertiComponent_itemlinkSpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | letter-spacing            | normal                       |
+      | font-family               |  Inter, "Inter Fallback"     |
+      | letter-spacing            | 0.2px                        |
       | font-weight               | 500                          |
 
   Scenario: Validate Awards and certifications Hover
