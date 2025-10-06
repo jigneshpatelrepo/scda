@@ -23,24 +23,25 @@ Feature: 4XCard_carousel: Validate 4X cardcarousel (SCDA Homepage)
   Scenario: Validate Carouselwith- 4Cards (Awards/Partner) -UI (Font size,family and weight,Letter spacing,Line height)
 
     And The '4cardcarousel_Eyebrow' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
       | letter-spacing            | normal                       |
       | text-transform            | uppercase                    |
     And The '4cardcarousel_Title' element has following CSS properties
-      | font-size                 | 48px                         |
+      | font-size                 | 40px                         |
       | line-height               | 48px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-      | letter-spacing            | -0.48px                      |
+      | letter-spacing            | normal                       |
 
     And The '4cardcarousel_CTAPartnerSpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
+      | letter-spacing            |        0.2px                 |
 
   Scenario: Validate Carouselwith- 4Cards (Awards/Partner) - Functionalities
 
@@ -64,10 +65,11 @@ Feature: 4XCard_carousel: Validate 4X cardcarousel (SCDA Homepage)
     And The '4cardcarousel_ImageforHover' element has following CSS properties
       | background-color            | rgb(230, 243, 236)       |
     And The '4cardcarousel_CTAAwardsSpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
+      | letter-spacing            |        0.2px                 |
 
     And I click on '4cardcarousel_CTAAnchorAwards'
     And Current URL contains 'awards'

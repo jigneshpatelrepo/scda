@@ -20,27 +20,35 @@ Feature: Faqs_Home: Validate Faqs (SCDA Homepage)
   Scenario: Validate FAQ - (Font size,family and weight,Letter spacing,Line height)
 
     And The 'FAQComponent_Eyebrow' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
+      | letter-spacing            |                   0.2px      |
       | text-transform            | uppercase                    |
 
     And The 'FAQComponent_Title' element has following CSS properties
-      | font-size                 | 48px                         |
+      | font-size                 | 40px                         |
       | line-height               | 48px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-      | letter-spacing            | -0.48px                      |
+      | letter-spacing            |      normal                  |
+
+    And The 'FAQComponent_Item1Question' element has following CSS properties
+      | font-size                 | 22px                         |
+      | line-height               | 36px                         |
+      | font-family               | Inter, "Inter Fallback"      |
+      | font-weight               | 400                          |
+      | letter-spacing            |      normal                  |
 
     And The 'FAQComponent_CTASpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
       | padding-left              | 16px                         |
       | padding-right             | 0px                          |
+      | letter-spacing            |                   0.2px      |
 
   Scenario: Validate FAQ- functionality (Expand / collapsed - Navigation)
     And I click on 'FAQComponent_Item1'

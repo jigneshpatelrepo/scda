@@ -29,31 +29,31 @@ Feature: 3Xcarousel: Validate 3Xcarousel  (SCDA Homepage)
   Scenario: Validate 3X card carousel - UI (Font size,family and weight,Letter spacing,Line height)
 
     And The '3cardcarousel_Eyebrow' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"  |
       | font-weight               | 500                          |
       | letter-spacing            |                   normal     |
       | text-transform            | uppercase                    |
 
     And The '3cardcarousel_Heading' element has following CSS properties
-      | font-size                 | 48px                         |
+      | font-size                 | 40px                         |
       | line-height               | 48px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-#       | letter-spacing            |       -1.92px or -0.48px    |
+      | letter-spacing            |      normal                  |
     And The '3cardcarousel_cardtitle' element has following CSS properties
-      | font-size                 | 24px                         |
-      | line-height               | 32px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-size                 | 22px                         |
+      | line-height               | 36px                         |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-      | letter-spacing            |                   -0.48px    |
+      | letter-spacing            |    normal                    |
     And The '3cardcarousel_cardsingletag' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            |        normal                |
+      | letter-spacing            |        0.2px                 |
 
   Scenario: Validate 3X card carousel functionality ( Enable and Disable )
     Then '3cardcarousel_cardPreviousBtn' is disabled

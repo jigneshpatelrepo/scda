@@ -43,68 +43,122 @@ Feature: Footer: Validate Footer (SCDA Homepage)
       | width                | 427px                         |
 
    And The 'FooterComponent_AboutLink' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
-    | Color                     | rgb(180, 180, 180)           |
+    | letter-spacing            |        0.2px                 |
+    | text-transform            | uppercase                    |
 
    And The 'FooterComponent_AboutLinkItem1' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
+    | letter-spacing            |    0.2px                     |
     | Color                     | rgb(255, 255, 255)           |
+     | text-decoration-style    | solid                        |
 
    And The 'FooterComponent_FindUs' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
-    | Color                     | rgb(180, 180, 180)           |
+    | letter-spacing            |        0.2px                 |
+    | text-transform            | uppercase                    |
 
    And The 'FooterComponent_FindusItem1' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
+    | letter-spacing            |    0.2px                     |
     | Color                     | rgb(255, 255, 255)           |
+    | text-decoration-style    | solid                         |
 
    And The 'FooterComponent_Media' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
-    | Color                     | rgb(180, 180, 180)           |
+    | letter-spacing            |        0.2px                 |
+    | text-transform            | uppercase                    |
 
    And The 'FooterComponent_MediaItem1' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               |Inter, "Inter Fallback"       |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
+    | letter-spacing            |    0.2px                     |
     | Color                     | rgb(255, 255, 255)           |
+    | text-decoration-style    | solid                         |
 
    And The 'FooterComponent_QuickLInks' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
-    | Color                     | rgb(180, 180, 180)           |
+    | letter-spacing            |        0.2px                 |
+    | text-transform            | uppercase                    |
 
    And The 'FooterComponent_QuicklinksItem1' element has following CSS properties
-    | font-size                 | 14px                         |
+    | font-size                 | 12px                         |
     | line-height               | 16px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 500                          |
-    | letter-spacing            | normal                       |
+    | letter-spacing            |    0.2px                     |
     | Color                     | rgb(255, 255, 255)           |
+    | text-decoration-style     | solid                        |
+
+ Scenario: Validate Footer - Newsletter and Working hours UI (Font size,family and weight,Letter spacing,Line height)
+
+  And The 'FooterComponent_JoinNewsletter' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            |    0.2px                     |
+   | text-decoration-style     | solid                        |
+
+  And The 'FooterComponent_WorkingHrs' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            |    0.2px                     |
+   | text-decoration-style     | solid                        |
+
+  And The 'FooterComponent_Disclaimer' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            |    0.2px                     |
+   | text-decoration-style     | solid                        |
+
+  And The 'FooterComponent_Privacy' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            |    0.2px                     |
+   | text-decoration-style     | solid                        |
+
+  And The 'FooterComponent_MonthltVisitors' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            |    0.2px                     |
+   | text-decoration-style     | solid                        |
+
+  And The 'FooterComponent_Lastupdated' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            |    0.2px                     |
+   | text-decoration-style     | solid                        |
 
  Scenario: Validate Footer - Functionality
   And 'alphanumerical' text is visible in 'FooterComponent_Lastupdated'

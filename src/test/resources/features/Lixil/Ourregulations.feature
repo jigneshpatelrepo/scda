@@ -15,6 +15,35 @@ Scenario: Validate Security for Page opening
   And 'DropDownFilterWithCards_Component_DD' is visible
   And 'DropDownFilterWithCards_Component_Allcards' is visible
 
+ Scenario: Validate Our regulation and Standard page  - card - UI (Font size,family and weight,Letter spacing,Line height)
+   And The 'DropDownFilterWithCards_Component_Heading' element has following CSS properties
+   | font-size                 | 22px                         |
+   | line-height               | 36px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 400                          |
+   | letter-spacing            | normal                       |
+
+  And The 'DropDownFilterWithCards_Component_Desc' element has following CSS properties
+   | font-size                 | 14px                         |
+   | line-height               | 24px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 400                          |
+   | letter-spacing            | 0.2px                        |
+
+  And The 'DropDownFilterWithCards_Component_Btn_Span' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 14px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+
+  And The 'DropDownFilterWithCards_Component_FormatandSize' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+
  Scenario: Validate Our regulation and Standard page  - Filter Functionality - Single filter
   And Total count of 'DropDownFilterWithCards_Component_Allcards' is 9
   Then The 'aria-selected' attribute of 'DropDownFilterWithCards_Component_DD_item1_Cb' element contains 'true'
@@ -30,6 +59,7 @@ Scenario: Validate Security for Page opening
   And I wait for '2' seconds
   And Total count of 'DropDownFilterWithCards_Component_Allcards' is 5
   And '1 more tags' text is visible in test 'DropDownFilterWithCards_Component_plusonetext'
+  And I click on 'DropDownFilterWithCards_Component_Loadmore' if available
 
  Scenario: Validate Our regulation and Standard page  - Hover Functionality on Card
   Then I hover mouse over 'DropDownFilterWithCards_Component_Allcards_Hover'
@@ -49,29 +79,5 @@ Scenario: Validate Security for Page opening
   And I wait for '5' seconds
   And I press 'esc' key on page
   And I click on 'Advancebutton' if available
-  And  I click on 'Advancebuttonproceed' if available
+  And I click on 'Advancebuttonproceed' if available
   And I wait for '1' seconds
-
- Scenario: Validate Our regulation and Standard page  - card - UI (Font size,family and weight,Letter spacing,Line height)
-  Then I navigate to 'https://dev-sdd.ishj.ae/en/about/our-regulations-and-standards'
-
-  And The 'DropDownFilterWithCards_Component_Heading' element has following CSS properties
-   | font-size                 | 24px                         |
-   | line-height               | 32px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                       |
-
-  And The 'DropDownFilterWithCards_Component_Desc' element has following CSS properties
-   | font-size                 | 16px                         |
-   | line-height               | 24px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
-
-  And The 'DropDownFilterWithCards_Component_Btn' element has following CSS properties
-   | font-size                 | 16px                         |
-   | line-height               | 24px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | font-weight               | 400                          |
-   | letter-spacing            | normal                       |

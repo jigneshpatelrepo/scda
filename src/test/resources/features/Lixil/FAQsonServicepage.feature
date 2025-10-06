@@ -1,8 +1,6 @@
 @test @FaqsOnservicepage @FAQs
 Feature: FAQs_on_Servicepage: Validate FAQ on Service page
-
   @clearcookies
-
  Scenario: Validate Security for Page opening
    Then I navigate to 'https://dev-sdd.ishj.ae/en/'
    And I wait for '3' seconds
