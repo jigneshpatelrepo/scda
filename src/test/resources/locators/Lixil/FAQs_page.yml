@@ -13,4 +13,5 @@ FAQ_Item1: XPATH=//div[contains(@data-component,'faq')]//button
 FAQ_Question1Item1: XPATH=//div[contains(@data-component,'faq')]//button//h3
 
 FAQ_QuestionLoadmore: XPATH=//section[@data-component='TabsWithFilters']//section//span[(text()='Load More')]/ancestor::button
+FAQ_QuestionLoadmore_Span: XPATH=//section[@data-component='TabsWithFilters']//section//span[(text()='Load More')]/ancestor::button//span[(text()='Load More')]
 FAQ_countafterclickingonLoadmore: XPATH=//section[@data-component='TabsWithFilters']//div[contains(@aria-label,'Showing')]/div

@@ -21,57 +21,60 @@ Feature: FAQs_on_Servicepage: Validate FAQ on Service page
  Scenario: Validate Service page for FAQ's - UI (Font size,family and weight,Letter spacing,Line height)
 
    And The 'FAQTTitleOnTop' element has following CSS properties
-    | font-size                 | 24px                         |
-    | line-height               | 32px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-size                 | 22px                         |
+    | line-height               | 36px                         |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 400                          |
-    | letter-spacing            | -0.48px                      |
+    | letter-spacing            | normal                       |
+    | color                     | rgb(0, 0, 0)                 |
 
   And The 'FAQTDescOnTop' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | letter-spacing            | normal                       |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 400                          |
+   | letter-spacing            | 0.2px                        |
+   | color                     | rgb(94, 94, 94)              |
+
   And The 'aria-label' attribute of 'FAQTotalcount' element contains '11'
 
  Scenario: Validate FAQ - UI of left side components (Font size,family and weight,Letter spacing,Line height)
 
+  And I click on 'FAQTotalcount'
   And The 'FAQTotalcount' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
-
-  And The 'FAQFilterItem1' element has following CSS properties
-   | font-size                 | 18px                         |
-   | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
+   | color                     | rgb(23, 143, 82)             |
+And The 'class' attribute of 'FAQTotalcount' element contains 'text-primary-300'
 
  Scenario: Validate FAQ - UI of left side components (Font size,family and weight,Letter spacing,Line height)
 
   And The 'FAQItemBoxHeading' element has following CSS properties
-   | font-size                 | 24px                         |
-   | line-height               | 32px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-size                 | 22px                         |
+   | line-height               | 36px                         |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                      |
+   | letter-spacing            | normal                       |
+   | color                     | rgb(0, 0, 0)                 |
 
   And The 'FAQItemBoxDesc' element has following CSS properties
-   | font-size                 | 16px                         |
+   | font-size                 | 14px                         |
    | line-height               | 24px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
+   | color                     | rgb(94, 94, 94)              |
 
   And The 'FAQItemBoxCTAFont' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 14px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
+   | color                     | rgb(0, 0, 0)                 |
 
  Scenario: Validate FAQ - Functionalities - Count and Navigation
   And I click on 'FAQTotalcount'
@@ -108,6 +111,6 @@ Feature: FAQs_on_Servicepage: Validate FAQ on Service page
  
  Scenario: Validate FAQ - Search Functionality
   And I enter 'add' into 'FAQsearchInput' field
-  And I wait for '3' seconds
-  And Total count of 'FAQcountafterclickingonLoadmore' is 11
+  And I wait for '2' seconds
+  And Total count of 'FAQcountafterclickingonLoadmore' is 3
 

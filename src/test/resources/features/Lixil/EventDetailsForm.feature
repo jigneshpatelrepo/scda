@@ -1,4 +1,4 @@
-@test
+@test @EventDetailsForm
 
 Feature: EventDetailsForm: Validate Event Details - Form
   @clearcookies
@@ -28,6 +28,14 @@ Feature: EventDetailsForm: Validate Event Details - Form
   And 'ContactUs_Form_Component_Lastname_ValidionMsg' is visible
   And 'ContactUs_Form_Component_email_ValidionMsg' is visible
   And 'ContactUs_Form_Component_Attend_ValidionMsg' is visible
+
+  And The 'ContactUs_Form_Component_Firstname_ValidionMsg' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+   |color                      | rgb(219, 59, 33)             |
 
  Scenario: Validate Event Details - Form Component - Specific Validation message Visibility
   And I click on 'ContactUs_Form_Component_Submit'

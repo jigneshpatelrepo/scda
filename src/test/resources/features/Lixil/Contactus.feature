@@ -26,36 +26,37 @@ Feature: Contactus: Validate Contactus page (Two Cta box , Contact Info and Form
   And 'TwoCtaBox_component_Card2Cta' is clickable
   And 'TwoCtaBox_component_Card2CtaSpan' is visible
 
- Scenario: Validate Two CTa Box - UI (Font size,family and weight,Letter spacing,Line height)
+ Scenario: Validate TwoCTa Box - UI (Font size,family and weight,Letter spacing,Line height)
 
    And The 'TwoCtaBox_component_Card1Title' element has following CSS properties
-    | font-size                 | 48px                         |
+    | font-size                 | 40px                         |
     | line-height               | 48px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
-    | font-weight               | 400                          |
-    | letter-spacing            | -0.48px                       |
-
-   And The 'TwoCtaBox_component_Card1Desc' element has following CSS properties
-    | font-size                 | 18px                         |
-    | line-height               | 28px                         |
-    | font-family               | Tajawal, "Tajawal Fallback"  |
+    | font-family               | Inter, "Inter Fallback"      |
     | font-weight               | 400                          |
     | letter-spacing            | normal                       |
 
-  And The 'TwoCtaBox_component_Card1CtaSpan' element has following CSS properties
-   | font-size                 | 14px                         |
-   | line-height               | 14px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   And The 'TwoCtaBox_component_Card1Desc' element has following CSS properties
+    | font-size                 | 16px                         |
+    | line-height               | 28px                         |
+    | font-family               | Inter, "Inter Fallback"      |
+    | font-weight               | 400                          |
+    | letter-spacing            | 0.2px                        |
 
- Scenario: Validate  Two CTa Box - Functionality
+  And The 'TwoCtaBox_component_Card1CtaSpan' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 14px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+
+ Scenario: Validate  TwoCTa Box - Functionality
   And I click on 'TwoCtaBox_component_Card2Cta' if available
-  And Current URL contains 'services'
-  And I navigate to 'https://dev-sdd.ishj.ae/en/find-us/contact-us'
+  And Current URL contains 'news'
 
   ##Contactus form
  Scenario: Validate Contact us Form Component - Visibility
+  And I navigate to 'https://dev-sdd.ishj.ae/en/find-us/contact-us'
+  And I wait for '2' seconds
   And 'ContactUs_Form_Component' component exists on the page
   And I scroll to 'ContactUs_Form_Component'
   And 'ContactUs_Form_Component_heading' is visible
@@ -71,6 +72,15 @@ Feature: Contactus: Validate Contactus page (Two Cta box , Contact Info and Form
   And 'ContactUs_Form_Component_Lastname_ValidionMsg' is visible
   And 'ContactUs_Form_Component_email_ValidionMsg' is visible
   And 'ContactUs_Form_Component_phone_ValidionMsg' is visible
+
+  And The 'ContactUs_Form_Component_Firstname_ValidionMsg' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+   |color                      | rgb(219, 59, 33)             |
+
 
  Scenario: Validate Contact us Form Component - Specific Validation message Visibility
   And I click on 'ContactUs_Form_Component_Submit'
@@ -124,69 +134,68 @@ Feature: Contactus: Validate Contactus page (Two Cta box , Contact Info and Form
  Scenario: Validate ContactInfo Component - UI - Hours Card
 
   And The 'ContactInfo_component_Working_Hours' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'ContactInfo_component_Working_Hours_time' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
  Scenario: Validate ContactInfo Component - UI - Address Card
 
   And The 'ContactInfo_component_Address' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'ContactInfo_component_Addresslink' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
  Scenario: Validate ContactInfo Component - UI - PhoneNo Card
 
   And The 'ContactInfo_component_Phone' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'ContactInfo_component_PhoneNo' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
  Scenario: Validate ContactInfo Component - UI - Address Card
 
   And The 'ContactInfo_component_Email' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'ContactInfo_component_Email_Address' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
- Scenario: Validate ContactInfo Component - Functionality 
-  
+ Scenario: Validate ContactInfo Component - Functionality
   Then I click on 'ContactInfo_component_Addresslink'
   Then I switch browser
   And Current URL contains 'maps'
@@ -196,6 +205,6 @@ Feature: Contactus: Validate Contactus page (Two Cta box , Contact Info and Form
   And I press 'esc' key on page
   And The 'href' attribute of 'ContactInfo_component_PhoneNo' element contains 'tel'
   Then I click on 'ContactInfo_component_Email_Address'
-  Then I wait for '20' seconds
+  Then I wait for '2' seconds
   And I press 'esc' key on page
   And The 'href' attribute of 'ContactInfo_component_Email_Address' element contains 'mailto'

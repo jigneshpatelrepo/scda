@@ -13,7 +13,7 @@ ContactUs_Form_Component_Message: XPATH=//div[contains(@class,'container-max pt-
 ContactUs_Form_Component_Submit: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//form//button[@type='submit']
 ContactUs_Form_Component_Img: XPATH=//div[contains(@class,'container-max pt-48 pb-16 md:py-64 bg-neutral-100')]//img
 
-ContactUs_Form_Component_ThankYou: XPATH=//h3 | //p[contains(text(),'appreciate')]
+ContactUs_Form_Component_ThankYou: XPATH=//h3[contains(text(),'Sent') | //p[contains(text(),'appreciate')]
 ### form validation message
 ContactUs_Form_Component_Subject_ValidionMsg: XPATH=//button[@id='Subjects-button']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
 ContactUs_Form_Component_Firstname_ValidionMsg: XPATH=//input[@id='firstName']//ancestor::div[@data-error='fieldError']//div[contains(@title,'required')]
@@ -30,7 +30,7 @@ TwoCtaBox_component: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJ
 TwoCtaBox_component_Card1Title: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'false')]//div[contains(@data-automation, 'twoCTABox-title')]
 TwoCtaBox_component_Card1Desc: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'false')]//div[contains(@data-automation, 'description')]/p
 TwoCtaBox_component_Card1Cta: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a
-TwoCtaBox_component_Card1CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='Services']
+TwoCtaBox_component_Card1CtaSpan: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//a//parent::div//span[text()='News']
 
 TwoCtaBox_component_Card2Title: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'true')]//div[contains(@data-automation, 'twoCTABox-title')]
 TwoCtaBox_component_Card2Desc: XPATH=//div[contains(translate(@data-component, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'twoctabox')]//div[contains(@data-automation,'true')]//div[contains(@data-automation, 'description')]/p

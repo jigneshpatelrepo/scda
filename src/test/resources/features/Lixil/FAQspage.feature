@@ -23,38 +23,45 @@ Feature: FAQs_page: Validate FAQ (SCDA Homepage)
   And 'FAQ_FilterItem2' is visible
   And 'FAQ_FilterItem3' is visible
 
- Scenario: Validate FAQ_ - Innner banner UI (Font size,family and weight,Letter spacing,Line height)
+ Scenario: Validate FAQ - Inner banner UI (Font size,family and weight,Letter spacing,Line height)
 
   And The 'FAQ_InnerBannerwithImageComponentTitle' element has following CSS properties
-   | font-size                 | 48px                         |
+   | font-size                 | 40px                         |
    | line-height               | 48px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                      |
+   | letter-spacing            | normal                       |
    | Color                     | rgb(255, 255, 255)           |
 
  Scenario: Validate FAQ - UI (Font size,family and weight,Letter spacing,Line height)
 
   And The 'FAQ_Totalcount' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               |  Inter, "Inter Fallback"     |
    | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+
+  And The 'FAQ_Question1Item1' element has following CSS properties
+   | font-size                 | 22px                         |
+   | line-height               | 36px                         |
+   | font-family               |  Inter, "Inter Fallback"     |
+   | font-weight               | 400                          |
    | letter-spacing            | normal                       |
 
   And The 'FAQ_FilterItem1' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
-  And The 'FAQ_Question1Item1' element has following CSS properties
-   | font-size                 | 24px                         |
-   | line-height               | 32px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                       |
+  And The 'FAQ_QuestionLoadmore_Span' element has following CSS properties
+   | font-size                 | 16px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
 
  Scenario: Validate FAQ - Functionalities - Count and Navigation
   And I click on 'FAQ_Totalcount'
@@ -89,4 +96,3 @@ Feature: FAQs_page: Validate FAQ (SCDA Homepage)
   And I enter 'why' into 'FAQ_searchInput' field
   And I wait for '3' seconds
   And Total count of 'FAQ_countafterclickingonLoadmore' is 6
-

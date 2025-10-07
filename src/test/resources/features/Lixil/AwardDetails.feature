@@ -22,25 +22,25 @@ Feature: AwardDetails: Validate SCDA Award details page
   And Total count of 'Breadcrumb_Total_items' is 3
 
   And The 'Breadcrumb_Parent_Item1' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'Breadcrumb_Parent_Item2' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'Breadcrumb_Parent_Item3' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
 
  Scenario:  Validate Award Details page for InnerBannerWithoutImage Component  - Field visible
@@ -54,33 +54,35 @@ Feature: AwardDetails: Validate SCDA Award details page
  Scenario:  Validate Award Details page for InnerBannerWithoutImage Component  - UI (Font size,family and weight,Letter spacing,Line height)
 
   And The 'InnerBannerWithoutImage_Component_Heading' element has following CSS properties
-   | font-size                 | 40px                         |
+   | font-size                 | 36px                         |
    | line-height               | 48px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               |Inter, "Inter Fallback"       |
    | font-weight               | 400                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
 
   And The 'InnerBannerWithoutImage_Component_Date' element has following CSS properties
-   | font-size                 | 20px                         |
+   | font-size                 | 18px                         |
    | line-height               | 24px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                       |
+   | letter-spacing            | normal                       |
+   | color                     | rgb(255, 255, 255)           |
 
   And The 'InnerBannerWithoutImage_Component_Awarded_by' element has following CSS properties
-   | font-size                 | 20px                         |
+   | font-size                 | 18px                         |
    | line-height               | 24px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                       |
+   | letter-spacing            | normal                       |
+   | color                     | rgb(255, 255, 255)           |
 
   And The 'InnerBannerWithoutImage_Component_AwardName' element has following CSS properties
-   | font-size                 | 20px                         |
+   | font-size                 | 18px                         |
    | line-height               | 24px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                      |
-
+   | letter-spacing            | normal                       |
+   | color                     | rgb(255, 255, 255)           |
 
  Scenario: Validate Image banner carousel functionality ( Enable and Disable )
   Then 'ImageBanner_Component_card_PreviousBtn' is disabled

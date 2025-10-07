@@ -25,36 +25,36 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
   Scenario: Validate FixedBar - UI (Font size,family and weight,Letter spacing,Line height)
 
     And The 'FixedBarComponent_EmergencySpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
-      | Color                     | rgb(0, 0, 0)           |
+      | letter-spacing            |  0.2px                       |
+      | Color                     | rgb(0, 0, 0)                 |
 
     And The 'FixedBarComponent_EServiceSpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
-      | Color                     | rgb(0, 0, 0)           |
+      | letter-spacing            |  0.2px                       |
+      | Color                     | rgb(0, 0, 0)                 |
 
     And The 'FixedBarComponent_FeedbackSpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
-      | Color                     | rgb(0, 0, 0)           |
+      | letter-spacing            |  0.2px                       |
+      | Color                     | rgb(0, 0, 0)                 |
 
     And The 'FixedBarComponent_CallcenterSpan' element has following CSS properties
-      | font-size                 | 14px                         |
+      | font-size                 | 12px                         |
       | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
-      | Color                     | rgb(0, 0, 0)           |
+      | letter-spacing            |  0.2px                       |
+      | Color                     | rgb(0, 0, 0)                 |
 
   Scenario: Validate FixedBar - Hover and UI verification
     And I refresh the current page
