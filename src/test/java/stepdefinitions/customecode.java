@@ -252,4 +252,22 @@ public class customecode {
         robot.keyRelease(KeyEvent.VK_ESCAPE);
     }
 
+    @Then("^The '(.*)' attribute contains Either of '(.*)' or '(.*)'$")
+    public void verifyMultipletextValue(String compName, String expectedValue1, String expectedValue2) {
+        log.debug("The attribute of " + compName + " " + expectedValue1);
+        log.debug("The  attribute of " + compName + " " + expectedValue2);
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        SelenideElement element = Selenide.$(loc.get(compName));
+        scrollToElement(element);
+        String attrValue = element.getText().trim().toUpperCase();
+        log.debug("Attribute value: " + attrValue);
+
+        if ((attrValue.contains(expectedValue1)) || (attrValue.contains(expectedValue2))) {
+            Assert.assertTrue(attrValue.toLowerCase().contains(expectedValue1.toLowerCase()));
+        }  else {
+            Assert.fail("Invalid match type provided: " + compName);
+        }
+
+    }
 }

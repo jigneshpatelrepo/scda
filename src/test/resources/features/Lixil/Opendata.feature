@@ -72,7 +72,8 @@ Feature: opendata: Validate Opendata page
    | font-weight               | 500                          |
    | letter-spacing            | 0.2px                        |
    |color                      | rgb(94, 94, 94)              |
-
+  And The 'OpendataRelatedResources_carddownloadformat' attribute contains Either of 'KB' or 'MB'
+  
  Scenario: Validate FAQ - Hover effect on card
   And I hover mouse over 'OpendataRelatedResources_cardComponentcard1'
   And I wait for '2' seconds
