@@ -2,7 +2,6 @@
 Feature: opendata: Validate Opendata page
 
  @clearcookies
-
  Scenario: Validate Security for Page opening
   Then I navigate to 'https://dev-sdd.ishj.ae/en/'
   And I wait for '3' seconds
@@ -25,48 +24,54 @@ Feature: opendata: Validate Opendata page
  Scenario: Validate Opendata page for - UI (Font size,family and weight,Letter spacing,Line height)
 
   And The 'OpendataComponentTitle' element has following CSS properties
-   | font-size                 | 24px                         |
-   | line-height               | 32px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-size                 | 22px                         |
+   | line-height               | 36px                         |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                      |
+   | letter-spacing            | normal                       |
+   |color                      | rgb(0, 0, 0)                 |
 
   And The 'OpendataComponentDesc' element has following CSS properties
-   | font-size                 | 18px                         |
+   | font-size                 | 16px                         |
    | line-height               | 28px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
-   | letter-spacing            | normal                       |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 400                          |
+   | letter-spacing            | 0.2px                        |
+   |color                      | rgb(94, 94, 94)             |
 
  Scenario: Validate Opendata page for Related Resources - UI (Font size,family and weight,Letter spacing,Line height)
 
   And The 'OpendataRelatedResources_Title' element has following CSS properties
-   | font-size                 | 48px                         |
+   | font-size                 | 40px                         |
    | line-height               | 48px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                      |
+   | letter-spacing            | normal                       |
+   |color                      | rgb(0, 0, 0)                 |
 
   And The 'OpendataRelatedResources_CardTitle' element has following CSS properties
-   | font-size                 | 24px                         |
-   | line-height               | 32px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-size                 | 22px                         |
+   | line-height               | 36px                         |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 400                          |
-   | letter-spacing            | -0.48px                      |
+   | letter-spacing            | normal                       |
+   |color                      | rgb(0, 0, 0)                 |
 
   And The 'OpendataRelatedResources_carddownloadbtnspan' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 14px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
+   | letter-spacing            | 0.2px                        |
+   |color                      | rgb(0, 0, 0)                 |
 
   And The 'OpendataRelatedResources_carddownloadformat' element has following CSS properties
-   | font-size                 | 14px                         |
+   | font-size                 | 12px                         |
    | line-height               | 16px                         |
-   | font-family               | Tajawal, "Tajawal Fallback"  |
+   | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
-   | letter-spacing            | normal                       |
-
+   | letter-spacing            | 0.2px                        |
+   |color                      | rgb(94, 94, 94)              |
 
  Scenario: Validate FAQ - Hover effect on card
   And I hover mouse over 'OpendataRelatedResources_cardComponentcard1'

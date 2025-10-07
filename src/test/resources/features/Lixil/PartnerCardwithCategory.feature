@@ -20,19 +20,18 @@ Feature: Our_Partner_Page: Validate CardsWithCategory Component on Our Partners 
   Scenario: Validate Ourpartners - UI - (Font size,family and weight,Letter spacing,Line height)
 
     And The 'CardsWithCategoryComponent_Title' element has following CSS properties
-      | font-size                 | 40px                         |
+      | font-size                 | 36px                         |
       | line-height               | 48px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
+      | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 400                          |
-      | letter-spacing            | normal                       |
-
+      | letter-spacing            | 0.2px                        |
+      |color                      | rgb(0, 0, 0)                 |
 
   Scenario: Validate Ourpartners - Hover functionality
     And I hover mouse over 'CardsWithCategoryComponent_card'
     And I wait for '1' seconds
     And The 'CardsWithCategoryComponent_card' element has following CSS properties
       | background-color               |  rgb(230, 243, 236)      |
-
 
   Scenario: Validate Ourpartners - Navigation
     And I click on 'CardsWithCategoryComponent_card'
