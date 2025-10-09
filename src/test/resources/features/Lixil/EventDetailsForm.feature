@@ -1,4 +1,4 @@
-@test @EventDetailsForm
+@test @EventDetailsForm @test1
 
 Feature: EventDetailsForm: Validate Event Details - Form
   @clearcookies
@@ -38,12 +38,15 @@ Feature: EventDetailsForm: Validate Event Details - Form
    |color                      | rgb(219, 59, 33)             |
 
  Scenario: Validate Event Details - Form Component - Specific Validation message Visibility
-  And I click on 'ContactUs_Form_Component_Submit'
-  Then I wait for '1' seconds
+  And I refresh the current page
   And I enter 'Test' into 'ContactUs_Form_Component_FirstName' field
   And I enter 'Test' into 'ContactUs_Form_Component_LastName' field
-  And I enter 'Test' into 'ContactUs_Form_Component_Email' field
+  And I enter 'Test123' into 'ContactUs_Form_Component_Email' field
+  Then I press 'tab' key on 'ContactUs_Form_Component_Email'
   And I enter '12345' into 'ContactUs_Form_Component_Phone' field
+  Then I press 'tab' key on 'ContactUs_Form_Component_Phone'
+  And I click on 'ContactUs_Form_Component_Submit'
+  Then I wait for '1' seconds
   And 'ContactUs_Form_Component_email_Regex' is visible
 
  Scenario: Validate Event Details - Form Component - Submit form
@@ -60,4 +63,3 @@ Feature: EventDetailsForm: Validate Event Details - Form
   And I click on 'ContactUs_Form_Component_Submit'
   Then I wait for '1' seconds
   Then 'ContactUs_Form_Component_ThankYou' is visible
-

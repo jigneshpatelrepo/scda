@@ -27,7 +27,7 @@ Feature: 4XCard_carousel: Validate 4X cardcarousel (SCDA Homepage)
       | line-height               | 16px                         |
       | font-family               | Inter, "Inter Fallback"      |
       | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
+      | letter-spacing            | 0.2px                       |
       | text-transform            | uppercase                    |
     And The '4cardcarousel_Title' element has following CSS properties
       | font-size                 | 40px                         |

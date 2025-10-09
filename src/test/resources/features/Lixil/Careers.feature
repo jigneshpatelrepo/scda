@@ -1,4 +1,4 @@
-@test @Careers @Careerspage
+@test @Careers @Careerspage @test1
 Feature: Careers: Validate ServiceCategory Page
 
   @clearcookies
@@ -47,12 +47,6 @@ Feature: Careers: Validate ServiceCategory Page
     And I wait for '2' seconds
     And The 'CardsWithoutFilter_Cta_hover' element has following CSS properties
       | background-color                      | rgb(230, 243, 236)        |
-#
-#  Scenario: Validate ServiceCategory - Functionality - Loadmore
-#    And Total count of 'AwardsCertiComponent_itemlinkAnchor' is 9
-#    And I click on 'AwardsCertiComponent_Loadmore'
-#    And I wait for '1' seconds
-#    And Total count of 'AwardsCertiComponent_itemlinkAnchor' is 15
 
   Scenario: Validate Careers - Functionality - Navigation
     And I click on 'CardsWithoutFilter_Cta'

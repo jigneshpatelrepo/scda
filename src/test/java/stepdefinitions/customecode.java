@@ -270,4 +270,16 @@ public class customecode {
         }
 
     }
+
+    @Then("^'(.*)' is visible for delete$")
+    public void componentIsVisible(String compName) {
+        FindLocatorFileName findLocatorFileName = new FindLocatorFileName();
+        YamlFile loc = findLocatorFileName.getLocatorFileName();
+        log.debug(compName + " is visible");
+        SelenideElement ele = Selenide.$(loc.get(compName));
+        Selenide.$(ele).should(Condition.exist, waitForElementExists);
+        Selenide.$(ele).should(Condition.visible, waitForElementVisible);
+        Assert.assertTrue(ele.isDisplayed());
+        scrollToElement(Selenide.$(ele));
+    }
 }

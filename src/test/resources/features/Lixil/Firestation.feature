@@ -1,4 +1,4 @@
-@test @Firestation
+@test @Firestation @test1
 Feature: Servicecenter: Validate Fire Station page - Iframe
 
   @clearcookies

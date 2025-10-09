@@ -1,5 +1,5 @@
-@lixil @test @SCDAhomepage @FixedBar
-Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
+@lixil @test @SCDAhomepage @FixedBar @test1
+Feature: Footer_Fixedbar: Validate Fixed Bar (SCDA Homepage)
 
   @clearcookies
 
@@ -65,11 +65,12 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
       | background-color                | rgb(230, 243, 236)    |
     And The 'FixedBarComponent_Callcenter' element has following CSS properties
       | background-color                | rgb(230, 243, 236)    |
+    And I hover mouse over 'FixedBarComponent_Emergency'
+    And I wait for '2' seconds
     And The 'FixedBarComponent_Emergency' element has following CSS properties
-      | background-color                |       rgb(0, 0, 0)    |
+      | background-color                | rgb(0, 0, 0)          |
 
   Scenario: Validate Fixed Bar - Functionality
-
     And The 'href' attribute of 'FixedBarComponent_Callcenter' element contains 'tel:65566667'
     And The 'href' attribute of 'FixedBarComponent_Emergency' element contains 'tel:997'
     And I click on 'FixedBarComponent_socialshare'
@@ -82,7 +83,6 @@ Feature: Footer_Fixedbar: Validate Fixed Bard (SCDA Homepage)
     And I refresh the current page
     And I wait for '2' seconds
     And I click on 'FixedBarComponent_Feedback'
-    And I wait for '2' seconds
     And I switch browser
     And Current URL contains 'login'
     And I switch browser

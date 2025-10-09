@@ -1,4 +1,4 @@
-@lixil @test1
+@lixil @test12
 Feature: Validate Product Selector flow
 
   @clearcookies

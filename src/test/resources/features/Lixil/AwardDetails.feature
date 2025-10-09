@@ -1,4 +1,4 @@
-@test @AwardDetails @smoke
+@test @AwardDetails @smoke @test1
 Feature: AwardDetails: Validate SCDA Award details page
 
   @clearcookies
@@ -41,7 +41,6 @@ Feature: AwardDetails: Validate SCDA Award details page
    | font-family               | Inter, "Inter Fallback"      |
    | font-weight               | 500                          |
    | letter-spacing            | 0.2px                        |
-
 
  Scenario:  Validate Award Details page for InnerBannerWithoutImage Component  - Field visible
   And 'InnerBannerWithoutImage_Component_Heading' is visible
@@ -92,6 +91,3 @@ Feature: AwardDetails: Validate SCDA Award details page
   And I click on 'ImageBanner_Component_card_PreviousBtn'
   And I wait for '1' seconds
   And The 'class' attribute of 'ImageBanner_Component_card_Navigation' element contains 'active is-visible'
-
-
-

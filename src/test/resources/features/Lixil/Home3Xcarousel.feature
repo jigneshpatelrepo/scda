@@ -33,7 +33,7 @@ Feature: 3Xcarousel: Validate 3Xcarousel  (SCDA Homepage)
       | line-height               | 16px                         |
       | font-family               | Inter, "Inter Fallback"  |
       | font-weight               | 500                          |
-      | letter-spacing            |                   normal     |
+      | letter-spacing            |                   0.2px     |
       | text-transform            | uppercase                    |
 
     And The '3cardcarousel_Heading' element has following CSS properties
