@@ -1,4 +1,4 @@
-@test @Awards @AwardsandCertification
+@test @Awards @AwardsandCertification @test1
 Feature: Awards_and_Certifications: Validate Awards and Certification Page
 
   @clearcookies

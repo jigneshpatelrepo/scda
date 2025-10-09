@@ -1,4 +1,4 @@
-@test @FaqsOnservicepage @FAQs
+@test @FaqsOnservicepage @FAQs @test1
 Feature: FAQs_on_Servicepage: Validate FAQ on Service page
   @clearcookies
  Scenario: Validate Security for Page opening
@@ -94,8 +94,6 @@ And The 'class' attribute of 'FAQTotalcount' element contains 'text-primary-300'
   And I scroll to 'FAQItemBoxCTA'
   And I hover mouse over 'FAQItemBoxCTA'
   And I wait for '1' seconds
-#  And The 'FAQItemBoxHover' element has following CSS properties
-#   | background-color           | rgb(230, 243, 236)       |
   And The 'class' attribute of 'FAQItemBoxHover' element contains 'active-cta'
 
  Scenario: Validate FAQ - Functionalities - Loadmore
@@ -105,12 +103,10 @@ And The 'class' attribute of 'FAQTotalcount' element contains 'text-primary-300'
   And I click on 'FAQQuestionLoadmore'
   And I wait for '1' seconds
   And Total count of 'FAQcountafterclickingonLoadmore' is 11
-#  And I refresh the current page
-#  And I click on 'FAQFilterItem2'
-# And Total count 'FAQItemBox' is greater than single filter 'FAQcountafterclickingonLoadmore'
- 
+
  Scenario: Validate FAQ - Search Functionality
   And I enter 'add' into 'FAQsearchInput' field
+  And I press 'tab' key on 'FAQsearchInput'
   And I wait for '2' seconds
   And Total count of 'FAQcountafterclickingonLoadmore' is 3
 

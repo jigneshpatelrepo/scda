@@ -1,4 +1,4 @@
-@test @FAQ_spage @FAQ_s
+@test @FAQ_spage @FAQ_s @test1
 Feature: FAQs_page: Validate FAQ (SCDA Homepage)
 
  @clearcookies
