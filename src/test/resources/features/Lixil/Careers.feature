@@ -1,5 +1,5 @@
 @test @Careers @Careerspage @test1
-Feature: Careers: Validate ServiceCategory Page
+Feature: Careers: Validate Careers Page
 
   @clearcookies
   Scenario: Validate Security for Page opening

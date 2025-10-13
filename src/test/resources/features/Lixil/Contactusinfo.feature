@@ -1,4 +1,4 @@
-@test @Contactuspage @Contactus @test1
+@test @Contactuspage @Contactusinfo @test1
 Feature: Contactus: Validate Contactinfo component on Contactus page
 
   @clearcookies
@@ -30,15 +30,13 @@ Feature: Contactus: Validate Contactinfo component on Contactus page
   And 'ContactInfo_component_Email' is visible
   And 'ContactInfo_component_Email_Address' is visible
   And 'ContactInfo_component_EmailAddress_logo' is visible
+  And I click to browser back button
+  And I refresh the current page
 
  Scenario: Validate ContactInfo Component - UI - Hours Card
-
-  And The 'ContactInfo_component_Working_Hours' element has following CSS properties
-   | font-size                 | 16px                         |
-   | line-height               | 28px                         |
-   | font-family               | Inter, "Inter Fallback"      |
-   | font-weight               | 400                          |
-   | letter-spacing            | 0.2px                        |
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/find-us/contact-us'
+  And I wait for '2' seconds
+  And I scroll to 'ContactInfo_component'
 
   And The 'ContactInfo_component_Working_Hours_time' element has following CSS properties
    | font-size                 | 12px                         |
@@ -47,6 +45,12 @@ Feature: Contactus: Validate Contactinfo component on Contactus page
    | font-weight               | 500                          |
    | letter-spacing            | 0.2px                        |
 
+  And The 'ContactInfo_component_Working_Hours' element has following CSS properties
+   | font-size                 | 16px                         |
+   | line-height               | 28px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 400                          |
+   | letter-spacing            | 0.2px                        |
  Scenario: Validate ContactInfo Component - UI - Address Card
 
   And The 'ContactInfo_component_Address' element has following CSS properties
@@ -119,3 +123,5 @@ Feature: Contactus: Validate Contactinfo component on Contactus page
   And 'ContactUs_Form_Component_Subject' is visible
   And 'ContactUs_Form_Component_Img' is visible
   And 'ContactUs_Form_Component_Message' is visible
+  And I click to browser back button
+  And I refresh the current page
