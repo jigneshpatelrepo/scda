@@ -4,4 +4,5 @@ CardsWithoutFilter_Component_Desc: XPATH=//div[contains(@data-automation,'CardsW
 
 CardsWithoutFilter_Cta: XPATH=//div[contains(@data-automation,'CardsWithoutFilter')]//a
 CardsWithoutFilter_Cta_span: XPATH=//div[contains(@data-automation,'CardsWithoutFilter')]//a/span[contains(@class,'cta-content')]
-CardsWithoutFilter_Cta_hover: XPATH=//div[contains(@data-automation,'CardsWithoutFilter')]//div[contains(@class,'hover:after:h-2 group-hover:active-cta group-hover')]
+CardsWithoutFilter_Cta_hoverold: XPATH=//div[contains(@data-automation,'CardsWithoutFilter')]//div[contains(@class,'hover:after:h-2 group-hover:active-cta group-hover')]
+CardsWithoutFilter_Cta_hover: XPATH=//div[contains(@data-automation,'CardsWithoutFilter')]//div[contains(@class,'bg-primary-200 [.active-cta]')]
