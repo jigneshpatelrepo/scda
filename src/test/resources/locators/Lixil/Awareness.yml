@@ -1,0 +1,22 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Image banner
+ImageBanner_Visible: XPATH=//div[@data-automation="innerBanner-image"]
+Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
+
+#Awareness listing
+Awareness_Visible: XPATH=//div[contains(@data-automation,"DropDownFilter")]
+Awareness_Total_Cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#Card 2 elements
+Awareness_Card2_Visible: XPATH=//div[contains(@class,"col-span-full")][2]
+Awareness_Card2_Title: XPATH=//div[contains(@class,"col-span-full")][2]//h4
+Awareness_Card2_CTA: XPATH=//div[contains(@class,"col-span-full")][2]//div[@class="self-start mt-auto"]//a
+Awareness_Card2_CTAText: XPATH=//div[contains(@class,"col-span-full")][2]//div[@class="self-start mt-auto"]//a//span[text()="Read More"]
+Awareness_Card2_Date: XPATH=//div[contains(@class,"col-span-full")][2]//p
+Awareness_Card2_Image: XPATH=//div[contains(@class,"col-span-full")][2]//img
+Awareness_Card2_Hover: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][2]//div[contains(@class,"underline")]
+Awareness_Card2_HoverEffect: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][2]//div[contains(@class,"underline")]//img

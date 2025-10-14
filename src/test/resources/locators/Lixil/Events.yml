@@ -1,0 +1,41 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Image banner
+ImageBanner_Visible: XPATH=//div[@data-automation="innerBanner-image"]
+Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
+
+#Events listing
+Events_Visible: XPATH=//div[contains(@data-automation,"DropDownFilter")]
+Events_Filter_Visible: XPATH=//div[@aria-label="Filter options"]
+Events_LoadMore_Button: XPATH=//div[@data-component="DropDownFilterWithCards"]//span[text()="Load More"]
+Events_Total_Cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#Card 1 elements
+Events_Card1_Visible: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]
+Events_Card1_Title: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//h4
+Events_Card1_CTA: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[@class="self-start mt-auto"]//a
+Events_Card1_CTAText: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[@class="self-start mt-auto"]//a//span[text()="Learn More"]
+Events_Card1_Date: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//p
+Events_Card1_Image: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//img
+Events_Card1_Label: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//img//following-sibling::div
+Events_Card1_LabelText: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//img//following-sibling::div//span[2]
+Events_UpcomingCard1_Label: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//img//following-sibling::div//span[2]
+Events_Card1_Time: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]//div[@class="flex gap-12"]//span[1]
+Events_Card1_City: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]//div[@class="flex gap-12"]//span[2]
+Events_Card1_Hover: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]
+Events_Card1_HoverEffect: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]//img
+
+#Filter dropdown
+Filter_Dropdown: XPATH=//button[contains(@id,"EventTimeline")]
+Filter_Total_Options: XPATH=//ul[contains(@id,"EventTimeline")]//li[@role="option"]
+Filter_Option1: XPATH=//ul[contains(@id,"EventTimeline")]//li[@aria-selected="true"]
+Filter_Option1_HoverColor: XPATH=//ul[contains(@id,"EventTimeline")]//li[1]//button
+Filter_Option2: XPATH=//ul[contains(@id,"EventTimeline")]//li[2]//button
+Filter_Option2_Label: XPATH=//div[@data-component="DropDownFilterWithCards"]//span[contains(normalize-space(.), 'DAY')]
+Filter_UpcomingEvents_TotalCards: XPATH=//div[contains(@class,"col-span-full")]
+Filter_Option3: XPATH=//ul[contains(@id,"EventTimeline")]//li[3]//button
+Filter_Option3_Label: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")]//img//following-sibling::div//span[text()="PAST EVENT"]
+Filter_PastEvents_TotalCards: XPATH=//div[contains(@class,"col-span-full")]
