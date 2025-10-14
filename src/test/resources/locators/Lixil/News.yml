@@ -1,0 +1,52 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Image banner
+ImageBanner_Visible: XPATH=//div[@data-automation="innerBanner-image"]
+Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]//h1
+
+#News
+News_Visible: XPATH=//div[contains(@data-automation,"DropDownFilterWithCards")]
+News_Total_cards: XPATH=//div[contains(@class,"col-span-full")]
+News_Card1_Visible: XPATH=//div[contains(@class,"col-span-full")][1]
+News_Card1_Title: XPATH=//div[contains(@class,"col-span-full")][1]//h4
+News_Card1_CTA: XPATH=//div[contains(@class,"col-span-full")][1]//div[@class="self-start mt-auto"]//span[text()="Read More"]
+News_Card1_Date: XPATH=//div[contains(@class,"col-span-full")][1]//p
+News_Card1_Image: XPATH=//div[contains(@class,"col-span-full")][1]//img
+News_Card1_Hover: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]
+News_Card1_HoverEffect: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]//img
+#Filter
+News_Filter_Visible: XPATH=//div[@aria-label="Filter options"]
+
+#Filter Months
+MonthDropdown_Click: XPATH=//button[@aria-describedby="filter-description-Months"]
+MonthDropdownList_Visible: XPATH=//ul[@id="filter-list-Months"]
+MonthDropdownList_TotalCount: XPATH=//ul[@id="filter-list-Months"]//li
+MonthDropdownList_FirstOption: XPATH=//ul[@id="filter-list-Months"]//li[@aria-selected="true"]
+
+#Filter Year
+YearDropdown_Click: XPATH=//button[contains(@id,"Years")]
+YearDropdownList_Visible: XPATH=//ul[@id="filter-list-Years"]
+YearDropdownList_TotalCount: XPATH=//ul[@id="filter-list-Years"]//li
+YearDropdownList_FirstOption: XPATH=//ul[@id="filter-list-Years"]//li[@aria-selected="true"]
+
+#After applying filters on month
+MonthFilter_SelectJuly: XPATH=//ul[contains(@aria-labelledby,"Months")]//li//span[text()="July"]/..
+MonthFilter_SelectAugust: XPATH=//ul[contains(@aria-labelledby,"Months")]//li//span[text()="August"]/..
+MonthFilter_SelectSeptember: XPATH=//ul[contains(@aria-labelledby,"Months")]//li//span[text()="September"]/..
+MonthFilter_List_OptionsSelected_TotalCount: XPATH=//ul[contains(@aria-labelledby,"Months")]//li[@aria-selected="true"]
+MonthFilter_TextOnDropdown: XPATH=//button[@aria-describedby="filter-description-Months"]//ul
+MonthFilter_Total_cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#After applying filters on year
+YearFilter_Select2024: XPATH=//ul[@id="filter-list-Years"]//li//span[text()="2024"]
+YearFilter_Select2023: XPATH=//ul[@id="filter-list-Years"]//li//span[text()="2023"]
+YearFilter_Select2022: XPATH=//ul[@id="filter-list-Years"]//li//span[text()="2022"]
+YearFilter_List_OptionsSelected_TotalCount: XPATH=//ul[@id="filter-list-Years"]//li[@aria-selected="true"]
+YearFilter_TextOnDropdown: XPATH=//button[@aria-describedby="filter-description-Years"]//ul
+YearFilter_Total_cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#First CTA click
+News_FirstCard_CTA: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[@class="self-start mt-auto"]//a

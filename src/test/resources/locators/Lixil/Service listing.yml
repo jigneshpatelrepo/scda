@@ -1,0 +1,33 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Image banner
+ImageBanner_Visible: XPATH=//div[@data-automation="innerBanner-image"]
+Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
+ImageBanner_CTA: XPATH=//div[@data-component="InnerBannerWithImage"]//a
+ImageBanner_CTAText: XPATH=//div[@data-component="InnerBannerWithImage"]//a//span[2]
+
+#Service listing
+Service_Visible: XPATH=//div[contains(@data-automation,"CardsWithoutFilter")]
+Service_Total_Cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#Card 1 elements
+Service_Card1_Visible: XPATH=//div[contains(@class,"col-span-full")][1]
+Service_Card1_Title: XPATH=//div[contains(@class,"col-span-full")][1]//h4
+Service_Card1_CTA: XPATH=//div[contains(@class,"col-span-full")][1]//a//span[text()="View All"]/..
+Service_Card1_Description: XPATH=//div[contains(@class,"col-span-full")][1]//p
+Service_Card1_TagsCount: XPATH=//div[contains(@aria-label,"Construction Plan Approvals")]//ul[contains(@aria-label,"Tags for card")]//li
+Service_Card2_Hover: XPATH=//div[@data-component="CardsWithoutFilter"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"hover")]
+
+#Service sub categories page
+#Inner banner without image
+InnerBanner_Visible: XPATH=//div[contains(@data-automation,"InnerBannerWithoutImage")]
+InnerBanner_Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+InnerBanner_Breadcrumb_ParentItemCount: XPATH=//div[contains(@data-automation,"breadcrumbNavigation")]
+InnerBanner_Title: XPATH=//h2[contains(@data-automation,"title")]
+InnerBanner_Icon: XPATH=//div[contains(@data-automation,"InnerBannerWithoutImage")]//span
+
+#Tabs with filters
+TabsWithFilter_Visible: XPATH=//section[@data-component="TabsWithFilters"]
