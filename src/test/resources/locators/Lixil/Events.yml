@@ -10,7 +10,7 @@ ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
 #Events listing
 Events_Visible: XPATH=//div[contains(@data-automation,"DropDownFilter")]
 Events_Filter_Visible: XPATH=//div[@aria-label="Filter options"]
-Events_LoadMore_Button: XPATH=//div[@data-component="DropDownFilterWithCards"]//span[text()="Load More"]
+Events_LoadMore_Button: XPATH=//div[@data-component="DropDownFilterWithCards"]//span[text()="Load More"]/..
 Events_Total_Cards: XPATH=//div[contains(@class,"col-span-full")]
 
 #Card 1 elements

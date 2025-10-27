@@ -1,4 +1,4 @@
-@NewsListing
+@test@NewsListing
 Feature: News: Validating the News listing
 
   Scenario: Clicking on Page link through error msg

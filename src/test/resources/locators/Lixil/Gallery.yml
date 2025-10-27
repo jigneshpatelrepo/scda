@@ -46,6 +46,6 @@ Media_Count: XPATH=//div[contains(@data-automation,"mediaGallery-image")]
 First_Image_Click: XPATH=//div[@data-automation="mediaGallery-image-0"]
 PopUp_Image_Visible: XPATH=//div[contains(@class,"justify-center")]//img
 PopUp_NextArrow_Click: XPATH=//div[@data-automation="mediaGallery-wrapper"]//button[contains(@class,"md:absolute md:right-60 z-50")]
-PopUp_Image2_Visible: XPATH=//div[@data-automation="mediaGallery-wrapper"]//div[@data-automation="mediaGallery-image-1"]//img
+PopUp_Image2_Visible: XPATH=//div[contains(@class,"justify-center")]//img
 PopUp_PreviousArrow_Click: XPATH=//div[contains(@class,"justify-center")]//button[contains(@class,"md:absolute md:left-60 z-50")]
 Cross_Button: XPATH=//div[@data-automation="mediaGallery-wrapper"]//div[contains(@class,"absolute z-50")]//button

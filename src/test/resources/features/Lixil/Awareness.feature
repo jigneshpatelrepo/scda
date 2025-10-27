@@ -1,5 +1,5 @@
-@Awareness
-Feature: Awareness: Validating the Events listing
+@test@Awareness
+Feature: Awareness: Validating the Awareness listing
 
   Scenario: Clicking on Page link through error msg
     Then I navigate to 'https://dev-sdd.ishj.ae/en/QA/Automation/awareness'

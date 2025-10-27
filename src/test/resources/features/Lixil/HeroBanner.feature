@@ -1,4 +1,4 @@
-@herobanner
+@test@herobanner
 Feature: HeroBanner : Validate the hero banner
 
   Scenario: Clicking on Page link through error msg

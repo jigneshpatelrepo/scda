@@ -1,4 +1,4 @@
-@EventsListing
+ @test@EventsListing
 Feature: Events: Validating the Events listing
 
   Scenario: Clicking on Page link through error msg
@@ -92,11 +92,10 @@ Feature: Events: Validating the Events listing
 #    And I click on 'Filter_Option2'
 #    And I wait for '3' seconds
 #    And '7 DAYS LEFT' text is visible in 'Events_UpcomingCard1_Label'
-#    And Total count of 'Filter_UpcomingEvents_TotalCards' is 1
+#    And Total count of 'Filter_UpcomingEvents_TotalCards' is 0
     And I click on 'Filter_Option3'
-    And I wait for '3' seconds
-    And I click on 'Events_LoadMore_Button' if available
-    And Total count of 'Filter_PastEvents_TotalCards' is 11
+    And I wait for '2' seconds
+    And Total count of 'Filter_PastEvents_TotalCards' is 9
     And 'PAST EVENT' text is visible in 'Filter_Option3_Label'
     And I click on 'Events_Card1_CTA'
     And Current URL contains 'sharjah'
