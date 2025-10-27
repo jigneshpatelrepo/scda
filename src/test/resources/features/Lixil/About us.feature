@@ -1,4 +1,4 @@
-@AboutUs
+@test@AboutUs
 Feature: About us: Validating the About us page
 
   Scenario: Clicking on Page link through error msg
@@ -99,14 +99,14 @@ Feature: About us: Validating the About us page
       | font-family    | Inter, "Inter Fallback"     |
       | font-weight    | 400                         |
  And I scroll to 'Footer'
-#    And I wait for '2' seconds
+   And I wait for '2' seconds
     And 'PromoText_Row1_Description' is visible
     And The 'PromoText_Row1_Description' element has following CSS properties
       | font-size      | 22px                        |
       | line-height    | 36px                        |
       | font-family    | Inter, "Inter Fallback"     |
       | font-weight    | 400                         |
-
+    And I scroll to 'Footer'
     And I wait for '1' seconds
     And 'PromoText_Row2_Description' is visible
     And The 'PromoText_Row2_Description' element has following CSS properties

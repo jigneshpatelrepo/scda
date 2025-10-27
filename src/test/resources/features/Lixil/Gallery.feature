@@ -1,4 +1,4 @@
-@Gallery
+@test@Gallery
 Feature: Gallery: Validating the Events listing
 
   Scenario: Clicking on Page link through error msg
