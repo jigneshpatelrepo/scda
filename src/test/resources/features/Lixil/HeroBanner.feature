@@ -10,6 +10,7 @@ Feature: HeroBanner : Validate the hero banner
 
   Scenario: Validate FAQ -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
     And 'HeroBannerVisible' component exists on the page
+    And I wait for '2' seconds
     And 'Slide1Description' is visible
     And 'Slide1Title' is visible
     And 'SlideNumber' is visible
