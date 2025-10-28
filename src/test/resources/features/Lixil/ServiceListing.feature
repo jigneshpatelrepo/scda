@@ -64,3 +64,4 @@ Feature: Service listing: Validating the service listing
     And The 'Service_Card2_Hover' element has a CSS 'background-color' property with value '#e6f3ec'
     And I click on 'Service_Card1_CTA'
     And I wait for '2' seconds
+    And Current URL contains Either of 'services' or 'construction'

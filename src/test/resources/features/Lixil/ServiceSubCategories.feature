@@ -72,3 +72,4 @@ Feature: Service listing: Validating the service Sub categories page
     And Total count of 'TabsWithFilter_TotalCards' is 3
     And I click on 'TabsWithFilter_Card1AfterSearch_CTA'
     And I wait for '2' seconds
+    And Current URL contains Either of 'services' or 'floors'
