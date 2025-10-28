@@ -57,4 +57,5 @@ DetailPage_InnerBanner_BlackStrip_TextCount: XPATH=//div[contains(@class,"bg-pri
 DetailPage_InnerBanner_BlackStrip_FirstText: XPATH=//div[contains(@class,"bg-primary-400")]//div[contains(@class,"gap-8")][1]
 DetailPage_RTE_Visible: XPATH=//div[contains(@data-automation,"RichTextExtended")]
 DetailPage_FAQs_Visible: XPATH=//div[@data-component="FAQs"]
+DetailPage_FAQs_Button: XPATH=//div[@data-component="FAQs"]//div[@data-automation="faqs-item"]//following-sibling::div//a
 DetailPage_RelatedPageCarousel_Visible: XPATH=//div[@data-component="RelatedPagesCarousel"]

@@ -1,5 +1,5 @@
 @test@Gallery
-Feature: Gallery: Validating the Events listing
+Feature: Gallery: Validating the Gallery listing
 
   Scenario: Clicking on Page link through error msg
     Then I navigate to 'https://dev-sdd.ishj.ae/en/QA/Automation/Gallery'

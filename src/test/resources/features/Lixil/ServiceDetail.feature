@@ -29,4 +29,8 @@ And The 'DetailPage_InnerBanner_BlackStrip_FirstText' element has following CSS 
 
 And 'DetailPage_RTE_Visible' is visible
 And 'DetailPage_FAQs_Visible' is visible
-And 'DetailPage_RelatedPageCarousel_Visible' is visible
+  And 'DetailPage_FAQs_Button' is visible
+  And I hover mouse over 'DetailPage_FAQs_Button'
+  And I wait for '2' seconds
+  Then The 'DetailPage_FAQs_Button' element has a CSS 'background-color' property with value 'rgb(120, 191, 154)'
+  And 'DetailPage_RelatedPageCarousel_Visible' is visible
