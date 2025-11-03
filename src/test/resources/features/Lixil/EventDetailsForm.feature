@@ -1,0 +1,65 @@
+@test @EventDetailsForm @test1
+
+Feature: EventDetailsForm: Validate Event Details - Form
+  @clearcookies
+   Scenario: Validate Security for Page opening
+   Then I navigate to 'https://dev-sdd.ishj.ae/en/'
+   And I wait for '1' seconds
+   And I click on 'Advancebutton' if available
+   And  I click on 'Advancebuttonproceed' if available
+   And I wait for '1' seconds
+
+ Scenario: Validate Event Details - Form Component - Visibility
+  Then I navigate to 'https://dev-sdd.ishj.ae/en/media/events/madani-sharjah'
+  And 'ContactUs_Form_Component' component exists on the page
+  And I scroll to 'ContactUs_Form_Component'
+  And 'ContactUs_Form_Component_heading' is visible
+  And 'ContactUs_Form_Component_Img' is visible
+  And 'ContactUs_Form_Component_FirstName' is visible
+  And 'ContactUs_Form_Component_LastName' is visible
+  And 'ContactUs_Form_Component_Email' is visible
+  And 'ContactUs_Form_Component_Phone' is visible
+  And 'ContactUs_Form_Component_NoofAtten' is visible
+
+ Scenario: Validate Event Details - Form Component - Validation message Visibility
+  And I click on 'ContactUs_Form_Component_Submit'
+  Then I wait for '1' seconds
+  And 'ContactUs_Form_Component_Firstname_ValidionMsg' is visible
+  And 'ContactUs_Form_Component_Lastname_ValidionMsg' is visible
+  And 'ContactUs_Form_Component_email_ValidionMsg' is visible
+  And 'ContactUs_Form_Component_Attend_ValidionMsg' is visible
+
+  And The 'ContactUs_Form_Component_Firstname_ValidionMsg' element has following CSS properties
+   | font-size                 | 12px                         |
+   | line-height               | 16px                         |
+   | font-family               | Inter, "Inter Fallback"      |
+   | font-weight               | 500                          |
+   | letter-spacing            | 0.2px                        |
+   |color                      | rgb(219, 59, 33)             |
+
+ Scenario: Validate Event Details - Form Component - Specific Validation message Visibility
+  And I refresh the current page
+  And I enter 'Test' into 'ContactUs_Form_Component_FirstName' field
+  And I enter 'Test' into 'ContactUs_Form_Component_LastName' field
+  And I enter 'Test123' into 'ContactUs_Form_Component_Email' field
+  Then I press 'tab' key on 'ContactUs_Form_Component_Email'
+  And I enter '12345' into 'ContactUs_Form_Component_Phone' field
+  Then I press 'tab' key on 'ContactUs_Form_Component_Phone'
+  And I click on 'ContactUs_Form_Component_Submit'
+  Then I wait for '1' seconds
+  And 'ContactUs_Form_Component_email_Regex' is visible
+
+ Scenario: Validate Event Details - Form Component - Submit form
+  Then I refresh the current page
+  Then I wait for '1' seconds
+  And I scroll to 'ContactUs_Form_Component'
+  Then I click on 'ContactUs_Form_Component_NoofAtten'
+  Then I wait for '1' seconds
+  And I click on 'ContactUs_Form_Component_NoofAtten_item1_Span'
+  And I enter 'Test' into 'ContactUs_Form_Component_FirstName' field
+  And I enter 'Test' into 'ContactUs_Form_Component_LastName' field
+  And I enter 'Test@test.com' into 'ContactUs_Form_Component_Email' field
+  And I enter '12345122' into 'ContactUs_Form_Component_Phone' field
+  And I click on 'ContactUs_Form_Component_Submit'
+  Then I wait for '1' seconds
+  Then 'ContactUs_Form_Component_ThankYou' is visible

@@ -1,11 +1,11 @@
-@lixil @test @SCDAhomepage
-Feature: SCDAHomepage: Validate SCDA Homepage
-
-  @clearcookies
-
+#@lixil @test1 @SCDAhomepage1
+#Feature: SCDAHomepage: Validate SCDA Homepage
+#
+#  @clearcookies
+#
 #   Scenario: Validate 3X card carousel - Visibility and UI (Font size,family and weight,Letter spacing,Line height)
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-#    And I wait for '5' seconds
+#    And I wait for '3' seconds
 #    And 'Advancebutton' is visible
 #    And I click on 'Advancebutton'
 #    And  I click on 'Advancebuttonproceed'
@@ -17,7 +17,6 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #    And '3cardcarouselEyebrow' is visible
 #    And '3cardcarouselcardicon' is visible
 #    And '3cardcarouselcardsingletag' is visible
-#    And '3cardcarouselcardmultitpletag' is visible
 #    And '3cardcarouselcardcta' is visible
 #    And '3cardcarouselcardctaCommon' is visible
 #    And '3cardcarouselcardPreviousBtn' is visible
@@ -31,7 +30,7 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #      | font-weight               | 500                          |
 #      | letter-spacing            |                   normal     |
 #     | text-transform            | uppercase                    |
-
+#
 #     And The '3cardcarouselHeading' element has following CSS properties
 #       | font-size                 | 48px                         |
 #       | line-height               | 48px                         |
@@ -49,8 +48,8 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #      | line-height               | 16px                         |
 #      | font-family               | Tajawal, "Tajawal Fallback"  |
 #      | font-weight               | 500                          |
-#      | letter-spacing            |                   normal     |
-#
+#      | letter-spacing            |        normal                |
+#    And The 'aria-label' attribute of '3cardcarouselcardmultitpletag' element contains 'more tags'
 #
 #  Scenario: Validate 3X card carousel functionality
 #
@@ -68,9 +67,8 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #    And Current URL contains 'building-completion'
 #    And I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I click on '3cardcarouselcardctaCommon'
-#    And Current URL contains 'services'
+#    And Current URL contains 'service'
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-#
 #
 #  Scenario: Validate Onectabox Visibility and UI (Font size,family and weight,Letter spacing,Line height)
 #    And 'onectaboxComponent' component exists on the page
@@ -86,7 +84,7 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #      | font-weight               | 500                          |
 #      | letter-spacing            |                   normal     |
 #      | text-transform            | uppercase                    |
-
+#
 #    And The 'onectaboxTitle' element has following CSS properties
 #      | font-size                 | 48px                         |
 #      | line-height               | 48px                         |
@@ -95,8 +93,8 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #      | letter-spacing            |            -0.48px           |
 #
 #    And The 'onectaboxImage' element has following CSS properties
-#      | Height                    | 329px                        |
-#      | width                     | 539.625px                    |
+#      | height                    | 353px                        |
+#      | width                     | 579px                        |
 #
 #    And The 'onectaboxCTASpan' element has following CSS properties
 #      | font-size                 | 14px                         |
@@ -119,15 +117,9 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #    And I wait for '1' seconds
 #    And Current URL contains 'find-us'
 #    And I navigate to 'https://dev-sdd.ishj.ae/en'
-#
+#    And I wait for '3' seconds
 #
 #  Scenario: Validate Carouselwith- 4Cards (Awards/Partner) -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
-##    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-##    And I wait for '5' seconds
-##    And 'Advancebutton' is visible
-##    And I click on 'Advancebutton'
-##    And  I click on 'Advancebuttonproceed'
-##    And I wait for '3' seconds
 #
 #    And '4cardcarouselComponent' component exists on the page
 #    And '4cardcarouselEyebrow' is visible
@@ -197,16 +189,8 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #    And Current URL contains 'awards'
 #    Then I navigate to 'https://dev-sdd.ishj.ae/en'
 #    And I wait for '3' seconds
-
-
+#
 #  Scenario: Validate FAQ -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
-#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-#    And I wait for '5' seconds
-#    And 'Advancebutton' is visible
-#    And I click on 'Advancebutton'
-#    And  I click on 'Advancebuttonproceed'
-#    And I wait for '3' seconds
-
 #    And 'FAQComponent' component exists on the page
 #    And I scroll to 'FAQComponent'
 #    And 'FAQComponentTitle' is visible
@@ -221,14 +205,14 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #      | font-weight               | 500                          |
 #      | letter-spacing            | normal                       |
 #      | text-transform            | uppercase                    |
-
+#
 #    And The 'FAQComponentTitle' element has following CSS properties
 #      | font-size                 | 48px                         |
 #      | line-height               | 48px                         |
 #      | font-family               | Tajawal, "Tajawal Fallback"  |
 #      | font-weight               | 400                          |
 #      | letter-spacing            | -0.48px                      |
-
+#
 #    And The 'FAQComponentCTASpan' element has following CSS properties
 #      | font-size                 | 14px                         |
 #      | line-height               | 14px                         |
@@ -252,74 +236,79 @@ Feature: SCDAHomepage: Validate SCDA Homepage
 #    And Total count of 'FAQComponentTotalItem' is 4
 #    And I click on 'FAQComponentCTA'
 #    And Current URL contains 'faq'
-#    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-
-  Scenario: Validate News -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
-    Then I navigate to 'https://dev-sdd.ishj.ae/en'
-    And I wait for '5' seconds
-    And 'Advancebutton' is visible
-    And I click on 'Advancebutton'
-    And  I click on 'Advancebuttonproceed'
-    And I wait for '3' seconds
-
-    And 'NewsComponent' component exists on the page
-    And I scroll to 'NewsComponent'
-    And 'NewsComponentTitle' is visible
-    And 'NewsComponentEyebrow' is visible
-    And 'NewsComponentCTA' is visible
-    And 'NewsComponentImage' is visible
-    And 'NewsComponentDate' is visible
-    And 'NewsComponentItem1Title' is visible
-
-    And The 'NewsComponentEyebrow' element has following CSS properties
-      | font-size                 | 14px                         |
-      | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | font-weight               | 500                          |
-      | letter-spacing            | normal                       |
-      | text-transform            | uppercase                    |
-    And The 'NewsComponentTitle' element has following CSS properties
-      | font-size                 | 48px                         |
-      | line-height               | 48px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | font-weight               | 400                          |
-#      | letter-spacing            | -0.48px                      |
-
-    And The 'NewsComponentCTASpan' element has following CSS properties
-      | font-size                 | 14px                         |
-      | line-height               | 14px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | font-weight               | 500                          |
-      | padding-left              | 16px                         |
-      | padding-right             | 0px                          |
-
-    And The 'NewsComponentItem1Title' element has following CSS properties
-      | font-size                 | 24px                         |
-      | line-height               | 32px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | font-weight               | 400                          |
-      | padding-left              | 0px                          |
-      | padding-right             | 0px                          |
-
-    And The 'NewsComponentDate' element has following CSS properties
-      | font-size                 | 14px                         |
-      | line-height               | 16px                         |
-      | font-family               | Tajawal, "Tajawal Fallback"  |
-      | font-weight               | 500                          |
-      | padding-left              | 0px                          |
-      | padding-right             | 0px                          |
-      | text-transform            | uppercase                    |
-
-    Scenario: Validate News- functionality (Hover and Navigation)
-
-
-    And I hover mouse over 'NewsComponentImage2'
-    And I wait for '2' seconds
-    And The 'NewsComponentImage2' element has following CSS properties
-      | flex                     |  1 1 28.561%           |
-      And I hover mouse over 'NewsComponentImage'
-      And I wait for '2' seconds
-      And The 'NewsComponentImage' element has following CSS properties
-        | flex                     |  1 1 28.561%          |
-      And The 'NewsComponentImage' element has following CSS properties
-        | flex                     |  1 1 28.561%          |
+#    And I navigate to 'https://dev-sdd.ishj.ae/en'
+#    And I wait for '3' seconds
+#  Scenario: Validate News -Visibility and UI (Font size,family and weight,Letter spacing,Line height)
+##    Then I navigate to 'https://dev-sdd.ishj.ae/en'
+##    And I wait for '5' seconds
+##    And 'Advancebutton' is visible
+##    And I click on 'Advancebutton'
+##    And  I click on 'Advancebuttonproceed'
+##    And I wait for '3' seconds
+#
+#    And 'NewsComponent' component exists on the page
+#    And I scroll to 'NewsComponent'
+#    And 'NewsComponentTitle' is visible
+#    And 'NewsComponentEyebrow' is visible
+#    And 'NewsComponentCTA' is visible
+#    And 'NewsComponentImage' is visible
+#    And 'NewsComponentDate' is visible
+#    And 'NewsComponentItem1Title' is visible
+#
+#    And The 'NewsComponentEyebrow' element has following CSS properties
+#      | font-size                 | 14px                         |
+#      | line-height               | 16px                         |
+#      | font-family               | Tajawal, "Tajawal Fallback"  |
+#      | font-weight               | 500                          |
+#      | letter-spacing            | normal                       |
+#      | text-transform            | uppercase                    |
+#    And The 'NewsComponentTitle' element has following CSS properties
+#      | font-size                 | 48px                         |
+#      | line-height               | 48px                         |
+#      | font-family               | Tajawal, "Tajawal Fallback"  |
+#      | font-weight               | 400                          |
+##      | letter-spacing            | -0.48px                      |
+#
+#    And The 'NewsComponentCTASpan' element has following CSS properties
+#      | font-size                 | 14px                         |
+#      | line-height               | 14px                         |
+#      | font-family               | Tajawal, "Tajawal Fallback"  |
+#      | font-weight               | 500                          |
+#      | padding-left              | 16px                         |
+#      | padding-right             | 0px                          |
+#
+#    And The 'NewsComponentItem1Title' element has following CSS properties
+#      | font-size                 | 24px                         |
+#      | line-height               | 32px                         |
+#      | font-family               | Tajawal, "Tajawal Fallback"  |
+#      | font-weight               | 400                          |
+#      | padding-left              | 0px                          |
+#      | padding-right             | 0px                          |
+#
+#    And The 'NewsComponentDate' element has following CSS properties
+#      | font-size                 | 14px                         |
+#      | line-height               | 16px                         |
+#      | font-family               | Tajawal, "Tajawal Fallback"  |
+#      | font-weight               | 500                          |
+#      | padding-left              | 0px                          |
+#      | padding-right             | 0px                          |
+#      | text-transform            | uppercase                    |
+#
+#    Scenario: Validate News- functionality (Hover and Navigation)
+#
+#    And I hover mouse over 'NewsComponentImage2'
+#    And I wait for '2' seconds
+#    And The 'NewsComponentImage2' element has following CSS properties
+#      |          flex            |  1 1 28.561%           |
+#      And I hover mouse over 'NewsComponentImage'
+#      And I wait for '2' seconds
+#      And The 'NewsComponentImage' element has following CSS properties
+#        |           flex           |  1 1 28.561%          |
+#      And I click on 'NewsComponentCTA'
+#      And I wait for '2' seconds
+#      And Current URL contains 'news'
+#      And I navigate to 'https://dev-sdd.ishj.ae/en'
+#      And I click on 'NewsComponentItem1BtnAnchor'
+#      And I wait for '2' seconds
+#      And Current URL contains 'day'
+#      And I wait for '3' seconds

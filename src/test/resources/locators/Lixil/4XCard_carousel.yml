@@ -1,0 +1,16 @@
+###4cardcarousel(partners/awards)
+4cardcarousel_Component: XPATH=//div[@data-component='CarouselWithFourCards']
+4cardcarousel_Eyebrow: XPATH=//div[@data-component='CarouselWithFourCards']//span[(text()='Acknowledgement')]
+4cardcarousel_Title: XPATH=//div[@data-component='CarouselWithFourCards']//h2[contains(text(),'proud of our')]
+4cardcarousel_LinkPartner: XPATH=//div[@data-component='CarouselWithFourCards']//h2[contains(text(),'proud of our')]//following::button[(text()='partners')]
+4cardcarousel_LinkCTAAwards: XPATH=//div[@data-component='CarouselWithFourCards']//h2[contains(text(),'proud of our')]//following::button[(text()='awards')]
+4cardcarousel_CTAAnchorPartner: XPATH=//div[@data-component='CarouselWithFourCards']//span[contains(text(),'All Partners')]//ancestor::a
+4cardcarousel_CTAAnchorAwards: XPATH=//div[@data-component='CarouselWithFourCards']//span[contains(text(),'All Awards')]//ancestor::a
+4cardcarousel_CTAAwardsSpan: XPATH=//div[@data-component='CarouselWithFourCards']//span[contains(text(),'All Awards')]
+4cardcarousel_CTAPartnerSpan: XPATH=//div[@data-component='CarouselWithFourCards']//span[contains(@class,'cta-content font')]
+4cardcarousel_Image: XPATH=//div[@data-component='CarouselWithFourCards']//ul[@class='splide__list']/li//img
+4cardcarousel_ImageforAwards: XPATH=//div[@data-component='CarouselWithFourCards']//ul[@class='splide__list']/li[1]/a
+4cardcarousel_ImageforHover: XPATH=//div[@data-component='CarouselWithFourCards']//ul[@class='splide__list']/li[2]//a
+
+4cardcarousel_LinkCTAAwardsTitle: XPATH=//div[@data-component='CarouselWithFourCards']//ul[@class='splide__list']/li//div[contains(@class,'mt-auto')]
+4cardcarousel_LinkCTAAwardsCTA: XPATH=//div[@data-component='CarouselWithFourCards']//ul[@class='splide__list']/li//span[contains(@class,'cta-icon')]

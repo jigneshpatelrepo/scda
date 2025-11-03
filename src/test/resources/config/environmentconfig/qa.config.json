@@ -1,8 +1,8 @@
 {
-  "BaseURL": "https://greystar-velocity-staging.vercel.app/en",
+  "BaseURL": "https://dev-sdd.ishj.ae/en/",
   "defaultLang": "en-US",
   "testData": "test_data.yml",
-  "timeOut": "30000",
+  "timeOut": "10000",
   "implicitWait": "20",
   "MailConfig": "email-smtp.config.json",
   "ScreenshotForAllTest": "false",

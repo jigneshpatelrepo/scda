@@ -1,0 +1,11 @@
+
+###FAQ's
+FAQComponent: XPATH=*//div[@data-component='FAQs']
+FAQComponent_Title: XPATH=*//div[@data-component='FAQs']//h2
+FAQComponent_Eyebrow: XPATH=*//div[@data-component='FAQs']//span[(text()='FAQs')]
+FAQComponent_CTA: XPATH=*//div[@data-component='FAQs']//span[contains(@class,'cta-content font')]//ancestor::a
+FAQComponent_CTASpan: XPATH=*//div[@data-component='FAQs']//span[contains(@class,'cta-content font')]
+FAQComponent_Item1: XPATH=*//div[@data-component='faq-item'][1]//h3
+FAQComponent_Item1Btn: XPATH=*//div[@data-component='faq-item'][1]//button
+FAQComponent_Item1Question: XPATH=//div[@data-component='faq-item'][1]//h3
+FAQComponent_TotalItem: XPATH=*//div[@data-component='FAQs']//div[contains(@aria-labelledby,'faq')]/div

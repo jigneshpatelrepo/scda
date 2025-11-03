@@ -1,0 +1,61 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Image banner
+ImageBanner_Visible: XPATH=//div[@data-automation="innerBanner-image"]
+Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
+ImageBanner_CTA: XPATH=//div[@data-component="InnerBannerWithImage"]//a
+ImageBanner_CTAText: XPATH=//div[@data-component="InnerBannerWithImage"]//a//span[2]
+
+#Service listing
+Service_Visible: XPATH=//div[contains(@data-automation,"CardsWithoutFilter")]
+Service_Total_Cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#Card 1 elements
+Service_Card1_Visible: XPATH=//div[contains(@class,"col-span-full")][1]
+Service_Card1_Title: XPATH=//div[contains(@class,"col-span-full")][1]//h4
+Service_Card1_CTA: XPATH=//div[contains(@class,"col-span-full")][1]//a//span[text()="View All"]/..
+Service_Card1_CTA_Text: XPATH=//div[contains(@class,"col-span-full")][1]//a//span[text()="View All"]
+Service_Card1_Description: XPATH=//div[contains(@class,"col-span-full")][1]//p
+Service_Card1_TagsCount: XPATH=//div[contains(@aria-label,"Construction Plan Approvals")]//ul[contains(@aria-label,"Tags for card")]//li
+Service_Card2_Hover: XPATH=//div[@data-component="CardsWithoutFilter"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"hover")]
+
+#Service sub categories page
+#Inner banner without image
+InnerBanner_Visible: XPATH=//div[contains(@data-automation,"InnerBannerWithoutImage")]
+InnerBanner_Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+InnerBanner_Breadcrumb_ParentItemCount: XPATH=//div[contains(@data-automation,"breadcrumbNavigation")]
+InnerBanner_Title: XPATH=//h2[contains(@data-automation,"title")]
+InnerBanner_Icon: XPATH=//div[contains(@data-automation,"InnerBannerWithoutImage")]//span
+
+#Tabs with filters
+TabsWithFilter_Visible: XPATH=//section[@data-component="TabsWithFilters"]
+TabsWithFilter_Title: XPATH=//section[@data-component="TabsWithFilters"]//h2
+TabsWithFilter_Description: XPATH=//section[@data-component="TabsWithFilters"]//h2//following-sibling::p
+TabsWithFilter_LoadMore_Button: XPATH=//section[@data-component="TabsWithFilters"]//span[text()="Load More"]/..
+TabsWithFilter_TotalCards: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")]
+TabsWithFilter_Card1_Visible: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")][1]
+TabsWithFilter_Card1_Title: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")]//h4
+TabsWithFilter_Card1_Description: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")][1]//p
+TabsWithFilter_Card1_CTA: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")][1]//span[text()="Learn More"]//parent::a
+TabsWithFilter_Card1_CTA_Text: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")][1]//span[text()="Learn More"]
+TabsWithFilter_Total_FilterTabs: XPATH=//section[@data-component="TabsWithFilters"]//ul[@aria-label="Available filters"]//li
+TabsWithFilter_FirstFilter_Color: XPATH=//section[@data-component="TabsWithFilters"]//ul[@aria-label="Available filters"]//li[1]//button
+TabsWithFilter_SearchBox: XPATH=//section[@data-component="TabsWithFilters"]//input[@id="search-input"]
+TabsWithFilter_Card1AfterSearch_CTA: XPATH=//section[@data-component="TabsWithFilters"]//div[contains(@class,"md:col-span-6")][1]//span[text()="Learn More"]//parent::a
+
+
+#Service detail page
+#Inner banner without image
+DetailPage_InnerBanner_Visible: XPATH=//div[contains(@data-automation,"InnerBannerWithoutImage")]
+DetailPage_InnerBanner_Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+DetailPage_InnerBanner_Breadcrumb_ParentItemCount: XPATH=//div[contains(@data-automation,"breadcrumbNavigation")]
+DetailPage_InnerBanner_Title: XPATH=//h2[contains(@data-automation,"title")]
+DetailPage_InnerBanner_BlackStrip_TextCount: XPATH=//div[contains(@class,"bg-primary-400")]//div[contains(@class,"gap-8")]
+DetailPage_InnerBanner_BlackStrip_FirstText: XPATH=//div[contains(@class,"bg-primary-400")]//div[contains(@class,"gap-8")][1]
+DetailPage_RTE_Visible: XPATH=//div[contains(@data-automation,"RichTextExtended")]
+DetailPage_FAQs_Visible: XPATH=//div[@data-component="FAQs"]
+DetailPage_FAQs_Button: XPATH=//div[@data-component="FAQs"]//div[@data-automation="faqs-item"]//following-sibling::div//a
+DetailPage_RelatedPageCarousel_Visible: XPATH=//div[@data-component="RelatedPagesCarousel"]

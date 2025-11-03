@@ -1,0 +1,32 @@
+
+
+  ###Footer
+FooterComponent: XPATH=//footer[@data-component='Footer']
+FooterComponent_Leftlogo: XPATH=//footer[@data-component='Footer']//div[@data-automation='footer-logo']
+FooterComponent_Rightlogo: XPATH=//footer[@data-component='Footer']//div[@data-automation='footer-sharjah-logo-desktop']
+FooterComponent_AboutLink: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'about')]
+FooterComponent_FindUs: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'find')]
+FooterComponent_Media: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'media')]
+FooterComponent_QuickLInks: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'quick')]
+FooterComponent_JoinNewsletter: XPATH=//footer[@data-component='Footer']//h2[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'news')]
+FooterComponent_WorkingHrs: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'work')]
+
+FooterComponent_AboutLinkItem1: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'about')]//following-sibling::ul//li[1]
+FooterComponent_FindusItem1: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'find')]//following-sibling::ul//li[1]
+FooterComponent_MediaItem1: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'media')]//following-sibling::ul//li[1]
+FooterComponent_QuicklinksItem1: XPATH=//footer[@data-component='Footer']//h4[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'quick')]//following-sibling::ul//li[1]
+FooterComponent_WorkingHoursDay: XPATH=//footer[@data-component='Footer']//p[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'mon')]
+FooterComponent_WorkingHoursTime: XPATH=//footer[@data-component='Footer']//p[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'pm')]
+FooterComponent_WorkingNewsletterTxtbox: XPATH=//footer[@data-component='Footer']//input[contains(@id,'email')]
+
+FooterComponent_Disclaimer: XPATH=//ul[@data-automation='footer-legal-links']/li[1]/a
+FooterComponent_Privacy: XPATH=//ul[@data-automation='footer-legal-links']/li[2]/a
+FooterComponent_Sitemap: XPATH=//ul[@data-automation='footer-legal-links']/li[3]/a
+FooterComponent_TermsandCondition: XPATH=//ul[@data-automation='footer-legal-links']/li[4]/a
+FooterComponent_MonthltVisitors: XPATH=//div[@data-automation='footer-copyright']//p[1]
+FooterComponent_Lastupdated: XPATH=//div[@data-automation='footer-copyright']//p[2]
+FooterComponent_allrightreserved: XPATH=//div[@data-automation='footer-copyright']//p[3]
+FooterComponent_Followus: XPATH=//div[@data-automation='footer-social']
+
+
+

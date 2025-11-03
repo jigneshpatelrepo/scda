@@ -1,0 +1,51 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Image banner
+ImageBanner_Visible: XPATH=//div[@data-automation="innerBanner-image"]
+Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+ImageBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
+
+#Events listing
+Gallery_Visible: XPATH=//div[contains(@data-automation,"DropDownFilter")]
+Gallery_Filter_Visible: XPATH=//div[@aria-label="Filter options"]
+Gallery_LoadMore_Button: XPATH=//div[@data-component="DropDownFilterWithCards"]//span[text()="Load More"]
+Gallery_Total_Cards: XPATH=//div[contains(@class,"col-span-full")]
+
+#Card 1 elements
+Gallery_Card1_Visible: XPATH=//div[contains(@class,"col-span-full")][1]
+Gallery_Card1_Title: XPATH=//div[contains(@class,"col-span-full")][1]//h4
+Gallery_Card1_CTA: XPATH=//div[contains(@class,"col-span-full")][1]//div[@class="self-start mt-auto"]//a
+Gallery_Card1_CTAText: XPATH=//div[contains(@class,"col-span-full")][1]//div[@class="self-start mt-auto"]//a//span[text()="View All"]
+Gallery_Card1_Date: XPATH=//div[contains(@class,"col-span-full")][1]//p
+Gallery_Card1_Image: XPATH=//div[contains(@class,"col-span-full")][1]//img
+Gallery_Card1_Label: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//img//following-sibling::div//span[2]
+Gallery_Card1_Hover: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]
+Gallery_Card1_HoverEffect: XPATH=//div[@data-component="DropDownFilterWithCards"]//div[contains(@class,"col-span-full")][1]//div[contains(@class,"underline")]//img
+
+#Filter dropdown
+Filter_dropdown: XPATH=//button[contains(@id,"Time")]
+#Filter_dropdown: XPATH=//button[contains(@aria-controls,"EventTimeline")]
+Filter_Total_Options: XPATH=//ul[contains(@id,"filter-list")]//li[@role="option"]
+Filter_Option1: XPATH=//ul[contains(@id,"filter-list")]//li[@aria-selected="true"]
+Filter_Option1_HoverColor: XPATH=//ul[contains(@id,"filter-list")]//li[1]//button
+Filter_Option2: XPATH=//ul[contains(@id,"filter-list")]//li[2]//button
+Filter_Option2_Label: XPATH=//div[@data-component="DropDownFilterWithCards"]//span[contains(normalize-space(.), '7 ITEMS')]
+
+#Gallery Detail Page
+#Inner banner without image
+InnerBanner_Visible: XPATH=//div[contains(@data-automation,"InnerBannerWithoutImage")]
+InnerBanner_Breadcrumb_Visible: XPATH=//div[@data-automation="breadcrumbNavigation-tab-0"]/..
+InnerBanner_Breadcrumb_ParentItemCount: XPATH=//div[contains(@data-automation,"breadcrumbNavigation")]
+InnerBanner_Title: XPATH=//h2[contains(@data-automation,"title")]
+InnerBanner_Label: XPATH=//div[@data-component="InnerBannerWithoutImage"]//div[contains(@class,"uppercase")]
+InnerBanner_7Items_CrossCheck: XPATH=//div[@data-component="InnerBannerWithoutImage"]//div[contains(@class,"uppercase")]//span[text()="7"]
+InnerBanner_BlackStrip_Text: XPATH=//div[@data-automation="mediaGallery-wrapper"]//preceding-sibling::div//span[text()="December"]
+Media_Count: XPATH=//div[contains(@data-automation,"mediaGallery-image")]
+First_Image_Click: XPATH=//div[@data-automation="mediaGallery-image-0"]
+PopUp_Image_Visible: XPATH=//div[contains(@class,"justify-center")]//img
+PopUp_NextArrow_Click: XPATH=//div[@data-automation="mediaGallery-wrapper"]//button[contains(@class,"md:absolute md:right-60 z-50")]
+PopUp_Image2_Visible: XPATH=//div[contains(@class,"justify-center")]//img
+PopUp_PreviousArrow_Click: XPATH=//div[contains(@class,"justify-center")]//button[contains(@class,"md:absolute md:left-60 z-50")]
+Cross_Button: XPATH=//div[@data-automation="mediaGallery-wrapper"]//div[contains(@class,"absolute z-50")]//button

@@ -1,0 +1,18 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+#hero banner
+HeroBannerVisible: XPATH=//ul[contains(@id,"list")]
+Slide1Description: XPATH=//ul[contains(@id,"list")]//li//h2
+Slide1Title: XPATH=//span[@aria-label="Page 01"]//span[@class="text-b1 -my-[3px]"]
+SlideNumber: XPATH=//span[@aria-label="Page 01"]//span[contains(@class,"text-b2")]
+CTA: XPATH=//ul[contains(@id,"list")]//descendant::span[text()="Learn More"][1]
+Slide1HorizontalLine: XPATH=//span[@aria-label="Page 01"]//span[contains(@class,"indicator-line")] #not correct
+PreviousArrow: XPATH=*//div[@data-component="HeroBanner"]//div[@aria-label='Carousel Navigation']//button[1][contains(@aria-controls,'track')]
+NextArrow: XPATH=*//div[@data-component="HeroBanner"]//div[@aria-label='Carousel Navigation']//button[2][contains(@aria-controls,'track')]
+
+#functionality of next and previous arrows
+Slides_Total_Count: XPATH=//ul[contains(@id,"list")]//li[contains(@data-automation,"hero-banner")]
+First_Slide: XPATH=//ul[contains(@id,"list")]//li[contains(@data-automation,"hero-banner")][1]
+Second_Slide: XPATH=//ul[contains(@id,"list")]//li[contains(@data-automation,"hero-banner")][2]
+Third_Slide: XPATH=//ul[contains(@id,"list")]//li[contains(@data-automation,"hero-banner")][3]

@@ -1,2 +1,4 @@
 image_tag: XPATH=//img
 image_tag1: XPATH=//img
+Advancebutton: XPATH=//button[@id='details-button']
+Advancebuttonproceed: XPATH=//p[@id='final-paragraph']/a

@@ -1,0 +1,4 @@
+###CardsWithCategory
+CardsWithCategoryComponent: XPATH=//div[@data-component='CardsWithCategory']
+CardsWithCategoryComponent_Title: XPATH=//div[@data-component='CardsWithCategory']/h3
+CardsWithCategoryComponent_card: XPATH=//div[@data-component='CardsWithCategory']//a

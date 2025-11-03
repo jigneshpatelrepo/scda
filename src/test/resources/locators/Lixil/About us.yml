@@ -1,0 +1,39 @@
+#clikcing on advance
+Advance: XPATH=//button[@id="details-button"]
+Pagelink: XPATH=//a[@id="proceed-link"]
+
+#Inner banner with image
+InnerBanner_Visible: XPATH=//div[@data-automation="InnerBannerWithImage-6d977ac4-6cbb-4807-8a0c-9ba4df4def72"]
+InnerBanner_Title: XPATH=//div[@data-automation="innerBanner-title"]
+InnerBanner_CTA: XPATH=//div[@data-automation="InnerBannerWithImage-6d977ac4-6cbb-4807-8a0c-9ba4df4def72"]//a
+InnerBanner_CTA_Text: XPATH=//div[@data-automation="InnerBannerWithImage-6d977ac4-6cbb-4807-8a0c-9ba4df4def72"]//a//span[contains(@class,'cta-content')]
+
+#Text with images
+TextWithImage_Visible: XPATH=//div[@data-component="TextWithImages"]
+TextWithImage_Title: XPATH=//h3[@data-automation="textWithImages-title"]
+TextWithImage_Description: XPATH=//div[@data-automation="textWithImages-description"]
+#TextWithImage_Images: XPATH=//div[@data-automation="TextWithImages-9f0fcc9c-c3da-4ba3-a52c-84aa0523b352"]//div//img
+TextWithImage_Images_Gap: XPATH=//div[@data-automation="TextWithImages-9f0fcc9c-c3da-4ba3-a52c-84aa0523b352"]//img//parent::div
+TextWithImage_Total_Images: XPATH=//div[@data-automation="TextWithImages-9f0fcc9c-c3da-4ba3-a52c-84aa0523b352"]//div//img[@loading="lazy"]
+TextWithImageTitle_Image1: XPATH=//div[@data-automation="TextWithImages-9f0fcc9c-c3da-4ba3-a52c-84aa0523b352"]//div//img[1]
+
+#Promo text with rows
+PromoText_visible: XPATH=//div[@data-component="PromoTextWithRows"]
+PromoText_Total_Rows: XPATH=//div[@data-automation="PromoTextWithRows-72e3657b-ef99-4de9-a8ff-d8e2a9f2e208"]//div[contains(@class,"py-32")]
+PromoText_Total_Row1: XPATH=//div[@data-automation="PromoTextWithRows-72e3657b-ef99-4de9-a8ff-d8e2a9f2e208"]//div[contains(@class,"py-32")][1]
+PromoText_Total_Row2: XPATH=//div[@data-automation="PromoTextWithRows-72e3657b-ef99-4de9-a8ff-d8e2a9f2e208"]//div[contains(@class,"py-32")][2]
+PromoText_Title: XPATH=//div[@data-component="PromoTextWithRows"]//h2
+PromoText_Row1_Title: XPATH=//div[@data-component="PromoTextWithRows"]//div[@id="RichText-0"]/..//h2
+PromoText_Row2_Title: XPATH=//div[@data-component="PromoTextWithRows"]//div[@id="RichText-1"]/..//h2
+PromoText_Row1_Description: XPATH=//div[@data-automation="promoTextWithRows-row-0"]//div[@id="RichText-0"]
+PromoText_Row2_Description: XPATH=//div[@data-automation="promoTextWithRows-row-1"]//div[@id="RichText-1"]
+
+#Text with single image
+TextWithSingleImage_Visible: XPATH=//section[contains(@data-automation,"TextWithSingleImage")]
+TextWithSingleImage_Padding: XPATH=//section[contains(@data-automation,"TextWithSingleImage")]//div[@class="container py-48 md:py-60"]
+TextWithSingleImage_Title: XPATH=//h2[@id="text-with-image-title"]
+TextWithSingleImage_Description: XPATH=//section[contains(@data-automation,"TextWithSingleImage")]//div[@data-component="helpers/fieldwrappers/richtextwrapper"]
+TextWithSingleImage_Name: XPATH=//section[contains(@data-automation,"TextWithSingleImage")]//p[contains(@class,"font-bold")]
+TextWithSingleImage_Image: XPATH=//div[@data-automation="textWithSingleImage-image"]//img
+
+Footer: XPATH=//footer[@data-component="Footer"]
