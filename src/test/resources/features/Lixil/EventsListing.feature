@@ -99,3 +99,4 @@ Feature: Events: Validating the Events listing
     And 'PAST EVENT' text is visible in 'Filter_Option3_Label'
     And I click on 'Events_Card1_CTA'
     And Current URL contains 'sharjah'
+    And Current URL contains 'sharjah'
